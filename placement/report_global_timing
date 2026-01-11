@@ -1,0 +1,16 @@
+****************************************
+Report : global timing
+        -format { narrow }
+        -report_by design
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:38:19 2025
+****************************************
+
+No setup violations found.
+
+
+No hold violations found.
+
+
+1

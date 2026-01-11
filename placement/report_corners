@@ -1,0 +1,116 @@
+****************************************
+Report : corner
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:38:49 2025
+****************************************
+
+--------------------------------------------------------------------------------
+Corner ss0p6v125c
+--------------------------------------------------------------------------------
+
+Current: false  Default: false  Empty: false
+
+Scenarios associated with this corner:
+
+                                                         Leakage   Dynamic
+Scenario            Mode            Active  Setup  Hold  Power     Power     Max_tran  Max_cap  Min_cap  Cell_em  Signal_em
+-------------------------------------------------------------------------------------------------------------------------
+func_mode::ss0p6v125c func_mode     true    true   false true      true      true      true     false    false    false
+
+
+Top-Level PVT Settings:
+  early process label             (none)
+  early process number            1
+  early voltage                   0.60
+    source                        UPF
+    file/line                     /home1/PD07/AMuthuKKumar/FPU/fpu/ICCII/design_data/ss0p6v125c.tcl, line 9
+  early temperature               -40.00
+    source                        hierarchical opcond
+    file/line                     /home1/PD07/AMuthuKKumar/FPU/fpu/ICCII/design_data/ss0p6v125c.tcl, line 13
+
+  late process label              (none)
+  late process number             1
+  late voltage                    0.60
+    source                        UPF
+    file/line                     /home1/PD07/AMuthuKKumar/FPU/fpu/ICCII/design_data/ss0p6v125c.tcl, line 9
+  late temperature                125.00
+    source                        hierarchical opcond
+    file/line                     /home1/PD07/AMuthuKKumar/FPU/fpu/ICCII/design_data/ss0p6v125c.tcl, line 13
+
+
+
+
+0 objects with explicit PVT settings.
+
+
+Top-level cell timing derates:
+ data_cell derate early:   rise: 1.00    fall: 1.00  
+ clk_cell derate early:   rise: 1.00    fall: 1.00  
+ cell_check derate early:   rise: 1.00    fall: 1.00  
+ data_cell derate  late:   rise: 1.00    fall: 1.00  
+ clk_cell derate  late:   rise: 1.00    fall: 1.00  
+ cell_check derate  late:   rise: 1.00    fall: 1.00  
+
+Global net timing derates:
+ net_data, early:   rise: 1.00    fall: 1.00  
+ net_data, late:   rise: 1.00    fall: 1.00  
+ net_clock, early:   rise: 1.00    fall: 1.00  
+ net_clock, late:   rise: 1.00    fall: 1.00  
+
+
+--------------------------------------------------------------------------------
+Corner ss0p6vm40c
+--------------------------------------------------------------------------------
+
+Current: true  Default: false  Empty: false
+
+Scenarios associated with this corner:
+
+                                                         Leakage   Dynamic
+Scenario            Mode            Active  Setup  Hold  Power     Power     Max_tran  Max_cap  Min_cap  Cell_em  Signal_em
+-------------------------------------------------------------------------------------------------------------------------
+turbo_mode::ss0p6vm40c turbo_mode   false   false  true  true      false     true      false    true     false    false
+
+
+Top-Level PVT Settings:
+  early process label             (none)
+  early process number            1
+  early voltage                   0.60
+    source                        UPF
+    file/line                     /home1/PD07/AMuthuKKumar/FPU/fpu/ICCII/design_data/ss0p6vm40c.tcl, line 9
+  early temperature               -40.00
+    source                        hierarchical opcond
+    file/line                     /home1/PD07/AMuthuKKumar/FPU/fpu/ICCII/design_data/ss0p6vm40c.tcl, line 14
+
+  late process label              (none)
+  late process number             1
+  late voltage                    0.60
+    source                        UPF
+    file/line                     /home1/PD07/AMuthuKKumar/FPU/fpu/ICCII/design_data/ss0p6vm40c.tcl, line 9
+  late temperature                125.00
+    source                        hierarchical opcond
+    file/line                     /home1/PD07/AMuthuKKumar/FPU/fpu/ICCII/design_data/ss0p6vm40c.tcl, line 14
+
+
+
+
+0 objects with explicit PVT settings.
+
+
+Top-level cell timing derates:
+ data_cell derate early:   rise: 1.00    fall: 1.00  
+ clk_cell derate early:   rise: 1.00    fall: 1.00  
+ cell_check derate early:   rise: 1.00    fall: 1.00  
+ data_cell derate  late:   rise: 1.00    fall: 1.00  
+ clk_cell derate  late:   rise: 1.00    fall: 1.00  
+ cell_check derate  late:   rise: 1.00    fall: 1.00  
+
+Global net timing derates:
+ net_data, early:   rise: 1.00    fall: 1.00  
+ net_data, late:   rise: 1.00    fall: 1.00  
+ net_clock, early:   rise: 1.00    fall: 1.00  
+ net_clock, late:   rise: 1.00    fall: 1.00  
+
+
+1

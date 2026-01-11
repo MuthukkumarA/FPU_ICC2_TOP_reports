@@ -1,0 +1,1317 @@
+RM-info: Reporting stage set to placement
+RM-info: Reporting timing and QoR ...
+
+****************************************
+Report : qor
+        -summary
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:38:11 2025
+****************************************
+
+Timing
+---------------------------------------------------------------------------
+Context                                 WNS            TNS            NVE
+---------------------------------------------------------------------------
+func_mode::ss0p6v125c (Setup)           0.00           0.00              0
+Design             (Setup)             0.00           0.00              0
+
+Design             (Hold)                --           0.00              0
+---------------------------------------------------------------------------
+
+Miscellaneous
+---------------------------------------------------------------------------
+Cell Area (netlist):                          30413.75
+Cell Area (netlist and physical only):        30695.77
+Nets with DRC Violations:        0
+1
+****************************************
+Report : global timing
+        -format { narrow }
+        -report_by design
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:38:19 2025
+****************************************
+
+No setup violations found.
+
+
+No hold violations found.
+
+
+1
+RM-info: Analyzing design violations ...
+
+Information: Starting 'analyze_design_violations' (FLW-8000)
+Information: Time: 2025-08-22 18:38:20 / Session: 0.50 hr / Command: 0.00 hr / Memory: 4512 MB (FLW-8100)
+
+****************************************
+Report : Violation analysis
+Design : fpu
+Block  : fpu.dlib:fpu/placement.design
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:38:20 2025
+****************************************
+
+START_CMD: analyze_design_violations CPU:   1083 s ( 0.30 hr) ELAPSE:   1799 s ( 0.50 hr) MEM-PEAK:  4511 Mb Fri Aug 22 18:38:20 2025
+Information: Top design (Reference: fpu/placement.design) is treated as modifiable. (HOPT-001)
+Information: 2 sub-block instances are treated as non-modifiable. (HOPT-003)
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (100000 100000) (2199380 2500000)
+Number of VARs = 3
+Number of unique PDs = 2
+Number of Power Domains = 3
+Number of Voltage Areas = 3
+Number of supply Nets = 8
+Number of used supplies = 0
+Blocked VAs: 1 2 
+INFO: auto-mv setup started.
+Information: Initializing classic cellmap without advanced rules enabled and without PDC enabled
+Information: The following app options are used in cellmap
+        place.legalize.enable_color_aware_placement : false
+        place.legalize.use_nll_query_cm : false
+        place.legalize.enable_advanced_legalizer : false
+        place.legalize.enable_prerouted_net_check : true
+        place.legalize.enable_advanced_prerouted_net_check : false
+        place.legalize.always_continue : true
+        place.legalize.limit_legality_checks : false
+        place.common.pnet_aware_density : 1.0000
+        place.common.pnet_aware_min_width : 0.0000
+        place.common.pnet_aware_layers : {}
+        place.common.use_placement_model : false
+        place.common.enable_advanced_placement_model : true
+        cts.placement.cell_spacing_rule_style : maximum
+Warning: Library cell saed14rvt_ss0p6v125c:SAEDRVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14rvt_ss0p6v125c:SAEDRVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14lvt_ss0p6v125c:SAEDLVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14lvt_ss0p6v125c:SAEDLVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14rvt_ss0p6v125c:SAEDRVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Total 2.5792 seconds to build cellmap data
+INFO: creating 50(r) x 50(c) GridCells YDim 5.2 XDim 4.5988
+INFO: creating 50(r) x 50(c) GridCells YDim 5.2 XDim 4.5988
+Total 0.2220 seconds to load 17764 cell instances into cellmap
+Moveable cells: 16663; Application fixed cells: 0; Macro cells: 0; User fixed cells: 1101
+Average cell width 0.7190, cell height 0.6030, cell area 0.4407 for total 16663 placed and application fixed cells
+Design utilization is 0.280211
+
+  Start analyzing SETUP violations.
+
+    No setup violation was found. 
+
+END_CMD: analyze_design_violations CPU:   1086 s ( 0.30 hr) ELAPSE:   1806 s ( 0.50 hr) MEM-PEAK:  4511 Mb Fri Aug 22 18:38:27 2025
+Information: Ending 'analyze_design_violations' (FLW-8001)
+Information: Time: 2025-08-22 18:38:27 / Session: 0.50 hr / Command: 0.00 hr / Memory: 4512 MB (FLW-8100)
+RM-info: Running report_power ...
+
+RM-info: Running report_power ...
+
+Scenario turbo_mode::ss0p6vm40c (mode turbo_mode corner ss0p6vm40c) is active for hold/leakage_power/max_transition/min_capacitance analysis.
+****************************************
+Report : power
+        -significant_digits 2
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:38:34 2025
+****************************************
+Information: Activity for scenario func_mode::ss0p6v125c was cached, no propagation required. (POW-005)
+Information: Activity propagation will be performed for scenario turbo_mode::ss0p6vm40c.
+Information: Doing activity propagation for mode 'turbo_mode' and corner 'ss0p6vm40c' with effort level 'medium'. (POW-024)
+Information: Timer-derived activity data is cached on scenario turbo_mode::ss0p6vm40c (POW-052)
+Infomation: Fast mode activity propagation power.rtl_activity_annotation setup is ignored. Always use accurate mode.
+Information: Turn on parallel simulation of generator nets.
+Information: Running switching activity propagation with 4 threads!
+
+ **** Information : No. of simulation cycles = 6 ****
+Warning: Abstract fpu_mul (ref: fpu_mul) does not have information for mode 'turbo_mode' corner 'ss0p6vm40c' late. (ABS-514)
+Error: Abstract fpu_mul (ref: fpu_mul) does not have information for mode 'turbo_mode' corner 'ss0p6vm40c' early. Activate mode 'turbo_mode' corner 'ss0p6vm40c' early at block level and re-create abstract. (ABS-314)
+Mode: func_mode
+Corner: ss0p6v125c
+Scenario: func_mode::ss0p6v125c
+Voltage: 0.60
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+VDDH (power) probability 1.00 (default)
+fpu_add/VDD (power) probability 1.00 (default)
+fpu_add/VSS (ground) probability 1.00 (default)
+fpu_mul/VDD (power) probability 1.00 (default)
+fpu_mul/VDDo (power) probability 1.00 (default)
+fpu_mul/VSS (ground) probability 1.00 (default)
+
+  Cell Internal Power    = 4.54e+08 pW ( 67.2%)
+  Net Switching Power    = 2.21e+08 pW ( 32.8%)
+Total Dynamic Power      = 6.75e+08 pW (100.0%)
+
+Cell Leakage Power       = 7.72e+07 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             2.83e+08               1.33e+08               1.36e+06               4.17e+08    ( 55.5%)        i
+register                  2.14e+07               1.32e+07               1.19e+07               4.66e+07    (  6.2%)         
+sequential                1.01e+08               7.33e+04               1.40e+07               1.15e+08    ( 15.3%)         
+combinational             4.83e+07               7.49e+07               4.99e+07               1.73e+08    ( 23.0%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     4.54e+08 pW            2.21e+08 pW            7.72e+07 pW            7.52e+08 pW
+Mode: turbo_mode
+Corner: ss0p6vm40c
+Scenario: turbo_mode::ss0p6vm40c
+Voltage: 0.60
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+VDDH (power) probability 1.00 (default)
+fpu_add/VDD (power) probability 1.00 (default)
+fpu_add/VSS (ground) probability 1.00 (default)
+fpu_mul/VDD (power) probability 1.00 (default)
+fpu_mul/VDDo (power) probability 1.00 (default)
+fpu_mul/VSS (ground) probability 1.00 (default)
+
+  Cell Internal Power    = N/A ( N/A )
+  Net Switching Power    = N/A ( N/A )
+Total Dynamic Power      = N/A (  0.0%)
+
+Cell Leakage Power       = 7.72e+07 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                         N/A                    N/A               0.00e+00               0.00e+00    (  0.0%)         
+memory                         N/A                    N/A               0.00e+00               0.00e+00    (  0.0%)         
+black_box                      N/A                    N/A               0.00e+00               0.00e+00    (  0.0%)         
+clock_network                  N/A                    N/A               1.36e+06               1.36e+06    (  1.8%)        i
+register                       N/A                    N/A               1.19e+07               1.19e+07    ( 15.4%)         
+sequential                     N/A                    N/A               1.40e+07               1.40e+07    ( 18.2%)         
+combinational                  N/A                    N/A               4.99e+07               4.99e+07    ( 64.6%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                          N/A                    N/A               7.72e+07 pW            7.72e+07 pW
+1
+Scenario turbo_mode::ss0p6vm40c (mode turbo_mode corner ss0p6vm40c) is configured for hold/leakage_power/max_transition/min_capacitance, but is inactive.
+RM-info: Reporting timing constraints ...
+
+Dispatching command : 'report_modes -nosplit' > ${REPORTS_DIR}/${CURRENT_STEP}/report_modes
+Dispatching command : 'report_pvt -nosplit' > ${REPORTS_DIR}/${CURRENT_STEP}/report_pvt
+Dispatching command : 'report_corners [all_corners]' > ${REPORTS_DIR}/${CURRENT_STEP}/report_corners
+Waiting for all dispatched commands to complete ...
+Done.
+
+All command runs are done. Below is the status.
+
+Completed 'report_modes -nosplit' successfully.
+Output is in log '${REPORTS_DIR}/${CURRENT_STEP}/report_modes'
+
+Completed 'report_pvt -nosplit' successfully.
+Output is in log '${REPORTS_DIR}/${CURRENT_STEP}/report_pvt'
+
+Completed 'report_corners [all_corners]' successfully.
+Output is in log '${REPORTS_DIR}/${CURRENT_STEP}/report_corners'
+
+****************************************
+Report : check_mv_design
+        -erc_mode
+        -voltage_threshold 0
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:38:50 2025
+****************************************
+
+---------- Power domain rule ----------
+No errors or warnings.
+
+---------- Supply set rule ----------
+No errors or warnings.
+
+---------- Supply net rule ----------
+Warning: Supply state(s) has not been defined on the supply net 'fpu_mul/VDD'. (MV-099)
+Warning: Supply state(s) has not been defined on the supply net 'fpu_mul/VDDo'. (MV-099)
+Warning: Supply state(s) has not been defined on the supply net 'fpu_mul/VSS'. (MV-099)
+Information: Total 3 MV-099 violations. (MV-080)
+
+---------- Supply port rule ----------
+No errors or warnings.
+
+---------- Isolation strategy rule ----------
+No errors or warnings.
+
+---------- Level shifter strategy rule ----------
+No errors or warnings.
+
+---------- Retention strategy rule ----------
+No errors or warnings.
+
+---------- Power switch strategy rule ----------
+No errors or warnings.
+
+---------- Repeater rule ----------
+No errors or warnings.
+
+---------- Terminal boundary rule ----------
+No errors or warnings.
+
+---------- Isolation cell rule ----------
+No errors or warnings.
+
+---------- Level shifter cell rule ----------
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_0__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_1__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_2__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_3__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_4__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_5__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_6__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_7__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_8__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_9__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_10__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_11__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_12__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_13__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_14__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_15__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_16__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_17__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_18__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_19__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Information: Message 'MV-045' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 83 MV-045 violations. (MV-080)
+
+Error: Level shifter 'mul_frac_out_0__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_1__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_2__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_3__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_4__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_5__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_6__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_7__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_8__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_9__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_10__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_11__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_12__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_13__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_14__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_15__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_16__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_17__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_18__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_19__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Information: Message 'MV-046' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 83 MV-046 violations. (MV-080)
+
+---------- Retention cell rule ----------
+No errors or warnings.
+
+---------- Switch cell rule ----------
+No errors or warnings.
+
+---------- PGMUX rule ----------
+No errors or warnings.
+
+---------- Diode cell rule ----------
+No errors or warnings.
+
+---------- Model rule ----------
+No errors or warnings.
+
+---------- Isolation rule ----------
+Warning: Driver pin 'cluster_header/I0/rst_repeater/syncff/i0/HFSBUF_156_785/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_159/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'cluster_header/I0/U4/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_160/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/U29/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_157/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/U29/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_156/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/HFSBUF_50_687/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_153/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U5/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_148/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_out/fpu_out_ctl/i_mul_dest_rdy/q_reg_0_/Q' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_155/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_out/fpu_out_ctl/i_mul_dest_rdy/q_reg_0_/Q' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_154/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U536/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_14/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U142/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_3/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U138/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_4/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U134/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_5/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U6/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_6/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U587/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_26/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/ctmTdsLR_4_3554/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_44/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U323/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_75/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U472/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_92/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U247/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_117/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_mul/eco_cell_177/X' [supply net 'fpu_mul/VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_out/fpu_out_dp/U375/C2' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'HFSBUF_37_429/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_79/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Information: Message 'MV-013' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 164 MV-013 violations. (MV-080)
+
+---------- Voltage shifting rule ----------
+Warning: Driver pin 'cluster_header/I0/rst_repeater/syncff/i0/HFSBUF_156_785/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_159/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'cluster_header/I0/U4/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_160/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/U29/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_157/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/U29/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_156/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/HFSBUF_50_687/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_153/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U5/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_148/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_out/fpu_out_ctl/i_mul_dest_rdy/q_reg_0_/Q' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_155/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_out/fpu_out_ctl/i_mul_dest_rdy/q_reg_0_/Q' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_154/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U536/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_14/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U142/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_3/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U138/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_4/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U134/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_5/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U6/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_6/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U587/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_26/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/ctmTdsLR_4_3554/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_44/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U323/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_75/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U472/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_92/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U247/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_117/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_mul/eco_cell_177/X' (supply net 'fpu_mul/VDD' [<undef>V]) cannot drive load pin 'fpu_out/fpu_out_dp/U375/C2' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'HFSBUF_37_429/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_79/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Information: Message 'MV-012' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 164 MV-012 violations. (MV-080)
+
+---------- Tie-off connection rule ----------
+No errors or warnings.
+
+---------- Analog net rule ----------
+No errors or warnings.
+
+---------- Physical block pin rule ----------
+No errors or warnings.
+
+---------- PG pin rule ----------
+No errors or warnings.
+
+---------- Signal pin rule ----------
+No errors or warnings.
+
+---------- Summary ----------
+Information: Total 166 error(s) and 331 warning(s) from check_mv_design. (MV-082)
+0
+****************************************
+Report : check_mv_design
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:38:50 2025
+****************************************
+
+---------- Power domain rule ----------
+No errors or warnings.
+
+---------- Supply set rule ----------
+No errors or warnings.
+
+---------- Supply net rule ----------
+Warning: Supply state(s) has not been defined on the supply net 'fpu_mul/VDD'. (MV-099)
+Warning: Supply state(s) has not been defined on the supply net 'fpu_mul/VDDo'. (MV-099)
+Warning: Supply state(s) has not been defined on the supply net 'fpu_mul/VSS'. (MV-099)
+Information: Total 3 MV-099 violations. (MV-080)
+
+---------- Supply port rule ----------
+No errors or warnings.
+
+---------- Isolation strategy rule ----------
+No errors or warnings.
+
+---------- Level shifter strategy rule ----------
+No errors or warnings.
+
+---------- Retention strategy rule ----------
+No errors or warnings.
+
+---------- Power switch strategy rule ----------
+No errors or warnings.
+
+---------- Repeater rule ----------
+No errors or warnings.
+
+---------- Terminal boundary rule ----------
+No errors or warnings.
+
+---------- Isolation cell rule ----------
+No errors or warnings.
+
+---------- Level shifter cell rule ----------
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_0__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_1__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_2__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_3__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_4__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_5__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_6__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_7__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_8__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_9__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_10__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_11__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_12__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_13__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_14__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_15__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_16__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_17__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_18__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_19__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Information: Message 'MV-045' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 83 MV-045 violations. (MV-080)
+
+Error: Level shifter 'mul_frac_out_0__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_1__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_2__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_3__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_4__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_5__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_6__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_7__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_8__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_9__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_10__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_11__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_12__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_13__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_14__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_15__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_16__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_17__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_18__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_19__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Information: Message 'MV-046' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 83 MV-046 violations. (MV-080)
+
+Information: The level shifter 'mul_frac_out_0__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_1__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_2__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_3__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_4__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_5__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_6__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_7__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_8__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_9__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_10__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_11__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_12__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_13__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_14__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_15__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_16__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_17__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_18__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_19__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: Message 'MV-072' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 83 MV-072 violations. (MV-080)
+
+---------- Retention cell rule ----------
+No errors or warnings.
+
+---------- Switch cell rule ----------
+No errors or warnings.
+
+---------- PGMUX rule ----------
+No errors or warnings.
+
+---------- Diode cell rule ----------
+No errors or warnings.
+
+---------- Model rule ----------
+No errors or warnings.
+
+---------- Isolation rule ----------
+Warning: Driver pin 'cluster_header/I0/rst_repeater/syncff/i0/HFSBUF_156_785/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_159/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'cluster_header/I0/U4/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_160/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/U29/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_157/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/U29/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_156/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/HFSBUF_50_687/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_153/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U5/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_148/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_out/fpu_out_ctl/i_mul_dest_rdy/q_reg_0_/Q' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_155/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_out/fpu_out_ctl/i_mul_dest_rdy/q_reg_0_/Q' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_154/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U536/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_14/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U142/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_3/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U138/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_4/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U134/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_5/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U6/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_6/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U587/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_26/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/ctmTdsLR_4_3554/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_44/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U323/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_75/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U472/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_92/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U247/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_117/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_mul/eco_cell_177/X' [supply net 'fpu_mul/VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_out/fpu_out_dp/U375/C2' [supply net 'VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'HFSBUF_37_429/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_79/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Information: Message 'MV-013' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 164 MV-013 violations. (MV-080)
+
+---------- Voltage shifting rule ----------
+Warning: Driver pin 'cluster_header/I0/rst_repeater/syncff/i0/HFSBUF_156_785/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_159/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'cluster_header/I0/U4/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_160/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/U29/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_157/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/U29/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_156/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/HFSBUF_50_687/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_153/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U5/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_148/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_out/fpu_out_ctl/i_mul_dest_rdy/q_reg_0_/Q' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_155/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_out/fpu_out_ctl/i_mul_dest_rdy/q_reg_0_/Q' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_154/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U536/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_14/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U142/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_3/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U138/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_4/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U134/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_5/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U6/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_6/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U587/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_26/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/ctmTdsLR_4_3554/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_44/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U323/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_75/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U472/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_92/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/U247/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_117/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_mul/eco_cell_177/X' (supply net 'fpu_mul/VDD' [<undef>V]) cannot drive load pin 'fpu_out/fpu_out_dp/U375/C2' (supply net 'VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'HFSBUF_37_429/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_79/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Information: Message 'MV-012' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 164 MV-012 violations. (MV-080)
+
+---------- Tie-off connection rule ----------
+No errors or warnings.
+
+---------- Analog net rule ----------
+No errors or warnings.
+
+---------- Physical block pin rule ----------
+No errors or warnings.
+
+---------- PG pin rule ----------
+No errors or warnings.
+
+---------- Signal pin rule ----------
+No errors or warnings.
+
+---------- Summary ----------
+Information: Total 166 error(s) and 331 warning(s) from check_mv_design. (MV-082)
+0
+Checking secondary net through power switch is enabled. 
+Secondary net will be checked together from primary net. They will be treated as the same net
+Primary Net : VDD    Secondary Net:
+Primary Net : VDDH    Secondary Net:
+Primary Net : VSS    Secondary Net:
+Loading cell instances...
+Number of Standard Cells: 17764
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 2
+Loading P/G wires and vias...
+Number of VDD Wires: 7652
+Number of VDD Vias: 13778
+Number of VDD Terminals: 1
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 2
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VDDH Wires: 44
+Number of VDDH Vias: 495
+Number of VDDH Terminals: 1
+**************Verify net VDDH connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 83
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 1
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VSS Wires: 6954
+Number of VSS Vias: 9453
+Number of VSS Terminals: 1
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 2
+************************************************************
+Overall runtime: 0 seconds.
+RM-info: Reporting design information ...
+
+****************************************
+Report : report_utilization
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:38:51 2025
+****************************************
+Utilization Ratio:			0.2831
+Utilization options:
+ - Area calculation based on:		site_row of block fpu/placement
+ - Categories of objects excluded:	hard_macros macro_keepouts soft_macros io_cells hard_blockages 
+Total Area:				50385.1200
+Total Capacity Area:			25937.0592
+Total Area of cells:			7343.0940
+Area of excluded objects:
+ - hard_macros         :		0.0000
+ - macro_keepouts      :		1276.7220
+ - soft_macros         :		23171.3388
+ - io_cells            :		0.0000
+ - hard_blockages      :		0.0000
+
+Utilization of site-rows with:
+ - Site 'unit':				0.2831
+
+0.2831
+RM-info: Checking design issues ...
+
+RM-info: Reporting units ...
+
+RM-info: Reporting non-default app option settings ...
+
+RM-info: Reporting size_only and dont_touch information ...
+
+RM-info: Reporting ideal_network information ...
+
+
+Running global router for congestion map ...
+Info: Set app option 'route.global.deterministic' to on
+
+Generating Timing information  
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Design  Scenario func_mode::ss0p6v125c (Mode func_mode Corner ss0p6v125c)
+Generating Timing information  ... Done
+[End of Generating Timing Information] Elapsed real time: 0:00:01 
+[End of Generating Timing Information] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used    7  Alloctr    8  Proc 17801 
+Printing options for 'route.common.*'
+
+Printing options for 'route.global.*'
+global.deterministic                                    :	 on                  
+global.timing_driven                                    :	 true                
+
+Begin global routing.
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MRDL
+Turn off antenna since no rule is specified
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+rule rm_leaf equivalent to default rule
+Warning: The step 0.037 of vertical track TRACK_0 is less than the pitch 0.074 of layer M1. (ZRT-642)
+Warning: 6184 vertical tracks are found in area (0, 0, 229.938, 260) of layer M1. The quantity of tracks is unreasonably high. (ZRT-642)
+Skipping 1 internal pins that are not physical. Set route.common.verbose_level to > 0 and run routing command to get skipped pin names.
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 0.98 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 0.98 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+Warning: Standard cell pin SAEDRVT14_NR2_MM_3/A1 has no valid via regions. (ZRT-044)
+Warning: Via regions for port SAEDRVT14_OA33_U_0P5/A2 may block other ports completely. (ZRT-045)
+Warning: Standard cell pin SAEDRVT14_INV_PS_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OA21_1/A1 has no valid via regions. (ZRT-044)
+Warning: Via regions for port SAEDRVT14_OA33_U_0P5/A1 may block other ports completely. (ZRT-045)
+Warning: Standard cell pin SAEDRVT14_ND2_0P5/A1 has no valid via regions. (ZRT-044)
+Warning: Via regions for port SAEDRVT14_OA33_U_0P5/A2 may block other ports completely. (ZRT-045)
+Warning: Standard cell pin SAEDLVT14_ND2B_U_0P5/A has no valid via regions. (ZRT-044)
+Warning: Via regions for port SAEDRVT14_OA33_U_0P5/A1 may block other ports completely. (ZRT-045)
+Warning: Standard cell pin SAEDRVT14_ND2_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI33_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI33_1/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR3B_U_0P5/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_MUX3_V1M_1/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO221_1/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA32_U_0P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA32_U_0P5/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_S_4/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_1/VDDH has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOI21_1P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOI21_1P5/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO32_1/A3 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_ND2_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR3B_4/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO221_0P5/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_ECO_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_2/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA221_U_0P5/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA221_U_0P5/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_1/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OR2B_PSECO_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_LVLUBUF_IY2_2/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI21_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI21_2/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_S_1P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_ECO_1/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_ND3B_4/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI21_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI21_2/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_S_1P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OR2B_PMM_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2B_0P75/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_ADDH_0P5/CO has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2B_U_0P5/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OR2B_PSECO_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_INV_PS_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_EO2_0P5/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_EO2_0P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_MUXI2_U_0P5/D1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AN4_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2_2/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI22_0P75/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI22_2/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR3B_1P5/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AN3_0P75/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI22_0P75/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_ADDH_0P5/CO has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LDNQ_1/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA21_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_AN2_8/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_AN2_8/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_2/VDDH has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_3/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_ND2B_0P75/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOI22_1P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_ADDF_V2_1/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2_ECO_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2B_0P75/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_ND2B_U_0P5/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_EO2_1/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2_1P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2_1P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_EO2_V1_0P75/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_EO2_MM_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AN2_MM_4/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2B_1P5/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_EO2_V1_0P75/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_FSDPQ_V2LP_1/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_1P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_1P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO211_U_0P5/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO211_U_0P5/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO211_U_0P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO211_1/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO211_1/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO211_1/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO2BB2_V1_0P5/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA31_1/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA31_1/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI22_0P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_FSDPQ_V2LP_1/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OR3_4/A3 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA21_2/A1 has no valid via regions. (ZRT-044)
+Current Stage stats:
+[End of Read DB] Elapsed real time: 0:00:00 
+[End of Read DB] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Read DB] Stage (MB): Used   75  Alloctr   76  Proc    8 
+[End of Read DB] Total (MB): Used   82  Alloctr   84  Proc 17809 
+Loading timing information to the router from design
+Timing information loaded to the router.
+[End of Loading Timing] Elapsed real time: 0:00:00 
+[End of Loading Timing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Constructing data structure ...
+Design statistics:
+Design Bounding Box (0.00um,0.00um,229.94um,260.00um)
+Number of routing layers = 10
+layer M1, dir Ver, min width = 0.034um, min space = 0.026um pitch = 0.074um
+layer M2, dir Hor, min width = 0.034um, min space = 0.026um pitch = 0.06um
+layer M3, dir Ver, min width = 0.034um, min space = 0.026um pitch = 0.074um
+layer M4, dir Hor, min width = 0.06um, min space = 0.04um pitch = 0.074um
+layer M5, dir Ver, min width = 0.06um, min space = 0.04um pitch = 0.12um
+layer M6, dir Hor, min width = 0.06um, min space = 0.04um pitch = 0.12um
+layer M7, dir Ver, min width = 0.06um, min space = 0.04um pitch = 0.12um
+layer M8, dir Hor, min width = 0.06um, min space = 0.04um pitch = 0.12um
+layer M9, dir Ver, min width = 0.06um, min space = 0.04um pitch = 0.12um
+layer MRDL, dir Hor, min width = 2um, min space = 2um pitch = 0.6um
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    5  Alloctr    5  Proc    0 
+[End of Build Tech Data] Total (MB): Used   91  Alloctr   93  Proc 17809 
+Net statistics:
+Total number of nets     = 17005
+Number of nets to route  = 16965
+Number of single or zero port nets = 39
+1 nets are fully connected,
+ of which 1 are detail routed and 0 are global routed.
+Net length statistics: 
+Net Count(Ignore Fully Rted) 16965, Total Half Perimeter Wire Length (HPWL) 196938 microns
+HPWL   0 ~   50 microns: Net Count    16012	Total HPWL       103413 microns
+HPWL  50 ~  100 microns: Net Count      557	Total HPWL        40796 microns
+HPWL 100 ~  200 microns: Net Count      388	Total HPWL        50027 microns
+HPWL 200 ~  300 microns: Net Count        3	Total HPWL          623 microns
+HPWL 300 ~  400 microns: Net Count        2	Total HPWL          666 microns
+HPWL 400 ~  500 microns: Net Count        3	Total HPWL         1413 microns
+HPWL 500 ~  600 microns: Net Count        0	Total HPWL            0 microns
+HPWL 600 ~  700 microns: Net Count        0	Total HPWL            0 microns
+HPWL 700 ~  800 microns: Net Count        0	Total HPWL            0 microns
+HPWL 800 ~  900 microns: Net Count        0	Total HPWL            0 microns
+HPWL 900 ~ 1000 microns: Net Count        0	Total HPWL            0 microns
+HPWL     > 1000 microns: Net Count        0	Total HPWL            0 microns
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    9  Alloctr   10  Proc    0 
+[End of Build All Nets] Total (MB): Used  101  Alloctr  103  Proc 17809 
+Number of partitions: 1 (1 x 1)
+Size of partitions: 384 gCells x 434 gCells
+Average gCell capacity  1.27	 on layer (1)	 M1
+Average gCell capacity  5.86	 on layer (2)	 M2
+Average gCell capacity  4.85	 on layer (3)	 M3
+Average gCell capacity  4.82	 on layer (4)	 M4
+Average gCell capacity  2.88	 on layer (5)	 M5
+Average gCell capacity  2.97	 on layer (6)	 M6
+Average gCell capacity  2.98	 on layer (7)	 M7
+Average gCell capacity  2.22	 on layer (8)	 M8
+Average gCell capacity  2.24	 on layer (9)	 M9
+Average gCell capacity  0.60	 on layer (10)	 MRDL
+Average number of tracks per gCell 8.13	 on layer (1)	 M1
+Average number of tracks per gCell 9.99	 on layer (2)	 M2
+Average number of tracks per gCell 8.09	 on layer (3)	 M3
+Average number of tracks per gCell 8.10	 on layer (4)	 M4
+Average number of tracks per gCell 4.99	 on layer (5)	 M5
+Average number of tracks per gCell 5.00	 on layer (6)	 M6
+Average number of tracks per gCell 4.99	 on layer (7)	 M7
+Average number of tracks per gCell 5.00	 on layer (8)	 M8
+Average number of tracks per gCell 4.99	 on layer (9)	 M9
+Average number of tracks per gCell 1.00	 on layer (10)	 MRDL
+Number of gCells = 1666560
+Current Stage stats:
+[End of Build Congestion Map] Elapsed real time: 0:00:01 
+[End of Build Congestion Map] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Build Congestion Map] Stage (MB): Used   18  Alloctr   19  Proc    0 
+[End of Build Congestion Map] Total (MB): Used  120  Alloctr  122  Proc 17809 
+Number of partitions: 1 (1 x 1)
+Size of partitions: 384 gCells x 434 gCells
+Current Stage stats:
+[End of Add Nets Demand] Elapsed real time: 0:00:00 
+[End of Add Nets Demand] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Add Nets Demand] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Add Nets Demand] Total (MB): Used  120  Alloctr  123  Proc 17809 
+Number of user frozen nets = 0
+Timing criticality report: total 998 (5.87)% critical nets.
+   Number of criticality 1 nets = 640 (3.76)%
+   Number of criticality 2 nets = 40 (0.24)%
+   Number of criticality 3 nets = 105 (0.62)%
+   Number of criticality 4 nets = 133 (0.78)%
+   Number of criticality 5 nets = 60 (0.35)%
+   Number of criticality 6 nets = 12 (0.07)%
+   Number of criticality 7 nets = 8 (0.05)%
+Information: RC layer preference is turned on for this design. (ZRT-613)
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:01 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Build Data] Stage (MB): Used   36  Alloctr   36  Proc    0 
+[End of Build Data] Total (MB): Used  122  Alloctr  125  Proc 17809 
+Number of partitions: 1 (1 x 1)
+Size of partitions: 384 gCells x 434 gCells
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:02 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:02
+[End of Blocked Pin Detection] Stage (MB): Used  177  Alloctr  177  Proc    0 
+[End of Blocked Pin Detection] Total (MB): Used  298  Alloctr  301  Proc 17809 
+Information: Using 4 threads for routing. (ZRT-444)
+Information: Multiple gcell levels ON
+Information: Buffer distance is estimated to be ~271.0000um (451 gCells)
+
+Start GR phase 0
+Number of partitions: 1 (1 x 1)
+Size of partitions: 384 gCells x 434 gCells
+10% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+20% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+30% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+40% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+50% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+60% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+70% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:01
+80% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:01
+90% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:02
+[rtAllBotParts] Elapsed real time: 0:00:08 
+[rtAllBotParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:08 total=0:00:08
+[rtTop] Elapsed real time: 0:00:00 
+[rtTop] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:08 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:08 total=0:00:08
+[End of Initial Routing] Stage (MB): Used   10  Alloctr   11  Proc    0 
+[End of Initial Routing] Total (MB): Used  309  Alloctr  312  Proc 17809 
+Initial. Routing result:
+Initial. Both Dirs: Overflow =   467 Max = 4 GRCs =   729 (0.22%)
+Initial. H routing: Overflow =   173 Max = 4 (GRCs =  2) GRCs =   269 (0.16%)
+Initial. V routing: Overflow =   293 Max = 4 (GRCs =  3) GRCs =   460 (0.28%)
+Initial. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M2         Overflow =   141 Max = 4 (GRCs =  1) GRCs =   235 (0.14%)
+Initial. M3         Overflow =   254 Max = 4 (GRCs =  3) GRCs =   422 (0.25%)
+Initial. M4         Overflow =    29 Max = 4 (GRCs =  1) GRCs =    32 (0.02%)
+Initial. M5         Overflow =    12 Max = 1 (GRCs = 15) GRCs =    15 (0.01%)
+Initial. M6         Overflow =     1 Max = 1 (GRCs =  1) GRCs =     1 (0.00%)
+Initial. M7         Overflow =     2 Max = 1 (GRCs =  3) GRCs =     3 (0.00%)
+Initial. M8         Overflow =     2 Max = 2 (GRCs =  1) GRCs =     1 (0.00%)
+Initial. M9         Overflow =    25 Max = 3 (GRCs =  1) GRCs =    20 (0.01%)
+Initial. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Overflow over macro areas
+
+Initial. Both Dirs: Overflow =    16 Max =  2 GRCs =    29 (0.02%)
+Initial. H routing: Overflow =     0 Max =  1 (GRCs =  1) GRCs =     1 (0.00%)
+Initial. V routing: Overflow =    16 Max =  2 (GRCs =  3) GRCs =    28 (0.04%)
+Initial. M1         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M2         Overflow =     0 Max =  1 (GRCs =  1) GRCs =     1 (0.00%)
+Initial. M3         Overflow =    15 Max =  2 (GRCs =  3) GRCs =    27 (0.04%)
+Initial. M4         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M5         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M6         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M7         Overflow =     0 Max =  1 (GRCs =  1) GRCs =     1 (0.00%)
+Initial. M8         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M9         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MRDL       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       97.8 1.63 0.42 0.06 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M2       51.3 19.6 3.28 14.3 1.25 4.55 2.54 1.73 0.96 0.16 0.16 0.03 0.01 0.00
+M3       46.5 11.0 11.6 12.2 1.21 8.68 4.87 2.03 1.31 0.00 0.38 0.06 0.02 0.00
+M4       68.8 21.1 3.91 3.47 0.40 1.60 0.35 0.13 0.11 0.00 0.04 0.01 0.00 0.00
+M5       75.3 17.1 1.00 4.38 0.00 0.44 0.91 0.21 0.38 0.00 0.19 0.00 0.01 0.00
+M6       85.5 12.4 0.43 1.17 0.00 0.14 0.20 0.01 0.02 0.00 0.02 0.00 0.00 0.00
+M7       89.1 7.04 0.11 2.68 0.00 0.07 0.52 0.07 0.20 0.00 0.17 0.00 0.00 0.00
+M8       97.7 1.60 0.02 0.37 0.00 0.02 0.16 0.01 0.07 0.00 0.05 0.00 0.00 0.00
+M9       96.7 1.65 0.15 0.92 0.00 0.08 0.30 0.00 0.09 0.00 0.07 0.00 0.01 0.01
+MRDL     100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    80.8 9.34 2.10 3.96 0.29 1.56 0.99 0.42 0.31 0.02 0.11 0.01 0.00 0.00
+
+
+Initial. Total Wire Length = 223342.13
+Initial. Layer M1 wire length = 1835.42
+Initial. Layer M2 wire length = 64744.91
+Initial. Layer M3 wire length = 84522.46
+Initial. Layer M4 wire length = 25105.78
+Initial. Layer M5 wire length = 21390.73
+Initial. Layer M6 wire length = 10328.38
+Initial. Layer M7 wire length = 10396.29
+Initial. Layer M8 wire length = 1815.63
+Initial. Layer M9 wire length = 3202.53
+Initial. Layer MRDL wire length = 0.00
+Initial. Total Number of Contacts = 116325
+Initial. Via VIA12SQ_C count = 47664
+Initial. Via VIA23SQ_C count = 59798
+Initial. Via VIA34SQ_C count = 4699
+Initial. Via VIA45SQ count = 2265
+Initial. Via VIA56SQ count = 1117
+Initial. Via VIA67SQ_C count = 496
+Initial. Via VIA78SQ_C count = 202
+Initial. Via VIA89_C count = 84
+Initial. Via VIA9RDL count = 0
+Initial. completed.
+
+Start GR phase 1
+Fri Aug 22 18:39:37 2025
+Number of partitions: 9 (3 x 3)
+Size of partitions: 128 gCells x 160 gCells
+10% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:02
+20% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:02
+30% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:02
+40% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:02
+50% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:02
+60% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:02
+70% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:02
+80% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:02
+90% of nets complete Elapsed cpu time: 0:00:03 Elapsed real time: 0:00:02
+[rtAllParts] Elapsed real time: 0:00:02 
+[rtAllParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:03
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:02 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:03 total=0:00:03
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    1  Proc    0 
+[End of Phase1 Routing] Total (MB): Used  310  Alloctr  313  Proc 17809 
+phase1. Routing result:
+phase1. Both Dirs: Overflow =    73 Max = 4 GRCs =   109 (0.03%)
+phase1. H routing: Overflow =    69 Max = 4 (GRCs =  1) GRCs =   101 (0.06%)
+phase1. V routing: Overflow =     4 Max = 2 (GRCs =  1) GRCs =     8 (0.00%)
+phase1. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M2         Overflow =    69 Max = 4 (GRCs =  1) GRCs =   100 (0.06%)
+phase1. M3         Overflow =     4 Max = 2 (GRCs =  1) GRCs =     8 (0.00%)
+phase1. M4         Overflow =     0 Max = 1 (GRCs =  1) GRCs =     1 (0.00%)
+phase1. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Overflow over macro areas
+
+phase1. Both Dirs: Overflow =     0 Max =  1 GRCs =     1 (0.00%)
+phase1. H routing: Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. V routing: Overflow =     0 Max =  1 (GRCs =  1) GRCs =     1 (0.00%)
+phase1. M1         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M2         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M3         Overflow =     0 Max =  1 (GRCs =  1) GRCs =     1 (0.00%)
+phase1. M4         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M5         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M6         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M7         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M8         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M9         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MRDL       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       97.8 1.62 0.42 0.06 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M2       51.3 19.8 3.33 14.3 1.28 4.46 2.48 1.68 1.02 0.16 0.07 0.02 0.00 0.00
+M3       46.6 11.0 11.8 12.3 1.21 8.75 4.84 1.99 1.29 0.00 0.04 0.00 0.00 0.00
+M4       67.9 20.8 4.42 3.81 0.46 1.78 0.43 0.15 0.12 0.00 0.02 0.00 0.00 0.00
+M5       74.4 17.5 1.16 4.74 0.00 0.42 0.93 0.16 0.40 0.00 0.11 0.00 0.00 0.00
+M6       84.6 13.2 0.50 1.30 0.00 0.13 0.13 0.01 0.00 0.00 0.02 0.00 0.00 0.00
+M7       87.2 8.67 0.12 2.88 0.00 0.08 0.57 0.07 0.20 0.00 0.15 0.00 0.00 0.00
+M8       97.4 1.77 0.02 0.50 0.00 0.04 0.09 0.01 0.08 0.00 0.03 0.00 0.00 0.00
+M9       95.6 3.26 0.10 0.95 0.00 0.00 0.00 0.00 0.06 0.00 0.03 0.00 0.00 0.00
+MRDL     100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    80.3 9.80 2.19 4.10 0.30 1.57 0.95 0.41 0.32 0.02 0.05 0.00 0.00 0.00
+
+
+phase1. Total Wire Length = 224420.06
+phase1. Layer M1 wire length = 1835.42
+phase1. Layer M2 wire length = 63853.03
+phase1. Layer M3 wire length = 82465.05
+phase1. Layer M4 wire length = 26249.02
+phase1. Layer M5 wire length = 21959.35
+phase1. Layer M6 wire length = 10833.96
+phase1. Layer M7 wire length = 11766.60
+phase1. Layer M8 wire length = 1915.48
+phase1. Layer M9 wire length = 3542.14
+phase1. Layer MRDL wire length = 0.00
+phase1. Total Number of Contacts = 117381
+phase1. Via VIA12SQ_C count = 47664
+phase1. Via VIA23SQ_C count = 59946
+phase1. Via VIA34SQ_C count = 5100
+phase1. Via VIA45SQ count = 2538
+phase1. Via VIA56SQ count = 1240
+phase1. Via VIA67SQ_C count = 579
+phase1. Via VIA78SQ_C count = 218
+phase1. Via VIA89_C count = 96
+phase1. Via VIA9RDL count = 0
+phase1. completed.
+
+Start GR phase 2
+Fri Aug 22 18:39:39 2025
+Number of partitions: 9 (3 x 3)
+Size of partitions: 128 gCells x 160 gCells
+10% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+20% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+30% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+40% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+50% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+60% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+70% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+80% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+90% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+[rtAllParts] Elapsed real time: 0:00:00 
+[rtAllParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+Number of partitions: 9 (3 x 3)
+Size of partitions: 128 gCells x 160 gCells
+[updNetsDmd] Elapsed real time: 0:00:00 
+[updNetsDmd] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:01 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used  311  Alloctr  314  Proc 17809 
+phase2. Routing result:
+phase2. Both Dirs: Overflow =     0 Max = 0 GRCs =     0 (0.00%)
+phase2. H routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. V routing: Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M2         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M3         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M4         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M9         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Overflow over macro areas
+
+phase2. Both Dirs: Overflow =     0 Max =  0 GRCs =     0 (0.00%)
+phase2. H routing: Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. V routing: Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M1         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M2         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M3         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M4         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M5         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M6         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M7         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M8         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M9         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MRDL       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       97.8 1.62 0.42 0.06 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M2       52.3 22.5 3.93 15.6 1.54 3.18 0.69 0.10 0.02 0.00 0.00 0.00 0.00 0.00
+M3       47.1 11.2 11.8 12.6 1.24 8.77 4.76 1.66 0.61 0.00 0.04 0.00 0.00 0.00
+M4       68.4 20.6 4.23 3.85 0.47 1.76 0.42 0.14 0.07 0.00 0.02 0.00 0.00 0.00
+M5       74.8 17.4 1.08 4.70 0.00 0.40 0.90 0.12 0.40 0.00 0.10 0.00 0.00 0.00
+M6       84.9 13.0 0.50 1.25 0.00 0.13 0.12 0.01 0.00 0.00 0.02 0.00 0.00 0.00
+M7       87.5 8.44 0.11 2.76 0.00 0.08 0.59 0.07 0.21 0.00 0.17 0.00 0.00 0.00
+M8       97.7 1.48 0.01 0.50 0.00 0.04 0.10 0.01 0.08 0.00 0.03 0.00 0.00 0.00
+M9       95.8 3.02 0.09 0.98 0.00 0.00 0.00 0.00 0.06 0.00 0.03 0.00 0.00 0.00
+MRDL     100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    80.6 9.97 2.23 4.24 0.33 1.44 0.76 0.21 0.15 0.00 0.04 0.00 0.00 0.00
+
+
+phase2. Total Wire Length = 224385.88
+phase2. Layer M1 wire length = 1835.42
+phase2. Layer M2 wire length = 63827.26
+phase2. Layer M3 wire length = 82440.55
+phase2. Layer M4 wire length = 26230.80
+phase2. Layer M5 wire length = 21950.91
+phase2. Layer M6 wire length = 10844.46
+phase2. Layer M7 wire length = 11784.12
+phase2. Layer M8 wire length = 1911.02
+phase2. Layer M9 wire length = 3561.34
+phase2. Layer MRDL wire length = 0.00
+phase2. Total Number of Contacts = 117479
+phase2. Via VIA12SQ_C count = 47665
+phase2. Via VIA23SQ_C count = 59998
+phase2. Via VIA34SQ_C count = 5118
+phase2. Via VIA45SQ count = 2541
+phase2. Via VIA56SQ count = 1254
+phase2. Via VIA67SQ_C count = 585
+phase2. Via VIA78SQ_C count = 222
+phase2. Via VIA89_C count = 96
+phase2. Via VIA9RDL count = 0
+phase2. completed.
+[End of Whole Chip Routing] Elapsed real time: 0:00:15 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:17 total=0:00:17
+[End of Whole Chip Routing] Stage (MB): Used  225  Alloctr  226  Proc    0 
+[End of Whole Chip Routing] Total (MB): Used  311  Alloctr  314  Proc 17809 
+
+Congestion utilization per direction:
+Average vertical track utilization   = 10.08 %
+Peak    vertical track utilization   = 100.00 %
+Average horizontal track utilization =  8.43 %
+Peak    horizontal track utilization = 78.26 %
+
+[End of Global Routing] Elapsed real time: 0:00:15 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:17 total=0:00:17
+[End of Global Routing] Stage (MB): Used  210  Alloctr  210  Proc    0 
+[End of Global Routing] Total (MB): Used  295  Alloctr  298  Proc 17809 
+Writing out congestion map...
+Updating congestion ...
+Updating congestion ...
+[DBOUT] Elapsed real time: 0:00:00 
+[DBOUT] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DBOUT] Stage (MB): Used  -97  Alloctr  -99  Proc    0 
+[DBOUT] Total (MB): Used   36  Alloctr   37  Proc 17809 
+[End of dbOut] Elapsed real time: 0:00:00 
+[End of dbOut] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of dbOut] Stage (MB): Used  -97  Alloctr  -99  Proc    0 
+[End of dbOut] Total (MB): Used   36  Alloctr   37  Proc 17809 
+
+****************************************
+Report : congestion
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:39:40 2025
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+M1        |       0 |     0 |       0  ( 0.00%) |       0
+M2        |       0 |     0 |       0  ( 0.00%) |       0
+M3        |       0 |     0 |       0  ( 0.00%) |       0
+M4        |       0 |     0 |       0  ( 0.00%) |       0
+M5        |       0 |     0 |       0  ( 0.00%) |       0
+M6        |       0 |     0 |       0  ( 0.00%) |       0
+M7        |       0 |     0 |       0  ( 0.00%) |       0
+M8        |       0 |     0 |       0  ( 0.00%) |       0
+M9        |       0 |     0 |       0  ( 0.00%) |       0
+MRDL      |       0 |     0 |       0  ( 0.00%) |       0
+---------------------------------------------------------------
+Both Dirs |       0 |     0 |       0  ( 0.00%) |       0
+H routing |       0 |     0 |       0  ( 0.00%) |       0
+V routing |       0 |     0 |       0  ( 0.00%) |       0
+
+1
+Information: write_qor_data is capturing data for label placement to the ./qor_data directory.  (RPT-180)
+Information: Running write_qor_data for label 'placement' and report 'report_design'  (RPT-190)
+Information: Running write_qor_data for label 'placement' and report 'report_multibit'  (RPT-190)
+Information: Running write_qor_data for label 'placement' and report 'report_threshold_voltage_groups'  (RPT-190)
+Information: Running write_qor_data for label 'placement' and report 'report_utilization'  (RPT-190)
+Information: Running write_qor_data for label 'placement' and report 'report_qor'  (RPT-190)
+Information: Running write_qor_data for label 'placement' and report 'report_global_timing'  (RPT-190)
+Information: Running write_qor_data for label 'placement' and report 'report_constraints'  (RPT-190)
+Information: Running write_qor_data for label 'placement' and report 'report_clock_gating'  (RPT-190)
+Information: Running write_qor_data for label 'placement' and report 'report_power'  (RPT-190)
+Information: Using scenario func_mode::ss0p6v125c for dynamic power in summary reports.  (RPT-134)
+Information: Using scenario func_mode::ss0p6v125c for leakage power in summary reports.  (RPT-134)
+Information: Running write_qor_data for label 'placement' and report 'report_congestion'  (RPT-190)
+Information: compare_qor_data has written the QORsum report.  View it using view_qor_data -location ./compare_qor_data/index.html  (RPT-200)
+Information: 67 out of 72 LGL-050 messages were not printed due to limit 5 (after 'source' at icc2_shell-2.XurLPb:3) (MSG-3913)
+Information: 72338 out of 72348 POW-046 messages were not printed due to limit 10 (after 'source' at icc2_shell-2.XurLPb:3) (MSG-3913)

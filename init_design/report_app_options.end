@@ -1,0 +1,16 @@
+****************************************
+Report : app_option
+           -non_default
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:06:07 2025
+****************************************
+Name                             Type       Value      User-value   User-default System-default Scope      Status     Source
+-------------------------------- ---------- ---------- ------------ ------------ -------------- ---------- ---------- ----------
+gui.graphics_system              enum       native     native       native       auto           global     normal     --
+mv.upf.enable_golden_upf         bool       true       true         --           false          block      normal     --
+shell.common.enable_line_editing bool       false      false        false        true           global     normal     --
+-------------------------------- ---------- ---------- ------------ ------------ -------------- ---------- ---------- ----------
+
+There are additional internal differences with no available TBC source.
+1

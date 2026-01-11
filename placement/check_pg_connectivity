@@ -1,0 +1,52 @@
+Checking secondary net through power switch is enabled. 
+Secondary net will be checked together from primary net. They will be treated as the same net
+Primary Net : VDD    Secondary Net:
+Primary Net : VDDH    Secondary Net:
+Primary Net : VSS    Secondary Net:
+Loading cell instances...
+Number of Standard Cells: 17764
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 2
+Loading P/G wires and vias...
+Number of VDD Wires: 7652
+Number of VDD Vias: 13778
+Number of VDD Terminals: 1
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 2
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VDDH Wires: 44
+Number of VDDH Vias: 495
+Number of VDDH Terminals: 1
+**************Verify net VDDH connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 83
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 1
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VSS Wires: 6954
+Number of VSS Vias: 9453
+Number of VSS Terminals: 1
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 2
+************************************************************
+Overall runtime: 0 seconds.

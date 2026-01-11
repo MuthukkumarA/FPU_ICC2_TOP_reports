@@ -1,0 +1,56 @@
+****************************************
+ Report : check_design 
+ Options: { pre_clock_tree_stage }
+ Design : fpu
+ Version: T-2022.03-SP4
+ Date   : Fri Aug 22 18:38:51 2025
+****************************************
+
+Running mega-check 'pre_clock_tree_stage': 
+    Running atomic-check 'design_mismatch'
+    Running atomic-check 'scan_chain'
+    Running atomic-check 'mv_design'
+    Running atomic-check 'legality'
+    Running atomic-check 'timing'
+    Running atomic-check 'clock_trees'
+    Running atomic-check 'hier_pre_clock_tree'
+
+  *** EMS Message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  CTS-012      Warn   321        Net %net in the clock network have a dont_touch constraint.
+  CTS-013      Warn   35         Cell %inst in the clock network have a dont_touch constraint as ...
+  CTS-907      Warn   905        There is a disabled timing arc %arc in the clock network.
+  DFT-011      Info   1          The design has no scan chain defined in the scandef.
+  MV-012       Warn   164        %drvType '%driver' (supply net '%drvSupplyNet' [%drvVoltage]) ca...
+  MV-013       Warn   164        %drvType '%driver' [supply net '%drvSupplyNet', power state '%dr...
+  MV-045       Error  83         The input supply net '%inSupplyNet' of the level shifter '%cell'...
+  MV-046       Error  83         Level shifter '%cell'%dataPinName of level shifter type '%lsType...
+  MV-072       Info   83         The level shifter '%cell' is not associated with any level shift...
+  MV-099       Warn   3          Supply state(s) has not been defined on the %type '%supply'.
+  TCK-001      Warn   5764       The reported endpoint '%endpoint' is unconstrained. Reason: '%re...
+  TCK-002      Warn   2715       The register clock pin '%pin' has no fanin clocks. Mode:'%mode'.
+  ----------------------------------------------------------------------------------------------------
+  Total 10321 EMS messages : 166 errors, 10071 warnings, 84 info.
+  ----------------------------------------------------------------------------------------------------
+
+  *** Non-EMS message summary ***
+  ----------------------------------------------------------------------------------------------------
+  Rule         Type   Count      Message
+  ----------------------------------------------------------------------------------------------------
+  CTS-101      Info   1          %s will work on the following scenarios.
+  CTS-107      Info   1          %s will work on all clocks in active scenarios, including %d mas...
+  CTS-973      Info   1          The value of option cts.compile.enable_cell_relocation has been ...
+  DMM-117      Warn   1          Reporting design mismatch(es) or creating or setting design mism...
+  HOPT-001     Info   2          %s (Reference: %s) is treated as %s
+  LGL-050      Warn   24         Library cell %s is missing supply pins. Its power structure cann...
+  PDC-003      Warn   2          Routing direction of metal layer %s is neither "horizontal" nor ...
+  TL-451       Warn   1          Inconsistent value(s) of app option in block abstract(s) and top...
+  ----------------------------------------------------------------------------------------------------
+  Total 33 non-EMS messages : 0 errors, 28 warnings, 5 info.
+  ----------------------------------------------------------------------------------------------------
+
+Information: EMS database is saved to file 'check_design.pre_clock_tree_stage.ems'.
+Information: Non-EMS messages are saved into file 'check_design2025Aug22183851.log'.
+1

@@ -1,0 +1,30 @@
+****************************************
+Report : Power Domain
+Design : fpu
+Corner : ss0p6vm40c
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:06:06 2025
+****************************************
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Power Domain            :  PD
+Current Scope           :  / (top scope)
+Elements                :  fpu
+Voltage Area            :  DEFAULT_VA
+Available Supply Nets   :  VDD, VSS, VDDH
+Available Supply Sets   :
+
+Default Supplies           - Power -     - Ground -
+  Primary               :  VDD [0.60]    VSS [0.00]
+  Isolation             :  --            --
+  Retention             :  --            --
+
+Power Switch            :
+Isolation Strategy      :
+Level Shifter Strategy  :
+Repeater Strategy       :
+Retention Strategy      :
+Always on strategy      :  dual_power
+Disallow Forward Biasing : false
+Disallow Reverse Biasing : false
+--------------------------------------------------------------------------------------------------
+1

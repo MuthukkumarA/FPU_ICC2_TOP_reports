@@ -1,0 +1,29 @@
+****************************************
+Report : Power Scope
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:06:06 2025
+****************************************
+-------------------------------------------------
+Scope              :  / (top scope)
+Power Domains      :  PD
+Supply Ports       :  VDD, VDDH, VSS
+Supply Nets        :  VDD, VDDH, VSS
+Supply Sets        :
+Power State Tables :
+-------------------------------------------------
+Scope              :  fpu_add
+Power Domains      :  PD
+Supply Ports       :  VDD, VSS
+Supply Nets        :  VDD, VSS
+Supply Sets        :
+Power State Tables :
+-------------------------------------------------
+Scope              :  fpu_mul
+Power Domains      :  PDm
+Supply Ports       :  VDD, VDDo, VSS
+Supply Nets        :  VDD, VDDo, VSS
+Supply Sets        :
+Power State Tables :
+-------------------------------------------------
+1
