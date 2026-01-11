@@ -1,0 +1,56 @@
+****************************************
+Report : Report drc errors
+Design : fpu
+Data   : zroute.err
+Type   : error_type
+Version: T-2022.03-SP4
+Date   : Tue Aug 26 17:41:03 2025
+****************************************
+
+ErrorSet                                    Total   Visible     Fixed   Ignored
+--------------------------------------------------------------------------------
+Design : fpu                                6864    6864        0       0
+      Data : zroute.err                     6864    6864        0       0
+            Diff net spacing                156     156         0       0
+                M1 (19)                     130     130         0       0
+                M2 (21)                     7       7           0       0
+                M3 (23)                     4       4           0       0
+                M4 (25)                     2       2           0       0
+                M5 (27)                     5       5           0       0
+                M6 (29)                     2       2           0       0
+                M7 (31)                     6       6           0       0
+            Diff net via-cut spacing        2       2           0       0
+                VIA1 (20)                   1       1           0       0
+                VIA2 (22)                   1       1           0       0
+            Edge-line via spacing           41      41          0       0
+                M1 (19)                     37      37          0       0
+                M2 (21)                     1       1           0       0
+                M3 (23)                     3       3           0       0
+            End of line enclosure           6       6           0       0
+                VIA1 (20)-M2 (21)           6       6           0       0
+            Less than minimum area          146     146         0       0
+                M3 (23)                     131     131         0       0
+                M4 (25)                     6       6           0       0
+                M5 (27)                     4       4           0       0
+                M6 (29)                     5       5           0       0
+            Less than minimum width         1       1           0       0
+                M3 (23)                     1       1           0       0
+            Off-grid                        6210    6210        0       0
+                M1 (19)                     6193    6193        0       0
+                M2 (21)                     17      17          0       0
+            Same net spacing                17      17          0       0
+                M1 (19)                     8       8           0       0
+                M2 (21)                     1       1           0       0
+                M3 (23)                     6       6           0       0
+                M4 (25)                     2       2           0       0
+            Same net via-cut spacing        127     127         0       0
+                VIA1 (20)                   80      80          0       0
+                VIA1 (20)-VIA2 (22)         27      27          0       0
+                VIA2 (22)                   15      15          0       0
+                VIA2 (22)-VIA3 (24)         4       4           0       0
+                VIA3 (24)                   1       1           0       0
+            Short                           158     158         0       0
+                M2 (21)                     145     145         0       0
+                M3 (23)                     12      12          0       0
+                M5 (27)                     1       1           0       0
+1

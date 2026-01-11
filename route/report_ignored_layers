@@ -1,0 +1,12 @@
+****************************************
+Report : Ignored Layers
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Tue Aug 26 17:40:50 2025
+****************************************
+Layer Attribute                 Value
+--------------------------------------------------------------------------------
+Min Routing Layer               M2
+Max Routing Layer               M8
+RC Estimation Ignored Layers    PO M1 M9 MRDL 
+1

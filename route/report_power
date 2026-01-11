@@ -1,0 +1,108 @@
+****************************************
+Report : power
+        -significant_digits 2
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Tue Aug 26 17:40:47 2025
+****************************************
+Information: Activity for scenario turbo_mode::ss0p6vm40c was cached, no propagation required. (POW-005)
+Information: Activity for scenario func_mode::ss0p6v125c was cached, no propagation required. (POW-005)
+Mode: func_mode
+Corner: ss0p6v125c
+Scenario: func_mode::ss0p6v125c
+Voltage: 0.60
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+VDDH (power) probability 1.00 (default)
+fpu_add/VDD (power) probability 1.00 (default)
+fpu_add/VSS (ground) probability 1.00 (default)
+fpu_mul/VDD (power) probability 1.00 (default)
+fpu_mul/VDDo (power) probability 1.00 (default)
+fpu_mul/VSS (ground) probability 1.00 (default)
+
+  Cell Internal Power    = 4.48e+08 pW ( 61.2%)
+  Net Switching Power    = 2.84e+08 pW ( 38.8%)
+Total Dynamic Power      = 7.32e+08 pW (100.0%)
+
+Cell Leakage Power       = 7.61e+07 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+memory                    0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+black_box                 0.00e+00               0.00e+00               0.00e+00               0.00e+00    (  0.0%)         
+clock_network             3.42e+08               1.70e+08               1.93e+06               5.13e+08    ( 63.5%)        i
+register                  3.84e+07               1.93e+07               1.47e+07               7.24e+07    (  9.0%)         
+sequential                2.15e+07               7.39e+05               1.10e+07               3.33e+07    (  4.1%)         
+combinational             4.58e+07               9.46e+07               4.85e+07               1.89e+08    ( 23.4%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                     4.48e+08 pW            2.84e+08 pW            7.61e+07 pW            8.08e+08 pW
+Mode: turbo_mode
+Corner: ss0p6vm40c
+Scenario: turbo_mode::ss0p6vm40c
+Voltage: 0.60
+Temperature: 125.00
+
+Voltage Unit         : 1V
+Capacitance Unit     : 1fF
+Time Unit            : 1ns
+Temperature Unit     : 1C
+Dynamic Power Unit   : 1pW
+Leakage Power Unit   : 1pW
+
+Switched supply net power scaling:
+scaling for leakage power
+
+Supply nets:
+VDD (power) probability 1.00 (default)
+VSS (ground) probability 1.00 (default)
+VDDH (power) probability 1.00 (default)
+fpu_add/VDD (power) probability 1.00 (default)
+fpu_add/VSS (ground) probability 1.00 (default)
+fpu_mul/VDD (power) probability 1.00 (default)
+fpu_mul/VDDo (power) probability 1.00 (default)
+fpu_mul/VSS (ground) probability 1.00 (default)
+
+  Cell Internal Power    = N/A ( N/A )
+  Net Switching Power    = N/A ( N/A )
+Total Dynamic Power      = N/A (  0.0%)
+
+Cell Leakage Power       = 7.61e+07 pW
+
+
+  Attributes
+  ----------
+      u  -  User defined power group
+      i  -  Includes clock pin internal power
+
+Power Group         Internal Power        Switching Power          Leakage Power            Total Power    (   %  )    Attrs
+-----------------------------------------------------------------------------------------------------------------------------
+io_pad                         N/A                    N/A               0.00e+00               0.00e+00    (  0.0%)         
+memory                         N/A                    N/A               0.00e+00               0.00e+00    (  0.0%)         
+black_box                      N/A                    N/A               0.00e+00               0.00e+00    (  0.0%)         
+clock_network                  N/A                    N/A               1.93e+06               1.93e+06    (  2.5%)        i
+register                       N/A                    N/A               1.47e+07               1.47e+07    ( 19.3%)         
+sequential                     N/A                    N/A               1.10e+07               1.10e+07    ( 14.5%)         
+combinational                  N/A                    N/A               4.85e+07               4.85e+07    ( 63.7%)         
+-----------------------------------------------------------------------------------------------------------------------------
+Total                          N/A                    N/A               7.61e+07 pW            7.61e+07 pW
+1

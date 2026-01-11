@@ -1,0 +1,214 @@
+Warning: Scenario func_mode::ss0p6v125c is not configured for hold analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type min
+        -max_paths 1
+        -report_by group
+        -nosplit
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+        -crosstalk_delta
+        -derate
+        -attributes
+        -physical
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Tue Aug 26 17:40:14 2025
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis'. (TIM-050)
+
+  Startpoint: pcx_fpio_data_px2[10] (input port clocked by gclk)
+  Endpoint: fpu_in/fpu_in_dp/i_fp_srca_in/q_reg_10_ (rising edge-triggered flip-flop clocked by gclk)
+  Mode: turbo_mode
+  Corner: ss0p6vm40c
+  Scenario: turbo_mode::ss0p6vm40c
+  Path Group: **in2reg_default**
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                               Fanout    Cap      Trans     Derate   Delta     Incr      Path          Location       Attributes
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock gclk (rise edge)                                                                                              0.00      0.00
+  clock network delay (propagated)                                                                                    0.30      0.30
+  input external delay                                                                                                0.50      0.80 r
+  pcx_fpio_data_px2[10] (in)                                                              0.00      1.00              0.00      0.80 r    (36.88,259.87)
+  pcx_fpio_data_px2[10] (net)                                            1      1.49
+  fpu_in/fpu_in_dp/i_fp_srca_in/U15/A1 (SAEDRVT14_AN2_MM_0P5)                             0.00      1.00     -0.00   -0.00      0.80 r    (39.49,244.90)
+  fpu_in/fpu_in_dp/i_fp_srca_in/U15/X (SAEDRVT14_AN2_MM_0P5)                              0.01      1.00              0.02      0.82 r    (39.71,244.90)
+  fpu_in/fpu_in_dp/i_fp_srca_in/N13 (net)                                1      0.67
+  fpu_in/fpu_in_dp/i_fp_srca_in/q_reg_10_/D (SAEDRVT14_FSDPQ_V2LP_1)                      0.01      1.00     -0.01   -0.01      0.81 r    (38.82,246.69)    s, n
+  data arrival time                                                                                                             0.81
+
+  clock gclk (rise edge)                                                                                              0.00      0.00
+  clock network delay (propagated)                                                                                    0.21      0.21
+  fpu_in/fpu_in_dp/i_fp_srca_in/q_reg_10_/CK (SAEDRVT14_FSDPQ_V2LP_1)                     0.07      1.00      0.00    0.00      0.21 r    (40.01,246.70)    s, n
+  library hold time                                                                                 1.00              0.03      0.24
+  data required time                                                                                                            0.24
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                            0.24
+  data arrival time                                                                                                            -0.81
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                   0.57
+
+
+
+  Startpoint: fpu_out/fpu_out_dp/i_fp_cpx_data_ca_76_0/q_reg_46_ (rising edge-triggered flip-flop clocked by gclk)
+  Endpoint: fp_cpx_data_ca[46] (output port clocked by gclk)
+  Mode: turbo_mode
+  Corner: ss0p6vm40c
+  Scenario: turbo_mode::ss0p6vm40c
+  Path Group: **reg2out_default**
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                           Fanout    Cap      Trans     Derate   Delta     Incr      Path          Location       Attributes
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock gclk (rise edge)                                                                                                          0.00      0.00
+  clock network delay (propagated)                                                                                                0.27      0.27
+
+  fpu_out/fpu_out_dp/i_fp_cpx_data_ca_76_0/q_reg_46_/CK (SAEDRVT14_FSDPQ_V2LP_1)                      0.06      1.00              0.00      0.27 r    (196.01,120.70)   s, n
+  fpu_out/fpu_out_dp/i_fp_cpx_data_ca_76_0/q_reg_46_/Q (SAEDRVT14_FSDPQ_V2LP_1)                       0.10      1.00              0.15      0.42 f    (196.07,120.71)   s, n
+  fpu_out/fpu_out_dp/i_fp_cpx_data_ca_76_0/q[46] (net)                               1     13.82
+  fp_cpx_data_ca[46] (out)                                                                            0.10      1.00     -0.07   -0.07      0.35 f    (229.80,196.11)
+  data arrival time                                                                                                                         0.35
+
+  clock gclk (rise edge)                                                                                                          0.00      0.00
+  clock network delay (propagated)                                                                                                0.24      0.24
+  output external delay                                                                                                          -0.50     -0.26
+  data required time                                                                                                                       -0.26
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                       -0.26
+  data arrival time                                                                                                                        -0.35
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                               0.61
+
+
+
+  Startpoint: ctu_tst_scan_disable (input port clocked by gclk)
+  Endpoint: so (output port clocked by gclk)
+  Mode: turbo_mode
+  Corner: ss0p6vm40c
+  Scenario: turbo_mode::ss0p6vm40c
+  Path Group: **in2out_default**
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                           Fanout    Cap      Trans     Derate   Delta     Incr      Path          Location       Attributes
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock gclk (rise edge)                                                                                                          0.00      0.00
+  clock network delay (propagated)                                                                                                0.30      0.30
+  input external delay                                                                                                            0.50      0.80 f
+  ctu_tst_scan_disable (in)                                                                           0.00      1.00              0.00      0.80 f    (11.68,259.87)
+  ctu_tst_scan_disable (net)                                                         1      1.05
+  test_stub/U3/A2 (SAEDRVT14_AO32_U_0P5)                                                              0.00      1.00      --      0.00      0.80 f    (13.66,248.44)
+  test_stub/U3/X (SAEDRVT14_AO32_U_0P5)                                                               0.02      1.00              0.04      0.84 f    (14.17,248.32)
+  test_stub/so_0 (net)                                                               1      1.19
+  HFSBUF_4_410/A (SAEDRVT14_DEL_R2V1_2)                                                               0.02      1.00     -0.00   -0.00      0.84 f    (19.92,244.90)
+  HFSBUF_4_410/X (SAEDRVT14_DEL_R2V1_2)                                                               0.09      1.00              0.10      0.94 f    (20.18,244.90)
+  so (net)                                                                           1     24.25
+  so (out)                                                                                            0.09      1.00     -0.01   -0.00      0.93 f    (229.80,117.00)
+  data arrival time                                                                                                                         0.93
+
+  clock gclk (rise edge)                                                                                                          0.00      0.00
+  clock network delay (propagated)                                                                                                0.24      0.24
+  output external delay                                                                                                          -0.50     -0.26
+  data required time                                                                                                                       -0.26
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                       -0.26
+  data arrival time                                                                                                                        -0.93
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                               1.19
+
+
+
+  Startpoint: cluster_header/I0/sync_cluster_master/q_r_reg (rising edge-triggered flip-flop clocked by gclk)
+  Endpoint: cluster_header/I0/sync_cluster_slave/so_l_reg (negative level-sensitive latch clocked by gclk)
+  Mode: turbo_mode
+  Corner: ss0p6vm40c
+  Scenario: turbo_mode::ss0p6vm40c
+  Path Group: gclk
+  Path Type: min
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                           Fanout    Cap      Trans     Derate   Delta     Incr      Path          Location       Attributes
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock gclk (rise edge)                                                                                                          0.00      0.00
+  clock network delay (propagated)                                                                                                0.02      0.02
+
+  cluster_header/I0/sync_cluster_master/q_r_reg/CK (SAEDRVT14_FSDPQ_V2LP_1)                           0.06      1.00              0.00      0.02 r    (16.41,248.50)    s, n
+  cluster_header/I0/sync_cluster_master/q_r_reg/Q (SAEDRVT14_FSDPQ_V2LP_1)                            0.01      1.00              0.08      0.10 r    (16.48,248.49)    s, n
+  cluster_header/I0/sync_cluster_master/q (net)                                      1      0.31
+  cluster_header/I0/sync_cluster_slave/U3/A (SAEDRVT14_INV_S_0P5)                                     0.01      1.00     -0.00   -0.00      0.10 r    (15.37,249.11)
+  cluster_header/I0/sync_cluster_slave/U3/X (SAEDRVT14_INV_S_0P5)                                     0.01      1.00              0.01      0.11 f    (15.44,249.11)
+  cluster_header/I0/sync_cluster_slave/n2 (net)                                      1      0.69
+  cluster_header/I0/sync_cluster_slave/so_l_reg/D (SAEDRVT14_LDNQ_V1_1)                               0.01      1.00     -0.00   -0.00      0.11 f    (18.18,247.90)    s, n
+  data arrival time                                                                                                                         0.11
+
+  clock gclk (rise edge)                                                                                                          0.00      0.00
+  clock network delay (propagated)                                                                                                0.08      0.08
+  cluster_header/I0/sync_cluster_slave/so_l_reg/G (SAEDRVT14_LDNQ_V1_1)                               0.06      1.00      0.03    0.00      0.08 r    (18.62,248.02)    s, n
+  library hold time                                                                                             1.00              0.03      0.10
+  data required time                                                                                                                        0.10
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                        0.10
+  data arrival time                                                                                                                        -0.11
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                               0.01
+
+
+1

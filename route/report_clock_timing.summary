@@ -1,0 +1,73 @@
+****************************************
+Report : clock timing
+        -type summary
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Tue Aug 26 17:40:23 2025
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis'. (TIM-050)
+
+  Mode: func_mode
+  Clock: gclk
+                                                                                 Corner
+---------------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_99_/CK               0.42       rp-+   ss0p6v125c
+
+  Minimum setup capture latency:
+      cluster_header/I0/sync_cluster_master/q_r_reg/CK         0.01       rp-+   ss0p6v125c
+
+  Minimum hold launch latency:
+      cluster_header/I0/sync_cluster_master/q_r_reg/CK         0.01       rp-+   ss0p6v125c
+
+  Maximum hold capture latency:
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_99_/CK               0.42       rp-+   ss0p6v125c
+
+  Maximum active transition:
+      fpu_div/fpu_div_frac_dp/i_div_frac_in1/q_reg_54_/CK      0.08       rp-+   ss0p6v125c
+
+  Minimum active transition:
+      fpu_mul/i_m4stg_frac/booth/out_dff15/q_reg_2_/CK         0.00       rp-+   ss0p6v125c
+
+  Maximum setup skew:
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_97_/CK                          rp-+   ss0p6v125c
+      fpu_add/fpu_add_frac_dp/i_a1stg_in1a/q_reg_28_/CK        0.26       rp-+   ss0p6v125c
+
+  Maximum hold skew:
+      fpu_in/fpu_in_dp/i_fp_op_in/q_reg_7_/CK                             rp-+   ss0p6v125c
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_99_/CK               0.22       rp-+   ss0p6v125c
+
+
+
+  Mode: turbo_mode
+  Clock: gclk
+                                                                                 Corner
+---------------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_99_/CK               0.39       rp-+   ss0p6vm40c
+
+  Minimum setup capture latency:
+      cluster_header/I0/sync_cluster_master/q_r_reg/CK         0.01       rp-+   ss0p6vm40c
+
+  Minimum hold launch latency:
+      cluster_header/I0/sync_cluster_master/q_r_reg/CK         0.01       rp-+   ss0p6vm40c
+
+  Maximum hold capture latency:
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_99_/CK               0.39       rp-+   ss0p6vm40c
+
+  Maximum active transition:
+      fpu_div/fpu_div_frac_dp/i_div_frac_in1/q_reg_54_/CK      0.08       rp-+   ss0p6vm40c
+
+  Minimum active transition:
+      fpu_mul/i_m4stg_frac/booth/out_dff15/q_reg_2_/CK         0.00       rp-+   ss0p6vm40c
+
+  Maximum setup skew:
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_99_/CK                          rp-+   ss0p6vm40c
+      fpu_add/fpu_add_frac_dp/i_a1stg_in1a/q_reg_30_/CK        0.24       rp-+   ss0p6vm40c
+
+  Maximum hold skew:
+      fpu_in/fpu_in_dp/i_fp_op_in/q_reg_7_/CK                             rp-+   ss0p6vm40c
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_99_/CK               0.20       rp-+   ss0p6vm40c
+
+
+1

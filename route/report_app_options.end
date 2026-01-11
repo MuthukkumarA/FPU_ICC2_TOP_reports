@@ -1,0 +1,32 @@
+****************************************
+Report : app_option
+           -non_default
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Tue Aug 26 17:41:03 2025
+****************************************
+Name                                                                                 Type       Value                User-value           User-default System-default Scope      Status     Source
+------------------------------------------------------------------------------------ ---------- -------------------- -------------------- ------------ -------------- ---------- ---------- --------------------------
+cts.common.max_fanout                                                                integer    32                   32                   --           1000000        block      normal     --
+cts.common.user_instance_name_prefix                                                 string     clock_opt_cts_       clock_opt_cts_       --           --             block      normal     --
+extract.enable_coupling_cap                                                          bool       true                 true                 --           false          block      normal     --
+gui.graphics_system                                                                  enum       native               native               native       auto           global     normal     --
+mv.upf.enable_golden_upf                                                             bool       true                 true                 --           false          block      normal     --
+opt.common.user_instance_name_prefix                                                 string     clock_opt_cts_opt_   clock_opt_cts_opt_   --           --             block      normal     --
+place.coarse.continue_on_missing_scandef                                             bool       true                 true                 --           false          block      normal     --
+place.coarse.max_density                                                             float      0.3                  0.3                  --           0              block      normal     --
+route.auto_via_ladder.generate_center_track_on_off_grid_pattern_must_join_pin_shapes bool       true                 true                 --           false          block      normal     /tmp/icc2_shell-2.rolPqK:1
+route.common.global_min_layer_mode                                                   enum       allow_pin_connection allow_pin_connection --           soft           block      normal     /tmp/icc2_shell-2.sHVauO:1
+route.detail.generate_extra_off_grid_pin_tracks                                      bool       true                 true                 --           false          block      normal     /tmp/icc2_shell-2.rolPqK:1
+route.detail.timing_driven                                                           bool       true                 true                 --           false          block      normal     /tmp/icc2_shell-2.ZCngcY:1
+route.detail.var_spacing_to_same_net                                                 bool       true                 true                 --           false          block      normal     /tmp/icc2_shell-2.rolPqK:1
+route.global.timing_driven                                                           bool       true                 true                 --           false          block      normal     /tmp/icc2_shell-2.UGPbYA:1
+route.track.crosstalk_driven                                                         bool       true                 true                 --           false          block      normal     /tmp/icc2_shell-2.HowfcW:1
+route.track.timing_driven                                                            bool       true                 true                 --           false          block      normal     /tmp/icc2_shell-2.uhqvCD:1
+shell.common.enable_line_editing                                                     bool       false                false                false        true           global     normal     --
+time.enable_ccs_rcv_cap                                                              bool       true                 true                 --           false          block      normal     /tmp/icc2_shell-2.rolPqK:1
+time.si_enable_analysis                                                              bool       true                 true                 --           false          block      normal     /tmp/icc2_shell-2.AdDoIK:1
+------------------------------------------------------------------------------------ ---------- -------------------- -------------------- ------------ -------------- ---------- ---------- --------------------------
+
+There are additional internal differences with no available TBC source.
+1

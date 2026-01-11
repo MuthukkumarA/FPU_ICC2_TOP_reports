@@ -1,0 +1,31 @@
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 1
+        -setup
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Tue Aug 26 17:40:23 2025
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis'. (TIM-050)
+
+  Mode: func_mode
+  Clock: gclk
+
+  Clock Pin                                          Latency      Skew             Corner
+---------------------------------------------------------------------------------------------------
+  fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_97_/CK            0.42              rp-+   ss0p6v125c
+  fpu_add/fpu_add_frac_dp/i_a1stg_in1a/q_reg_28_/CK     0.16      0.26    rp-+   ss0p6v125c
+
+---------------------------------------------------------------------------------------------------
+
+  Mode: turbo_mode
+  Clock: gclk
+
+  Clock Pin                                          Latency      Skew             Corner
+---------------------------------------------------------------------------------------------------
+  fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_97_/CK            0.39              rp-+   ss0p6vm40c
+  fpu_add/fpu_add_frac_dp/i_a1stg_in1a/q_reg_28_/CK     0.15      0.24    rp-+   ss0p6vm40c
+
+---------------------------------------------------------------------------------------------------
+1

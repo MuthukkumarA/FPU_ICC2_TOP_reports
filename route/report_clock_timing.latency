@@ -1,0 +1,30 @@
+****************************************
+Report : clock timing
+        -type latency
+        -launch
+        -nworst 1
+        -setup
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Tue Aug 26 17:40:23 2025
+****************************************
+Information: Timer using 'PrimeTime Delay Calculation, SI, Timing Window Analysis'. (TIM-050)
+
+  Mode: func_mode
+  Clock: gclk
+
+                                                 --- Latency ---
+  Clock Pin                  Bal Dly    Trans   Source   Offset  Network    Total            Corner
+---------------------------------------------------------------------------------------------------
+  fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_97_/CK       --     0.08     0.00       --     0.42     0.42 rp-+ ss0p6v125c
+---------------------------------------------------------------------------------------------------
+
+  Mode: turbo_mode
+  Clock: gclk
+
+                                                 --- Latency ---
+  Clock Pin                  Bal Dly    Trans   Source   Offset  Network    Total            Corner
+---------------------------------------------------------------------------------------------------
+  fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_22_/CK       --     0.07     0.00       --     0.39     0.39 rp-+ ss0p6vm40c
+---------------------------------------------------------------------------------------------------
+1
