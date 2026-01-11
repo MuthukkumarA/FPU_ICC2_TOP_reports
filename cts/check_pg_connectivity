@@ -1,0 +1,53 @@
+Checking secondary net through power switch is enabled. 
+Secondary net will be checked together from primary net. They will be treated as the same net
+Primary Net : VDD    Secondary Net:
+Primary Net : VDDH    Secondary Net:
+Primary Net : VSS    Secondary Net:
+Loading cell instances...
+Number of Standard Cells: 17482
+Number of Macro Cells: 0
+Number of IO Pad Cells: 0
+Number of Blocks: 2
+Loading P/G wires and vias...
+Number of VDD Wires: 7652
+Number of VDD Vias: 13801
+Number of VDD Terminals: 1
+**************Verify net VDD connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 2
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VDDH Wires: 44
+Number of VDDH Vias: 711
+Number of VDDH Terminals: 1
+**************Verify net VDDH connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 162
+  Number of floating std cells: 77
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 1
+************************************************************
+Loading cell instances...
+Loading P/G wires and vias...
+Number of VSS Wires: 6954
+Number of VSS Vias: 9453
+Number of VSS Terminals: 1
+**************Verify net VSS connectivity*****************
+  Number of floating wires: 0
+  Number of floating vias: 0
+  Number of floating std cells: 0
+  Number of floating hard macros: 0
+  Number of floating I/O pads: 0
+  Number of floating terminals: 0
+  Number of floating hierarchical blocks: 2
+************************************************************
+Overall runtime: 0 seconds.
+{VIA_S_134274 VIA_S_134275 VIA_S_134276 VIA_S_134277 VIA_S_134278 VIA_S_134279 VIA_S_134280 VIA_S_134281 VIA_S_134282 VIA_S_134283 VIA_S_134284 VIA_S_134285 VIA_S_134286 VIA_S_134287 VIA_S_134288 VIA_S_134289 VIA_S_134290 VIA_S_134291 VIA_S_134292 VIA_S_134293 VIA_S_134294 VIA_S_134295 VIA_S_134297 VIA_S_134298 VIA_S_134299 VIA_S_134300 VIA_S_134301 VIA_S_134302 VIA_S_134303 VIA_S_134304 VIA_S_134305 VIA_S_134306 VIA_S_134307 VIA_S_134308 VIA_S_134309 VIA_S_134310 VIA_S_134311 VIA_S_134312 VIA_S_134313 VIA_S_134314 VIA_S_134315 VIA_S_134316 VIA_S_134317 VIA_S_134318 VIA_S_134319 VIA_S_134320 VIA_S_134321 VIA_S_134322 VIA_S_134323 VIA_S_134324 VIA_S_134325 VIA_S_134326 VIA_S_134327 VIA_S_134328 VIA_S_134329 VIA_S_134330 VIA_S_134331 VIA_S_134332 VIA_S_134333 VIA_S_134334 VIA_S_134335 VIA_S_134336 VIA_S_134342 VIA_S_134343 VIA_S_134344 VIA_S_134345 VIA_S_134346 VIA_S_134347 VIA_S_134348 VIA_S_134349 VIA_S_134350 VIA_S_134351 VIA_S_134352 VIA_S_134353 VIA_S_134354 VIA_S_134355 VIA_S_134356 VIA_S_134358 VIA_S_134367 VIA_S_134368 VIA_S_134369 VIA_S_134370 VIA_S_134371 VIA_S_134372 VIA_S_134375 VIA_S_134376 VIA_S_134377 VIA_S_134383 VIA_S_134384 VIA_S_134385 VIA_S_134391 VIA_S_134392 VIA_S_134393 VIA_S_134182 VIA_S_134183 VIA_S_134184 VIA_S_134185 VIA_S_134186 VIA_S_134187 VIA_S_134188 ...}

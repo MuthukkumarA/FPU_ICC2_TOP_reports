@@ -1,0 +1,36 @@
+****************************************
+Report : mode
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:57:41 2025
+****************************************
+
+------------------------------------------------------------------------------------------
+Mode func_mode
+--------------------------------------------------------------------------------
+
+Current: false  Default: false  Empty: false
+
+Scenarios associated with this mode:
+
+                                                         Leakage   Dynamic
+Scenario            Corner          Active  Setup  Hold  Power     Power     Max_tran  Max_cap  Min_cap  Cell_em  Signal_em
+-------------------------------------------------------------------------------------------------------------------------
+func_mode::ss0p6v125c ss0p6v125c    true    true   false true      true      true      true     false    false    false
+
+
+------------------------------------------------------------------------------------------
+Mode turbo_mode
+--------------------------------------------------------------------------------
+
+Current: true  Default: false  Empty: false
+
+Scenarios associated with this mode:
+
+                                                         Leakage   Dynamic
+Scenario            Corner          Active  Setup  Hold  Power     Power     Max_tran  Max_cap  Min_cap  Cell_em  Signal_em
+-------------------------------------------------------------------------------------------------------------------------
+turbo_mode::ss0p6vm40c ss0p6vm40c   true    false  true  true      false     true      false    true     false    false
+
+
+1

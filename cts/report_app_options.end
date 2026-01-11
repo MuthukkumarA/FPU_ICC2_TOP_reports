@@ -1,0 +1,22 @@
+****************************************
+Report : app_option
+           -non_default
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:57:58 2025
+****************************************
+Name                                     Type       Value              User-value         User-default System-default Scope      Status     Source
+---------------------------------------- ---------- ------------------ ------------------ ------------ -------------- ---------- ---------- --------------------------
+cts.common.max_fanout                    integer    32                 32                 --           1000000        block      normal     /tmp/icc2_shell-2.ODzJhH:1
+cts.common.user_instance_name_prefix     string     clock_opt_cts_     clock_opt_cts_     --           --             block      normal     /tmp/icc2_shell-2.LnYqmI:1
+gui.graphics_system                      enum       native             native             native       auto           global     normal     --
+mv.upf.enable_golden_upf                 bool       true               true               --           false          block      normal     --
+opt.common.user_instance_name_prefix     string     clock_opt_cts_opt_ clock_opt_cts_opt_ --           --             block      normal     /tmp/icc2_shell-2.vjwZcX:1
+place.coarse.continue_on_missing_scandef bool       true               true               --           false          block      normal     --
+place.coarse.max_density                 float      0.3                0.3                --           0              block      normal     --
+route.global.timing_driven               bool       true               true               --           false          block      normal     --
+shell.common.enable_line_editing         bool       false              false              false        true           global     normal     --
+---------------------------------------- ---------- ------------------ ------------------ ------------ -------------- ---------- ---------- --------------------------
+
+There are additional internal differences with no available TBC source.
+1

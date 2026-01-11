@@ -1,0 +1,1338 @@
+****************************************
+Analysis : MV Path
+Design   : fpu
+Version  : T-2022.03-SP4
+Date     : Fri Aug 22 18:57:45 2025
+****************************************
+MV Cells Condition :
+
+----------------------------------------
+Cell Name                   :  mul_frac_out_0__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_244/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U268/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_1__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_243/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U272/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_2__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_242/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U276/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_3__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_241/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U280/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_4__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_240/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U283/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_5__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_239/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U287/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_6__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_238/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U291/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_7__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_237/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U295/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_8__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_236/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U299/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_9__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_235/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U301/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_10__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_234/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U305/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_11__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_233/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U309/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_12__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_232/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U313/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_13__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_231/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U317/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_14__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_230/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U320/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_15__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_229/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U324/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_16__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_228/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U328/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_17__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_227/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U332/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_18__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_226/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U336/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_19__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_225/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U339/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_20__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_224/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U343/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_21__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_223/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U347/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_22__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_222/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U351/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_23__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_221/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U355/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_24__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_220/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U357/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_25__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_219/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U361/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_26__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_218/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U365/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_27__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_217/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U369/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_28__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_216/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U373/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_29__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_215/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U245/A2; fpu_out/fpu_out_dp/U249/A1; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_30__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_214/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U235/A2; fpu_out/fpu_out_dp/U237/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_31__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_213/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U229/A2; fpu_out/fpu_out_dp/U247/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_32__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_212/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U222/A2; fpu_out/fpu_out_dp/U239/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_33__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_211/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U21/A2; fpu_out/fpu_out_dp/U217/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_34__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_210/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U210/A2; fpu_out/fpu_out_dp/U223/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_35__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_209/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U42/A2; fpu_out/fpu_out_dp/U218/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_36__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_208/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U198/A2; fpu_out/fpu_out_dp/U211/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_37__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_207/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U191/A2; fpu_out/fpu_out_dp/U205/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_38__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_206/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U184/A2; fpu_out/fpu_out_dp/U199/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_39__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_205/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U178/A2; fpu_out/fpu_out_dp/U192/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_40__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_204/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U171/A2; fpu_out/fpu_out_dp/U185/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_41__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_203/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U166/A2; fpu_out/fpu_out_dp/U179/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_42__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_202/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U160/A2; fpu_out/fpu_out_dp/U172/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_43__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_201/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U155/A2; fpu_out/fpu_out_dp/U167/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_44__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_200/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U148/A2; fpu_out/fpu_out_dp/U161/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_45__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_199/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U142/A2; fpu_out/fpu_out_dp/U156/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_46__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_198/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U137/A2; fpu_out/fpu_out_dp/U150/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_47__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_197/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U131/A2; fpu_out/fpu_out_dp/U143/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_48__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_196/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U25/A2; fpu_out/fpu_out_dp/U126/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_49__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_195/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U120/A2; fpu_out/fpu_out_dp/U132/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_50__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_194/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U43/A2; fpu_out/fpu_out_dp/U127/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_frac_out_51__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_193/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U103/A2; fpu_out/fpu_out_dp/U121/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exp_out_0__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_192/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U97/A2; fpu_out/fpu_out_dp/U116/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exp_out_1__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_191/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U90/A2; fpu_out/fpu_out_dp/U111/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exp_out_2__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_190/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U84/A2; fpu_out/fpu_out_dp/U98/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exp_out_3__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_189/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U77/A2; fpu_out/fpu_out_dp/U91/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exp_out_4__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_188/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U72/A2; fpu_out/fpu_out_dp/U85/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exp_out_5__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_187/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U65/A2; fpu_out/fpu_out_dp/U78/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exp_out_6__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_186/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U73/A2; fpu_out/fpu_out_dp/U110/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exp_out_7__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_185/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U58/A2; fpu_out/fpu_out_dp/U66/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exp_out_8__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_184/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U59/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exp_out_9__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_183/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U104/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exp_out_10__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_182/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U47/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_sign_out_UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_181/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U256/B; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_fmuls_UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_180/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U45/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_fmul_dbl_dst_UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_179/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U46/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exc_out_0__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_178/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U149/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exc_out_2__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_176/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U255/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exc_out_3__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_175/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U254/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_exc_out_4__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_174/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_dp/U262/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_id_in_0__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_173/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_ctl/U12/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_id_in_1__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_172/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_ctl/U13/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_id_in_2__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_171/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_ctl/U20/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_id_in_3__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_170/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_ctl/U18/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_id_in_4__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_169/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_ctl/U21/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_id_in_5__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_168/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_ctl/U14/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_id_in_6__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_167/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_ctl/U17/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_id_in_7__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_166/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_ctl/U19/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_id_in_8__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_165/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_ctl/U15/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_id_in_9__UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_164/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_ctl/U16/A2; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m6stg_fmul_in_UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_163/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_out/fpu_out_ctl/U7/A1; fpu_out/fpu_out_ctl/U9/A1; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  mul_pipe_active_UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_2
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_161/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_in/fpu_in_ctl/U29/A1; 
+    Power Supply            :  VDD
+----------------------------------------
+Cell Name                   :  m1stg_step_UPF_LS
+Cell Type                   :  Level Shifter Cell
+Power Domain                :  PD
+Library Cell                :  SAEDRVT14_LVLDBUF_IY2V1_1
+Associated Strategy         :  None
+Association Error           :
+                               No strategy can be associated with the cell.
+
+Power Supplies                 -- Input --                     -- Output --
+                               VDDH(Tool Derived)              VDD(Tool Derived)
+
+  Input Driver              :  fpu_mul/eco_cell_162/X
+    Power Supply            :  VDD
+  Output Loads              :  fpu_in/fpu_in_ctl/clock_opt_cts_opt_ctmTdsLR_3_9126/A1; 
+    Power Supply            :  VDD
+----------------------------------------
+1

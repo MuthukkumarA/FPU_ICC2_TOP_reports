@@ -1,0 +1,598 @@
+SI analysis is not enabled, so delta delays are unavailable.
+Warning: Scenario turbo_mode::ss0p6vm40c is not configured for setup analysis: skipping. (UIC-058)
+****************************************
+Report : timing
+        -path_type full
+        -delay_type max
+        -max_paths 1
+        -report_by group
+        -nosplit
+        -input_pins
+        -nets
+        -transition_time
+        -capacitance
+        -crosstalk_delta
+        -derate
+        -attributes
+        -physical
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:57:17 2025
+****************************************
+
+  Startpoint: global_shift_enable (input port clocked by gclk)
+  Endpoint: fpu_add/fpu_add_frac_dp/i_a1stg_in2/q_reg_36_ (rising edge-triggered flip-flop clocked by gclk)
+  Mode: func_mode
+  Corner: ss0p6v125c
+  Scenario: func_mode::ss0p6v125c
+  Path Group: **in2reg_default**
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                        Fanout    Cap      Trans     Derate   Delta     Incr      Path          Location       Attributes
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock gclk (rise edge)                                                                                                       0.00      0.00
+  clock network delay (propagated)                                                                                             0.26      0.26
+  input external delay                                                                                                         0.50      0.76 r
+  global_shift_enable (in)                                                                         0.00      1.00              0.00      0.76 r    (0.88,259.87)
+  global_shift_enable (net)                                                      20     51.31
+  test_stub/HFSINV_14921_1264/A (SAEDRVT14_INV_S_3)                                                0.01      1.00              0.00      0.76 r    (73.08,206.02)
+  test_stub/HFSINV_14921_1264/X (SAEDRVT14_INV_S_3)                                                0.08      1.00              0.07      0.83 f    (73.08,205.78)
+  test_stub/HFSNET_3 (net)                                                       35     42.80
+  test_stub/HFSBUF_4788_1258/A (SAEDRVT14_BUF_1P5)                                                 0.08      1.00              0.00      0.83 f    (78.12,204.70)
+  test_stub/HFSBUF_4788_1258/X (SAEDRVT14_BUF_1P5)                                                 0.10      1.00              0.10      0.93 f    (78.27,204.71)
+  test_stub/se (net)                                                             36     25.28
+  test_stub/U2/A2 (SAEDRVT14_AN2_0P5)                                                              0.09      1.00              0.00      0.93 f    (80.93,202.90)
+  test_stub/U2/X (SAEDRVT14_AN2_0P5)                                                               0.01      1.00              0.06      0.99 f    (81.30,202.90)
+  test_stub/sehold (net)                                                          3      1.46
+  fpu_in/fpu_in_ctl/clock_opt_cts_opt_ctmTdsLR_2_8262/A (SAEDLVT14_INV_S_1)                        0.01      1.00              0.00      0.99 f    (82.56,201.69)
+  fpu_in/fpu_in_ctl/clock_opt_cts_opt_ctmTdsLR_2_8262/X (SAEDLVT14_INV_S_1)                        0.01      1.00              0.01      1.00 r    (82.63,201.69)
+  fpu_in/fpu_in_ctl/tmp_net1665 (net)                                             1      0.62
+  fpu_in/fpu_in_ctl/clock_opt_cts_opt_ctmTdsLR_1_8261/A1 (SAEDLVT14_AN3_2)                         0.01      1.00              0.00      1.00 r    (82.81,201.10)
+  fpu_in/fpu_in_ctl/clock_opt_cts_opt_ctmTdsLR_1_8261/X (SAEDLVT14_AN3_2)                          0.07      1.00              0.06      1.06 r    (82.98,201.04)
+  fpu_in/fpu_in_ctl/HFSNET_24 (net)                                              34     31.30
+  fpu_in/fpu_in_dp/HFSINV_2826_1179/A (SAEDRVT14_INV_2)                                            0.07      1.00              0.00      1.06 r    (89.29,201.11)
+  fpu_in/fpu_in_dp/HFSINV_2826_1179/X (SAEDRVT14_INV_2)                                            0.05      1.00              0.08      1.14 f    (89.37,201.11)
+  fpu_in/fpu_in_dp/HFSNET_45 (net)                                               19     16.17
+  fpu_in/fpu_in_dp/U4/A (SAEDRVT14_NR2B_2)                                                         0.05      1.00              0.00      1.14 f    (96.52,201.16)
+  fpu_in/fpu_in_dp/U4/X (SAEDRVT14_NR2B_2)                                                         0.09      1.00              0.11      1.25 f    (97.14,201.10)
+  fpu_in/fpu_in_dp/n106 (net)                                                    31     24.41
+  fpu_in/fpu_in_dp/HFSBUF_815_1052/A (SAEDRVT14_DEL_R2V1_2)                                        0.09      1.00              0.00      1.25 f    (95.32,169.90)
+  fpu_in/fpu_in_dp/HFSBUF_815_1052/X (SAEDRVT14_DEL_R2V1_2)                                        0.08      1.00              0.13      1.38 f    (95.06,169.90)
+  fpu_in/fpu_in_dp/HFSNET_41 (net)                                               27     27.84
+  fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_2_8356/A2 (SAEDRVT14_ND2_ECO_1)                      0.08      1.00              0.00      1.38 f    (93.95,145.90)
+  fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_2_8356/X (SAEDRVT14_ND2_ECO_1)                       0.03      1.00              0.05      1.43 r    (94.12,145.91)
+  fpu_in/fpu_in_dp/tmp_net1711 (net)                                              1      1.19
+  fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8355/A1 (SAEDRVT14_AN2_0P5)                        0.03      1.00              0.00      1.43 r    (94.40,143.50)
+  fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8355/X (SAEDRVT14_AN2_0P5)                         0.01      1.00              0.03      1.46 r    (94.62,143.50)
+  fpu_in/fpu_in_dp/tmp_net915 (net)                                               1      0.97
+  fpu_in/fpu_in_dp/ctmTdsLR_4_3229/B (SAEDRVT14_OAI21_0P5)                                         0.01      1.00              0.00      1.46 r    (96.47,142.89)
+  fpu_in/fpu_in_dp/ctmTdsLR_4_3229/X (SAEDRVT14_OAI21_0P5)                                         0.09      1.00              0.07      1.54 f    (96.51,142.92)
+  fpu_in/fpu_in_dp/inq_in2[36] (net)                                              2      6.56
+  fpu_rptr_groups/clock_opt_cts_opt_gre_mt_inst_9624/A (SAEDRVT14_DEL_R2V2_1)                      0.09      1.00              0.00      1.54 f    (96.91,133.88)
+  fpu_rptr_groups/clock_opt_cts_opt_gre_mt_inst_9624/X (SAEDRVT14_DEL_R2V2_1)                      0.07      1.00              0.13      1.67 f    (97.21,133.91)
+  fpu_rptr_groups/gre_net_2433 (net)                                              1      6.45
+  fpu_rptr_groups/HFSBUF_34_489/A (SAEDRVT14_BUF_ECO_1)                                            0.07      1.00              0.00      1.67 f    (106.76,112.89)
+  fpu_rptr_groups/HFSBUF_34_489/X (SAEDRVT14_BUF_ECO_1)                                            0.09      1.00              0.09      1.76 f    (106.49,112.89)
+  fpu_rptr_groups/HFSNET_43 (net)                                                 2     15.88
+  fpu_add/eco_cell_112/A (SAEDRVT14_BUF_20)                                                        0.09      1.00              0.00      1.76 f    (124.99,37.76)    d
+  fpu_add/eco_cell_112/X (SAEDRVT14_BUF_20)                                                        0.01      1.00              0.04      1.81 f    (125.82,37.58)    d
+  fpu_add/eco_net_112 (net)                                                       2      2.95                                                                        d
+  fpu_add/fpu_add_frac_dp/i_a1stg_in2/U45/A1 (SAEDRVT14_AN2_MM_0P5)                                0.01      1.00              0.00      1.81 f    (137.72,43.70)    d
+  fpu_add/fpu_add_frac_dp/i_a1stg_in2/U45/X (SAEDRVT14_AN2_MM_0P5)                                 0.02      1.00              0.02      1.83 f    (137.50,43.70)    d
+  fpu_add/fpu_add_frac_dp/i_a1stg_in2/N40 (net)                                   1      1.26                                                                        d
+  fpu_add/fpu_add_frac_dp/i_a1stg_in2/q_reg_36_/D (SAEDRVT14_FSDPQ_V2LP_1)                         0.02      1.00              0.00      1.83 f    (142.24,44.31)    s, d, n
+  data arrival time                                                                                                                      1.83
+
+  clock gclk (rise edge)                                                                                                       1.67      1.67
+  clock network delay (propagated)                                                                                             0.21      1.87
+  fpu_add/fpu_add_frac_dp/i_a1stg_in2/q_reg_36_/CK (SAEDRVT14_FSDPQ_V2LP_1)                        0.05      1.00              0.00      1.87 r    (143.43,44.30)    s, d, n
+  library setup time                                                                                         1.00             -0.03      1.85
+  data required time                                                                                                                     1.85
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                     1.85
+  data arrival time                                                                                                                     -1.83
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                            0.02
+
+
+
+  Startpoint: cluster_header/I0/dbginit_repeater/syncff/i0/u_FD (rising edge-triggered flip-flop clocked by gclk)
+  Endpoint: so (output port clocked by gclk)
+  Mode: func_mode
+  Corner: ss0p6v125c
+  Scenario: func_mode::ss0p6v125c
+  Path Group: **reg2out_default**
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                          Fanout    Cap      Trans     Derate   Delta     Incr      Path          Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock gclk (rise edge)                                                                                                         0.00      0.00
+  clock network delay (propagated)                                                                                               0.26      0.26
+
+  cluster_header/I0/dbginit_repeater/syncff/i0/u_FD/CK (SAEDRVT14_FSDPQ_V2LP_1)                      0.09      1.00              0.00      0.26 r    (23.51,247.30)    s, n
+  cluster_header/I0/dbginit_repeater/syncff/i0/u_FD/Q (SAEDRVT14_FSDPQ_V2LP_1)                       0.01      1.00              0.07      0.33 f    (23.58,247.29)    s, n
+  cluster_header/I0/dbginit_repeater/syncff/i0/n1 (net)                             1      0.85
+  cluster_header/I0/dbginit_repeater/syncff/i0/U2/A (SAEDRVT14_ND2B_U_0P5)                           0.01      1.00              0.00      0.33 f    (21.43,249.06)
+  cluster_header/I0/dbginit_repeater/syncff/i0/U2/X (SAEDRVT14_ND2B_U_0P5)                           0.05      1.00              0.04      0.37 f    (21.21,249.10)
+  cluster_header/I0/dbginit_repeater/syncff/i0/so (net)                             2      1.82
+  test_stub/U3/B1 (SAEDRVT14_AO32_U_0P5)                                                             0.05      1.00              0.00      0.37 f    (13.83,248.50)
+  test_stub/U3/X (SAEDRVT14_AO32_U_0P5)                                                              0.03      1.00              0.06      0.44 f    (14.17,248.32)
+  test_stub/so_0 (net)                                                              1      2.18
+  HFSBUF_4_410/A (SAEDRVT14_BUF_S_3)                                                                 0.03      1.00              0.00      0.44 f    (19.88,244.89)
+  HFSBUF_4_410/X (SAEDRVT14_BUF_S_3)                                                                 0.08      1.00              0.07      0.51 f    (20.20,245.02)
+  so (net)                                                                          1     40.70
+  so (out)                                                                                           0.08      1.00              0.01      0.52 f    (229.80,117.00)
+  data arrival time                                                                                                                        0.52
+
+  clock gclk (rise edge)                                                                                                         1.67      1.67
+  clock network delay (propagated)                                                                                               0.32      1.99
+  output external delay                                                                                                         -0.50      1.49
+  data required time                                                                                                                       1.49
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                       1.49
+  data arrival time                                                                                                                       -0.52
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                              0.97
+
+
+
+  Startpoint: global_shift_enable (input port clocked by gclk)
+  Endpoint: so (output port clocked by gclk)
+  Mode: func_mode
+  Corner: ss0p6v125c
+  Scenario: func_mode::ss0p6v125c
+  Path Group: **in2out_default**
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                          Fanout    Cap      Trans     Derate   Delta     Incr      Path          Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock gclk (rise edge)                                                                                                         0.00      0.00
+  clock network delay (propagated)                                                                                               0.26      0.26
+  input external delay                                                                                                           0.50      0.76 r
+  global_shift_enable (in)                                                                           0.00      1.00              0.00      0.76 r    (0.88,259.87)
+  global_shift_enable (net)                                                        20     51.31
+  test_stub/HFSINV_14921_1264/A (SAEDRVT14_INV_S_3)                                                  0.01      1.00              0.00      0.76 r    (73.08,206.02)
+  test_stub/HFSINV_14921_1264/X (SAEDRVT14_INV_S_3)                                                  0.08      1.00              0.07      0.83 f    (73.08,205.78)
+  test_stub/HFSNET_3 (net)                                                         35     42.80
+  test_stub/HFSINV_4657_1260/A (SAEDRVT14_INV_S_0P5)                                                 0.08      1.00              0.00      0.83 f    (28.98,247.91)
+  test_stub/HFSINV_4657_1260/X (SAEDRVT14_INV_S_0P5)                                                 0.07      1.00              0.10      0.93 r    (28.91,247.91)
+  test_stub/HFSNET_1 (net)                                                          9      6.28
+  cluster_header/I0/dbginit_repeater/syncff/i0/U2/B (SAEDRVT14_ND2B_U_0P5)                           0.07      1.00              0.00      0.93 r    (21.14,249.10)
+  cluster_header/I0/dbginit_repeater/syncff/i0/U2/X (SAEDRVT14_ND2B_U_0P5)                           0.05      1.00              0.07      1.00 f    (21.21,249.10)
+  cluster_header/I0/dbginit_repeater/syncff/i0/so (net)                             2      1.82
+  test_stub/U3/B1 (SAEDRVT14_AO32_U_0P5)                                                             0.05      1.00              0.00      1.00 f    (13.83,248.50)
+  test_stub/U3/X (SAEDRVT14_AO32_U_0P5)                                                              0.03      1.00              0.06      1.06 f    (14.17,248.32)
+  test_stub/so_0 (net)                                                              1      2.18
+  HFSBUF_4_410/A (SAEDRVT14_BUF_S_3)                                                                 0.03      1.00              0.00      1.06 f    (19.88,244.89)
+  HFSBUF_4_410/X (SAEDRVT14_BUF_S_3)                                                                 0.08      1.00              0.07      1.13 f    (20.20,245.02)
+  so (net)                                                                          1     40.70
+  so (out)                                                                                           0.08      1.00              0.01      1.15 f    (229.80,117.00)
+  data arrival time                                                                                                                        1.15
+
+  clock gclk (rise edge)                                                                                                         1.67      1.67
+  clock network delay (propagated)                                                                                               0.32      1.99
+  output external delay                                                                                                         -0.50      1.49
+  data required time                                                                                                                       1.49
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                       1.49
+  data arrival time                                                                                                                       -1.15
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (MET)                                                                                                                              0.34
+
+
+
+  Startpoint: fpu_div/fpu_div_frac_dp/i_div_frac_add_in2/q_reg_0_ (rising edge-triggered flip-flop clocked by gclk)
+  Endpoint: fpu_div/fpu_div_exp_dp/i_div_exp_out/q_reg_7_ (rising edge-triggered flip-flop clocked by gclk)
+  Mode: func_mode
+  Corner: ss0p6v125c
+  Scenario: func_mode::ss0p6v125c
+  Path Group: gclk
+  Path Type: max
+
+
+Attributes
+    b - black-box (unknown)
+    s - size_only
+    d - dont_touch
+    u - dont_use
+    g - generic
+    h - hierarchical
+    i - ideal
+    n - noncombinational
+    E - extracted timing model
+    Q - Quick timing model
+
+
+  Point                                                                                                  Fanout    Cap      Trans     Derate   Delta     Incr      Path          Location       Attributes
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  clock gclk (rise edge)                                                                                                                                 0.00      0.00
+  clock network delay (propagated)                                                                                                                       0.29      0.29
+
+  fpu_div/fpu_div_frac_dp/i_div_frac_add_in2/q_reg_0_/CK (SAEDLVT14_FSDPQ_V2LP_2)                                            0.03      1.00              0.00      0.29 r    (55.85,47.50)     s, n
+  fpu_div/fpu_div_frac_dp/i_div_frac_add_in2/q_reg_0_/Q (SAEDLVT14_FSDPQ_V2LP_2)                                             0.01      1.00              0.04      0.33 r    (55.92,47.51)     s, n
+  fpu_div/fpu_div_frac_dp/i_div_frac_add_in2/q[0] (net)                                                     3      2.39
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8757/C1 (SAEDLVT14_OAI222_1)                        0.01      1.00              0.00      0.33 r    (56.80,52.93)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8757/X (SAEDLVT14_OAI222_1)                         0.01      1.00              0.04      0.37 f    (55.99,52.90)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_365 (net)                                              3      1.92
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8764/A (SAEDLVT14_INV_S_1P5)                        0.01      1.00              0.00      0.37 f    (55.84,54.09)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8764/X (SAEDLVT14_INV_S_1P5)                        0.00      1.00              0.01      0.37 r    (55.92,54.09)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/tmp_net1957 (net)                                               1      0.42
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8763/A1 (SAEDLVT14_OAI21_0P5)                       0.00      1.00              0.00      0.37 r    (56.36,54.12)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8763/X (SAEDLVT14_OAI21_0P5)                        0.01      1.00              0.01      0.39 f    (56.47,54.12)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_368 (net)                                              1      0.64
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8767/B (SAEDLVT14_OAI21_2)                          0.01      1.00              0.00      0.39 f    (57.40,54.12)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8767/X (SAEDLVT14_OAI21_2)                          0.01      1.00              0.01      0.40 r    (57.28,54.12)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n279 (net)                                                      3      1.85
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_3_2968/A1 (SAEDRVT14_ND2_1)                                             0.01      1.00              0.00      0.40 r    (57.69,52.93)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_3_2968/X (SAEDRVT14_ND2_1)                                              0.01      1.00              0.02      0.41 f    (57.72,52.84)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_497 (net)                                              1      1.81
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2966/A2 (SAEDRVT14_ND2_MM_2)                                          0.01      1.00              0.00      0.41 f    (58.80,52.30)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2966/X (SAEDRVT14_ND2_MM_2)                                           0.01      1.00              0.02      0.43 r    (58.81,52.27)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n278 (net)                                                      3      2.59
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_6_2971/A1 (SAEDLVT14_OAI21_1)                                           0.01      1.00              0.00      0.43 r    (59.84,51.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_6_2971/X (SAEDLVT14_OAI21_1)                                            0.01      1.00              0.01      0.44 f    (59.77,51.11)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_315 (net)                                              1      0.68
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2700/A1 (SAEDLVT14_ND2_1)                                             0.01      1.00              0.00      0.44 f    (58.95,51.07)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2700/X (SAEDLVT14_ND2_1)                                              0.01      1.00              0.01      0.46 r    (58.98,51.16)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n277 (net)                                                      3      2.71
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_5_2635/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      0.46 r    (58.40,49.90)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_5_2635/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      0.47 f    (57.83,49.78)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_223 (net)                                              1      1.34
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_5_2571/A1 (SAEDRVT14_ND2_MM_3)                                          0.01      1.00              0.00      0.47 f    (58.68,48.70)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_5_2571/X (SAEDRVT14_ND2_MM_3)                                           0.01      1.00              0.01      0.48 r    (58.99,48.64)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_225 (net)                                              3      1.96
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2575/A2 (SAEDLVT14_ND2_CDC_0P5)                                       0.01      1.00              0.00      0.48 r    (60.21,48.18)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2575/X (SAEDLVT14_ND2_CDC_0P5)                                        0.01      1.00              0.01      0.49 f    (60.25,48.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_228 (net)                                              2      1.01
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8786/A (SAEDLVT14_INV_1P5)                          0.01      1.00              0.00      0.49 f    (60.51,47.51)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8786/X (SAEDLVT14_INV_1P5)                          0.01      1.00              0.01      0.50 r    (60.58,47.51)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/tmp_net1963 (net)                                               1      1.16
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8785/B (SAEDRVT14_OAI21_4)                          0.01      1.00              0.00      0.50 r    (61.20,46.30)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8785/X (SAEDRVT14_OAI21_4)                          0.01      1.00              0.01      0.52 f    (61.02,46.30)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_444 (net)                                              1      1.36
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2871/A2 (SAEDLVT14_ND2_MM_3)                                          0.01      1.00              0.00      0.52 f    (60.50,45.64)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2871/X (SAEDLVT14_ND2_MM_3)                                           0.01      1.00              0.01      0.53 r    (60.76,45.76)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n274 (net)                                                      4      2.70
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_3_8793/A1 (SAEDRVT14_OAI21_4)                         0.01      1.00              0.00      0.53 r    (63.76,46.33)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_3_8793/X (SAEDRVT14_OAI21_4)                          0.01      1.00              0.02      0.54 f    (63.98,46.30)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/tmp_net1966 (net)                                               1      1.54
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8791/A2 (SAEDRVT14_ND2_CDC_4)                       0.01      1.00              0.00      0.54 f    (63.84,45.76)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8791/X (SAEDRVT14_ND2_CDC_4)                        0.01      1.00              0.01      0.56 r    (63.83,45.82)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n273 (net)                                                      3      2.15
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2558/A1 (SAEDLVT14_OAI21_2)                                           0.01      1.00              0.00      0.56 r    (64.65,45.72)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2558/X (SAEDLVT14_OAI21_2)                                            0.01      1.00              0.01      0.57 f    (64.83,45.72)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_212 (net)                                              1      0.89
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_8_2557/A2 (SAEDLVT14_ND2_CDC_2)                                         0.01      1.00              0.00      0.57 f    (65.26,46.96)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_8_2557/X (SAEDLVT14_ND2_CDC_2)                                          0.01      1.00              0.01      0.58 r    (65.09,46.94)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_214 (net)                                              4      3.42
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8807/A1 (SAEDRVT14_OAI21_V1_4)                      0.01      1.00              0.00      0.58 r    (66.17,48.70)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8807/X (SAEDRVT14_OAI21_V1_4)                       0.01      1.00              0.01      0.60 f    (65.60,48.58)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/tmp_net1972 (net)                                               1      1.63
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8806/A2 (SAEDRVT14_ND2_CDC_4)                       0.01      1.00              0.00      0.60 f    (65.83,49.84)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8806/X (SAEDRVT14_ND2_CDC_4)                        0.01      1.00              0.01      0.61 r    (65.84,49.78)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n271 (net)                                                      3      3.45
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8809/A1 (SAEDLVT14_OAI21_2)                         0.01      1.00              0.00      0.61 r    (66.50,51.08)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8809/X (SAEDLVT14_OAI21_2)                          0.01      1.00              0.01      0.62 f    (66.67,51.08)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/tmp_net1973 (net)                                               1      0.56
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8808/A2 (SAEDLVT14_ND2_CDC_2)                       0.01      1.00              0.00      0.62 f    (67.07,51.04)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8808/X (SAEDLVT14_ND2_CDC_2)                        0.01      1.00              0.01      0.63 r    (67.24,51.06)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n270 (net)                                                      3      1.98
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8811/A1 (SAEDLVT14_OAI21_2)                         0.01      1.00              0.00      0.63 r    (68.20,52.28)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8811/X (SAEDLVT14_OAI21_2)                          0.01      1.00              0.01      0.64 f    (68.38,52.28)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/tmp_net1974 (net)                                               1      1.40
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8810/A2 (SAEDRVT14_ND2_MM_3)                        0.01      1.00              0.00      0.64 f    (68.35,51.64)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8810/X (SAEDRVT14_ND2_MM_3)                         0.01      1.00              0.02      0.66 r    (68.60,51.76)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n269 (net)                                                      3      2.32
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_11_2870/A1 (SAEDLVT14_OAI21_2)                                          0.01      1.00              0.00      0.66 r    (69.02,49.88)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_11_2870/X (SAEDLVT14_OAI21_2)                                           0.01      1.00              0.01      0.67 f    (68.84,49.88)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_253 (net)                                              1      0.92
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2609/A1 (SAEDLVT14_ND2_1)                                             0.01      1.00              0.00      0.67 f    (68.65,49.33)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2609/X (SAEDLVT14_ND2_1)                                              0.01      1.00              0.02      0.69 r    (68.68,49.24)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n268 (net)                                                      4      3.54
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_10_2495/A1 (SAEDRVT14_ND2_1)                                            0.01      1.00              0.00      0.69 r    (68.65,48.13)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_10_2495/X (SAEDRVT14_ND2_1)                                             0.01      1.00              0.02      0.70 f    (68.68,48.04)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_164 (net)                                              1      1.53
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_8_2493/A2 (SAEDLVT14_ND2_MM_3)                                          0.01      1.00              0.00      0.70 f    (68.05,46.84)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_8_2493/X (SAEDLVT14_ND2_MM_3)                                           0.01      1.00              0.01      0.72 r    (67.80,46.96)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_165 (net)                                              3      3.53
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8813/A1 (SAEDRVT14_OAI21_V1_4)                      0.01      1.00              0.00      0.72 r    (68.61,46.30)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8813/X (SAEDRVT14_OAI21_V1_4)                       0.01      1.00              0.01      0.73 f    (68.04,46.18)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/tmp_net1975 (net)                                               1      1.41
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8812/A2 (SAEDRVT14_ND2_CDC_4)                       0.01      1.00              0.00      0.73 f    (68.28,45.76)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8812/X (SAEDRVT14_ND2_CDC_4)                        0.01      1.00              0.01      0.74 r    (68.27,45.82)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n266 (net)                                                      3      1.92
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_3044/A1 (SAEDLVT14_OAI21_2)                                           0.01      1.00              0.00      0.74 r    (69.16,44.52)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_3044/X (SAEDLVT14_OAI21_2)                                            0.02      1.00              0.01      0.75 f    (69.34,44.52)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_546 (net)                                              1      1.53
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3043/A2 (SAEDRVT14_ND2_CDC_4)                                         0.02      1.00              0.00      0.75 f    (69.98,45.76)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3043/X (SAEDRVT14_ND2_CDC_4)                                          0.01      1.00              0.02      0.77 r    (69.98,45.82)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_282 (net)                                              4      3.38
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_5_2653/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      0.77 r    (73.79,45.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_5_2653/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      0.78 f    (73.22,44.98)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_283 (net)                                              1      0.95
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_4_2652/A2 (SAEDLVT14_ND2_MM_1)                                          0.01      1.00              0.00      0.78 f    (73.53,45.71)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_4_2652/X (SAEDLVT14_ND2_MM_1)                                           0.02      1.00              0.02      0.80 r    (73.45,45.74)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n264 (net)                                                      4      3.24
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_3_3058/A2 (SAEDLVT14_ND2_CDC_0P5)                                       0.02      1.00              0.00      0.80 r    (73.60,48.18)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_3_3058/X (SAEDLVT14_ND2_CDC_0P5)                                        0.01      1.00              0.02      0.82 f    (73.57,48.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_554 (net)                                              1      1.35
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3056/A1 (SAEDLVT14_ND2_1)                                             0.01      1.00              0.00      0.82 f    (74.56,48.13)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3056/X (SAEDLVT14_ND2_1)                                              0.01      1.00              0.01      0.83 r    (74.60,48.04)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n263 (net)                                                      1      1.28
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/U95/A (SAEDRVT14_ADDF_V1_2)                                                      0.01      1.00              0.00      0.83 r    (74.66,46.78)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/U95/CO (SAEDRVT14_ADDF_V1_2)                                                     0.01      1.00              0.04      0.86 r    (75.67,46.90)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n262 (net)                                                      3      2.70
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_7_2510/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      0.86 r    (76.45,46.90)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_7_2510/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.02      0.88 f    (77.02,47.02)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_176 (net)                                              1      1.70
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3041/A1 (SAEDLVT14_ND2_1)                                             0.01      1.00              0.00      0.88 f    (75.97,45.07)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3041/X (SAEDLVT14_ND2_1)                                              0.01      1.00              0.01      0.89 r    (76.00,45.16)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_178 (net)                                              3      2.24
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_5_2508/A1 (SAEDLVT14_NR2_1P5)                                           0.01      1.00              0.00      0.89 r    (74.86,43.26)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_5_2508/X (SAEDLVT14_NR2_1P5)                                            0.01      1.00              0.01      0.90 f    (74.87,43.26)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_179 (net)                                              1      1.42
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_3_2506/A2 (SAEDRVT14_OAI21_4)                                           0.01      1.00              0.00      0.90 f    (75.16,42.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_3_2506/X (SAEDRVT14_OAI21_4)                                            0.01      1.00              0.02      0.92 r    (75.67,42.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n260 (net)                                                      3      2.42
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_3014/A1 (SAEDRVT14_OAI21_4)                                           0.01      1.00              0.00      0.92 r    (76.93,42.07)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_3014/X (SAEDRVT14_OAI21_4)                                            0.02      1.00              0.02      0.94 f    (77.15,42.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_527 (net)                                              1      2.04
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3013/A1 (SAEDRVT14_ND2_5)                                             0.02      1.00              0.00      0.94 f    (77.49,43.36)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3013/X (SAEDRVT14_ND2_5)                                              0.01      1.00              0.01      0.95 r    (77.49,43.42)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n259 (net)                                                      4      3.63
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_3002/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      0.95 r    (79.33,43.30)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_3002/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      0.97 f    (79.91,43.42)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_519 (net)                                              1      1.43
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3001/A1 (SAEDLVT14_ND2_1P5)                                           0.01      1.00              0.00      0.97 f    (78.48,42.16)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3001/X (SAEDLVT14_ND2_1P5)                                            0.01      1.00              0.01      0.98 r    (78.48,42.22)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n258 (net)                                                      3      3.45
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_3012/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      0.98 r    (77.42,39.70)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_3012/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      0.99 f    (76.85,39.82)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_526 (net)                                              1      1.84
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3011/A1 (SAEDRVT14_ND2_MM_3)                                          0.01      1.00              0.00      0.99 f    (79.70,39.70)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3011/X (SAEDRVT14_ND2_MM_3)                                           0.01      1.00              0.01      1.01 r    (80.01,39.76)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n257 (net)                                                      3      2.53
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_10_2998/A1 (SAEDRVT14_OAI21_4)                                          0.01      1.00              0.00      1.01 r    (82.41,40.87)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_10_2998/X (SAEDRVT14_OAI21_4)                                           0.01      1.00              0.02      1.02 f    (82.63,40.90)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_451 (net)                                              2      1.64
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_3053/A (SAEDRVT14_INV_S_1P5)                                          0.01      1.00              0.00      1.02 f    (82.63,41.51)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_3053/X (SAEDRVT14_INV_S_1P5)                                          0.01      1.00              0.01      1.03 r    (82.70,41.51)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_550 (net)                                              1      0.68
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3052/A2 (SAEDLVT14_OAI21_0P5)                                         0.01      1.00              0.00      1.03 r    (82.93,42.15)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3052/X (SAEDLVT14_OAI21_0P5)                                          0.02      1.00              0.02      1.05 f    (83.11,42.12)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_454 (net)                                              1      0.95
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_7_2889/A1 (SAEDRVT14_ND2_MM_3)                                          0.02      1.00              0.00      1.05 f    (83.55,42.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_7_2889/X (SAEDRVT14_ND2_MM_3)                                           0.02      1.00              0.02      1.07 r    (83.86,42.16)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n255 (net)                                                      4      4.62
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2473/A1 (SAEDRVT14_OAI21_V1_4)                                        0.02      1.00              0.00      1.07 r    (84.89,40.90)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2473/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      1.08 f    (84.32,41.02)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_146 (net)                                              1      1.23
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_8_2472/A1 (SAEDRVT14_ND2_MM_2)                                          0.01      1.00              0.00      1.08 f    (84.54,39.76)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_8_2472/X (SAEDRVT14_ND2_MM_2)                                           0.01      1.00              0.01      1.10 r    (84.48,39.73)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_148 (net)                                              3      1.97
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8967/C1 (SAEDLVT14_OA222_2)                         0.01      1.00              0.00      1.10 r    (84.76,37.90)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8967/X (SAEDLVT14_OA222_2)                          0.01      1.00              0.04      1.13 r    (86.04,37.90)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n253 (net)                                                      4      5.39
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2840/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      1.13 r    (86.07,42.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2840/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      1.15 f    (86.64,42.22)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_413 (net)                                              1      1.99
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2839/A1 (SAEDRVT14_ND2_5)                                             0.01      1.00              0.00      1.15 f    (86.74,40.24)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2839/X (SAEDRVT14_ND2_5)                                              0.01      1.00              0.01      1.16 r    (86.74,40.18)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n252 (net)                                                      4      4.30
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_10_2752/A1 (SAEDRVT14_OAI21_V1_4)                                       0.01      1.00              0.00      1.16 r    (87.47,37.30)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_10_2752/X (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.01      1.17 f    (88.05,37.42)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_349 (net)                                              1      1.22
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2751/A1 (SAEDLVT14_ND2_1P5)                                           0.01      1.00              0.00      1.17 f    (88.77,37.84)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2751/X (SAEDLVT14_ND2_1P5)                                            0.01      1.00              0.02      1.19 r    (88.77,37.78)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_351 (net)                                              4      4.01
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_3032/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      1.19 r    (90.22,37.90)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_3032/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      1.20 f    (89.65,37.78)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_540 (net)                                              1      1.83
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3045/A1 (SAEDLVT14_ND2_1)                                             0.01      1.00              0.00      1.20 f    (93.44,37.33)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3045/X (SAEDLVT14_ND2_1)                                              0.01      1.00              0.01      1.21 r    (93.47,37.24)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n250 (net)                                                      1      1.10
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/U82/A (SAEDRVT14_ADDF_V1_2)                                                      0.01      1.00              0.00      1.21 r    (94.71,37.18)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/U82/CO (SAEDRVT14_ADDF_V1_2)                                                     0.01      1.00              0.04      1.25 r    (95.73,37.30)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n249 (net)                                                      4      2.94
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2620/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      1.25 r    (95.39,35.50)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2620/X (SAEDRVT14_OAI21_V1_4)                                         0.02      1.00              0.02      1.27 f    (95.96,35.38)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_260 (net)                                              1      2.34
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2619/A1 (SAEDRVT14_ND2_CDC_4)                                         0.02      1.00              0.00      1.27 f    (94.19,34.85)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2619/X (SAEDRVT14_ND2_CDC_4)                                          0.01      1.00              0.02      1.28 r    (94.17,35.02)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n248 (net)                                                      3      3.65
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2455/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      1.28 r    (89.32,36.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2455/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      1.30 f    (89.90,36.22)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_131 (net)                                              1      1.59
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3039/A1 (SAEDRVT14_ND2_MM_2)                                          0.01      1.00              0.00      1.30 f    (88.46,34.96)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_3039/X (SAEDRVT14_ND2_MM_2)                                           0.01      1.00              0.02      1.31 r    (88.41,34.93)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_133 (net)                                              3      2.57
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8988/A1 (SAEDLVT14_OAI21_1P5)                       0.01      1.00              0.00      1.31 r    (87.07,34.29)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8988/X (SAEDLVT14_OAI21_1P5)                        0.02      1.00              0.02      1.33 f    (87.25,34.28)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/tmp_net2047 (net)                                               1      1.49
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8987/A2 (SAEDRVT14_ND2_CDC_4)                       0.02      1.00              0.00      1.33 f    (87.07,33.76)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8987/X (SAEDRVT14_ND2_CDC_4)                        0.01      1.00              0.02      1.34 r    (87.07,33.82)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n246 (net)                                                      4      3.61
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_10_2673/A1 (SAEDLVT14_OAI21_2)                                          0.01      1.00              0.00      1.34 r    (87.22,32.52)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_10_2673/X (SAEDLVT14_OAI21_2)                                           0.01      1.00              0.01      1.36 f    (87.40,32.52)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_295 (net)                                              1      0.62
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2672/A2 (SAEDLVT14_ND2_CDC_2)                                         0.01      1.00              0.00      1.36 f    (87.79,32.56)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2672/X (SAEDLVT14_ND2_CDC_2)                                          0.01      1.00              0.01      1.37 r    (87.96,32.54)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_297 (net)                                              3      2.00
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_8_2671/A1 (SAEDLVT14_OAI21_2)                                           0.01      1.00              0.00      1.37 r    (88.70,32.52)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_8_2671/X (SAEDLVT14_OAI21_2)                                            0.01      1.00              0.01      1.38 f    (88.52,32.52)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_298 (net)                                              1      1.19
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_7_2670/A1 (SAEDRVT14_ND2_MM_2)                                          0.01      1.00              0.00      1.38 f    (88.46,31.36)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_7_2670/X (SAEDRVT14_ND2_MM_2)                                           0.01      1.00              0.02      1.39 r    (88.41,31.33)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n244 (net)                                                      3      2.84
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2703/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      1.39 r    (87.84,29.50)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2703/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      1.41 f    (88.42,29.38)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_316 (net)                                              1      1.22
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2702/A1 (SAEDLVT14_ND2_1P5)                                           0.01      1.00              0.00      1.41 f    (89.30,28.24)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2702/X (SAEDLVT14_ND2_1P5)                                            0.01      1.00              0.01      1.42 r    (89.30,28.18)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n243 (net)                                                      3      2.77
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2601/A1 (SAEDRVT14_ND2_1)                                             0.01      1.00              0.00      1.42 r    (90.03,27.07)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2601/X (SAEDRVT14_ND2_1)                                              0.01      1.00              0.01      1.43 f    (90.00,27.16)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_247 (net)                                              1      1.32
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2600/A2 (SAEDLVT14_ND2_MM_3)                                          0.01      1.00              0.00      1.43 f    (89.81,26.44)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2600/X (SAEDLVT14_ND2_MM_3)                                           0.01      1.00              0.01      1.44 r    (90.06,26.56)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_236 (net)                                              3      3.41
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8999/A1 (SAEDRVT14_OAI21_V1_4)                      0.01      1.00              0.00      1.44 r    (90.51,24.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_2_8999/X (SAEDRVT14_OAI21_V1_4)                       0.01      1.00              0.01      1.46 f    (91.08,24.22)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/tmp_net2049 (net)                                               1      1.46
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8998/A2 (SAEDRVT14_ND2_CDC_4)                       0.01      1.00              0.00      1.46 f    (90.48,23.44)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_8998/X (SAEDRVT14_ND2_CDC_4)                        0.01      1.00              0.01      1.47 r    (90.47,23.38)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n241 (net)                                                      3      2.57
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2726/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      1.47 r    (91.47,23.50)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2726/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      1.48 f    (92.04,23.38)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_332 (net)                                              1      0.95
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2725/A1 (SAEDLVT14_ND2_1)                                             0.01      1.00              0.00      1.48 f    (92.62,22.27)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2725/X (SAEDLVT14_ND2_1)                                              0.01      1.00              0.01      1.49 r    (92.59,22.36)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n240 (net)                                                      3      2.47
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_8_2732/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      1.49 r    (93.76,21.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_8_2732/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      1.51 f    (94.34,20.98)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_194 (net)                                              1      0.89
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2636/A1 (SAEDLVT14_ND2_MM_1)                                          0.01      1.00              0.00      1.51 f    (94.99,22.23)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2636/X (SAEDLVT14_ND2_MM_1)                                           0.01      1.00              0.01      1.52 r    (95.06,22.26)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_196 (net)                                              3      1.73
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2882/A2 (SAEDLVT14_ND2_CDC_0P5)                                       0.01      1.00              0.00      1.52 r    (95.14,22.98)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2882/X (SAEDLVT14_ND2_CDC_0P5)                                        0.01      1.00              0.01      1.53 f    (95.17,22.90)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_198 (net)                                              1      1.20
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_9005/A1 (SAEDLVT14_ND2_MM_1)                        0.01      1.00              0.00      1.53 f    (94.55,23.43)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_9005/X (SAEDLVT14_ND2_MM_1)                         0.01      1.00              0.01      1.54 r    (94.62,23.46)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n238 (net)                                                      1      1.17
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/U70/A (SAEDRVT14_ADDF_V1_2)                                                      0.01      1.00              0.00      1.54 r    (93.79,23.62)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/U70/CO (SAEDRVT14_ADDF_V1_2)                                                     0.01      1.00              0.04      1.58 r    (92.77,23.50)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n237 (net)                                                      1      2.00
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/U69/A (SAEDRVT14_ADDF_V1_2)                                                      0.01      1.00              0.00      1.58 r    (92.64,28.42)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/U69/CO (SAEDRVT14_ADDF_V1_2)                                                     0.01      1.00              0.04      1.62 r    (93.66,28.30)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n236 (net)                                                      3      2.97
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2734/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      1.62 r    (93.48,31.30)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2734/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      1.63 f    (92.91,31.42)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_337 (net)                                              1      1.32
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2959/A1 (SAEDRVT14_ND2_MM_3)                                          0.01      1.00              0.00      1.63 f    (94.28,31.90)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2959/X (SAEDRVT14_ND2_MM_3)                                           0.01      1.00              0.01      1.65 r    (94.59,31.84)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n235 (net)                                                      3      2.90
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2639/A1 (SAEDRVT14_OAI21_4)                                           0.01      1.00              0.00      1.65 r    (95.51,33.13)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2639/X (SAEDRVT14_OAI21_4)                                            0.01      1.00              0.02      1.66 f    (95.73,33.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_271 (net)                                              1      1.80
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2638/A1 (SAEDRVT14_ND2_5)                                             0.01      1.00              0.00      1.66 f    (96.73,33.04)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2638/X (SAEDRVT14_ND2_5)                                              0.01      1.00              0.01      1.68 r    (96.73,32.98)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n234 (net)                                                      3      3.58
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_10_2647/A1 (SAEDLVT14_OAI21_2)                                          0.01      1.00              0.00      1.68 r    (101.58,34.28)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_10_2647/X (SAEDLVT14_OAI21_2)                                           0.01      1.00              0.01      1.69 f    (101.75,34.28)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_202 (net)                                              1      0.91
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_6_2544/A1 (SAEDLVT14_ND2_1)                                             0.01      1.00              0.00      1.69 f    (101.58,35.47)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_6_2544/X (SAEDLVT14_ND2_1)                                              0.01      1.00              0.01      1.70 r    (101.61,35.56)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_204 (net)                                              3      1.81
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2547/A2 (SAEDRVT14_ND2_CDC_0P5)                                       0.01      1.00              0.00      1.70 r    (101.35,36.62)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_9_2547/X (SAEDRVT14_ND2_CDC_0P5)                                        0.02      1.00              0.02      1.72 f    (101.32,36.70)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_206 (net)                                              1      1.33
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_9013/A1 (SAEDLVT14_ND2_CDC_2)                       0.02      1.00              0.00      1.72 f    (100.33,36.76)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_9013/X (SAEDLVT14_ND2_CDC_2)                        0.01      1.00              0.02      1.73 r    (100.32,36.66)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n232 (net)                                                      3      2.45
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2973/A1 (SAEDLVT14_OAI21_2)                                           0.01      1.00              0.00      1.73 r    (98.39,36.68)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2973/X (SAEDLVT14_OAI21_2)                                            0.01      1.00              0.01      1.75 f    (98.22,36.68)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_499 (net)                                              1      1.35
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2972/A1 (SAEDLVT14_ND2_MM_2)                                          0.01      1.00              0.00      1.75 f    (97.52,38.56)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_1_2972/X (SAEDLVT14_ND2_MM_2)                                           0.01      1.00              0.01      1.76 r    (97.58,38.53)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n231 (net)                                                      3      2.83
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_7_2521/A1 (SAEDRVT14_OAI21_V1_4)                                        0.01      1.00              0.00      1.76 r    (96.13,40.30)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_7_2521/X (SAEDRVT14_OAI21_V1_4)                                         0.01      1.00              0.01      1.77 f    (96.70,40.18)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_184 (net)                                              1      1.09
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_6_2520/A1 (SAEDLVT14_ND2_1)                                             0.01      1.00              0.00      1.77 f    (97.88,40.93)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_6_2520/X (SAEDLVT14_ND2_1)                                              0.01      1.00              0.01      1.78 r    (97.84,40.84)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_186 (net)                                              4      1.77
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2597/A2 (SAEDLVT14_ND2_CDC_0P5)                                       0.01      1.00              0.00      1.78 r    (97.95,42.18)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/ctmTdsLR_2_2597/X (SAEDLVT14_ND2_CDC_0P5)                                        0.01      1.00              0.01      1.79 f    (97.99,42.10)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/popt_net_245 (net)                                              1      1.24
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_9015/A1 (SAEDLVT14_ND2_CDC_2)                       0.01      1.00              0.00      1.79 f    (99.22,42.04)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_9015/X (SAEDLVT14_ND2_CDC_2)                        0.01      1.00              0.01      1.81 r    (99.21,42.14)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/n229 (net)                                                      3      2.98
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_9017/A1 (SAEDRVT14_EO2_2)                           0.01      1.00              0.00      1.81 r    (99.99,43.24)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/clock_opt_cts_opt_ctmTdsLR_1_9017/X (SAEDRVT14_EO2_2)                            0.02      1.00              0.05      1.86 f    (100.39,43.29)
+  fpu_div/fpu_div_frac_dp/DP_OP_6J2_132_746/O1[52] (net)                                                    3      6.85
+  fpu_div/fpu_div_frac_dp/U206/A (SAEDRVT14_INV_S_6)                                                                         0.02      1.00              0.00      1.86 f    (113.48,47.98)
+  fpu_div/fpu_div_frac_dp/U206/X (SAEDRVT14_INV_S_6)                                                                         0.01      1.00              0.02      1.87 r    (113.49,48.22)
+  fpu_div/fpu_div_frac_dp/div_frac_add_52_inv (net)                                                         3      6.59
+  fpu_div/fpu_div_exp_dp/clock_opt_cts_opt_ctmTdsLR_2_9019/A2 (SAEDLVT14_ND2_CDC_2)                                          0.01      1.00              0.00      1.87 r    (115.24,69.04)
+  fpu_div/fpu_div_exp_dp/clock_opt_cts_opt_ctmTdsLR_2_9019/X (SAEDLVT14_ND2_CDC_2)                                           0.02      1.00              0.01      1.88 f    (115.41,69.06)
+  fpu_div/fpu_div_exp_dp/tmp_net2054 (net)                                                                  1      1.53
+  fpu_div/fpu_div_exp_dp/clock_opt_cts_opt_ctmTdsLR_1_9018/A2 (SAEDRVT14_ND2_CDC_4)                                          0.02      1.00              0.00      1.88 f    (116.08,68.56)
+  fpu_div/fpu_div_exp_dp/clock_opt_cts_opt_ctmTdsLR_1_9018/X (SAEDRVT14_ND2_CDC_4)                                           0.01      1.00              0.02      1.90 r    (116.08,68.62)
+  fpu_div/fpu_div_exp_dp/n171 (net)                                                                         8      5.83
+  fpu_div/fpu_div_exp_dp/U15/B (SAEDLVT14_NR2B_4)                                                                            0.01      1.00              0.00      1.90 r    (113.05,73.23)
+  fpu_div/fpu_div_exp_dp/U15/X (SAEDLVT14_NR2B_4)                                                                            0.01      1.00              0.03      1.93 f    (113.56,73.30)
+  fpu_div/fpu_div_exp_dp/n145 (net)                                                                         5      3.79
+  fpu_div/fpu_div_exp_dp/U35/A (SAEDRVT14_INV_2)                                                                             0.01      1.00              0.00      1.93 f    (112.60,75.69)
+  fpu_div/fpu_div_exp_dp/U35/X (SAEDRVT14_INV_2)                                                                             0.01      1.00              0.01      1.94 r    (112.68,75.69)
+  fpu_div/fpu_div_exp_dp/n160 (net)                                                                         3      2.18
+  fpu_div/fpu_div_exp_dp/U10/D0 (SAEDRVT14_MUX2_1)                                                                           0.01      1.00              0.00      1.94 r    (113.86,76.82)
+  fpu_div/fpu_div_exp_dp/U10/X (SAEDRVT14_MUX2_1)                                                                            0.01      1.00              0.03      1.97 r    (114.38,76.90)
+  fpu_div/fpu_div_exp_dp/n155 (net)                                                                         1      1.24
+  fpu_div/fpu_div_exp_dp/U8/A3 (SAEDRVT14_ND3_2)                                                                             0.01      1.00              0.00      1.97 r    (115.60,76.24)
+  fpu_div/fpu_div_exp_dp/U8/X (SAEDRVT14_ND3_2)                                                                              0.01      1.00              0.03      2.01 f    (115.91,76.30)
+  fpu_div/fpu_div_exp_dp/div_exp_out_in[7] (net)                                                            1      1.43
+  fpu_div/fpu_div_exp_dp/i_div_exp_out/U24/A (SAEDRVT14_INV_S_1P5)                                                           0.01      1.00              0.00      2.01 f    (115.49,78.71)
+  fpu_div/fpu_div_exp_dp/i_div_exp_out/U24/X (SAEDRVT14_INV_S_1P5)                                                           0.00      1.00              0.01      2.01 r    (115.41,78.71)
+  fpu_div/fpu_div_exp_dp/i_div_exp_out/n27 (net)                                                            1      0.68
+  fpu_div/fpu_div_exp_dp/i_div_exp_out/U3/A1 (SAEDLVT14_NR2_1)                                                               0.00      1.00              0.00      2.01 r    (115.34,80.42)
+  fpu_div/fpu_div_exp_dp/i_div_exp_out/U3/X (SAEDLVT14_NR2_1)                                                                0.04      1.00              0.01      2.03 f    (115.30,80.48)
+  fpu_div/fpu_div_exp_dp/i_div_exp_out/N11 (net)                                                            1      1.88
+  fpu_div/fpu_div_exp_dp/i_div_exp_out/q_reg_7_/D (SAEDRVT14_FSDPQ_V2LP_1)                                                   0.04      1.00              0.00      2.03 f    (115.49,85.89)    s, n
+  data arrival time                                                                                                                                                2.03
+
+  clock gclk (rise edge)                                                                                                                                 1.67      1.67
+  clock network delay (propagated)                                                                                                                       0.39      2.06
+  fpu_div/fpu_div_exp_dp/i_div_exp_out/q_reg_7_/CK (SAEDRVT14_FSDPQ_V2LP_1)                                                  0.05      1.00              0.00      2.06 r    (116.68,85.90)    s, n
+  library setup time                                                                                                                   1.00             -0.04      2.02
+  data required time                                                                                                                                               2.02
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  data required time                                                                                                                                               2.02
+  data arrival time                                                                                                                                               -2.03
+  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                                                                                -0.01
+
+
+1

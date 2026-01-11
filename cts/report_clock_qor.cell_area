@@ -1,0 +1,139 @@
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+Information: Timer using 1 threads
+Information: Top design (Reference: fpu/cts.design) is treated as modifiable. (HOPT-001)
+Information: 2 sub-block instances are treated as non-modifiable. (HOPT-003)
+****************************************
+Report : report clock qor
+        -type area
+        -nosplit
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:57:24 2025
+****************************************
+
+
+==========================
+==== Area (per clock) ====
+==========================
+
+Clock                                 Sinks          Clock          Clock          Clock          Clock          Sinks           Sink
+                                 (balanced)     Cell Count        Stdcell       Repeater       Repeater     (physical)        Stdcell          Macro
+                                                (non sink)           Area          Count           Area                          Area           Area
+------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: turbo_mode
+gclk                                   2144            207         118.50             59          20.07           2144        2376.38           0.00
+
+### Mode: func_mode
+gclk                                   2144            207         118.50             59          20.07           2144        2376.38           0.00
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                  2144            207         118.50             59          20.07           2144        2376.38           0.00
+
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+
+
+=================================
+==== Area (per library cell) ====
+=================================
+
+===== Summary =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+Clock Repeaters                          59              -          20.07              -              -              -
+Other Network Cells                     148              -          98.43              -              -              -
+Standard Cell Sinks                    2144              -        2376.38              -              -              -
+Macro Cells                               0              -           0.00              -              -              -
+
+===== Clock Repeaters =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+SAEDLVT14_BUF_4                           2           0.40           0.80         Buffer              -              -
+SAEDLVT14_BUF_16                          1           1.07           1.07         Buffer              -              -
+SAEDLVT14_BUF_S_2                         1           0.31           0.31         Buffer              -              -
+SAEDLVT14_BUF_S_4                         1           0.40           0.40         Buffer              -              -
+SAEDLVT14_BUF_S_6                         1           0.49           0.49         Buffer              -              -
+SAEDLVT14_BUF_S_12                        1           0.84           0.84         Buffer              -              -
+SAEDLVT14_BUF_U_0P5                       7           0.27           1.86         Buffer              -              -
+SAEDLVT14_DEL_R2V1_2                      1           0.36           0.36         Buffer              -              -
+SAEDRVT14_BUF_1P5                        29           0.31           9.01         Buffer              -              -
+SAEDRVT14_BUF_S_0P5                       1           0.27           0.27         Buffer              -              -
+SAEDRVT14_BUF_S_1P5                       1           0.31           0.31         Buffer              -              -
+SAEDRVT14_BUF_U_0P5                       3           0.27           0.80         Buffer              -              -
+SAEDRVT14_DEL_R2V1_2                     10           0.36           3.55         Buffer              -              -
+------------------------------------------------------------------------------------------------------------------------
+Total                                    59              -          20.07              -              -              -
+
+===== Other Network Cells =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+SAEDLVT14_AN2_4                           1           0.53           0.53  Combinational              -              -
+SAEDLVT14_AN2_8                           1           0.89           0.89  Combinational              -              -
+SAEDLVT14_AN2_8                           2           0.89           1.78  Combinational              -              -
+SAEDLVT14_AN2_MM_1                        1           0.31           0.31  Combinational              -              -
+SAEDLVT14_AN2_MM_3                        1           0.40           0.40  Combinational              -              -
+SAEDLVT14_AN2_MM_6                        1           0.62           0.62  Combinational              -              -
+SAEDLVT14_AN2_MM_8                        2           0.80           1.60  Combinational              -              -
+SAEDLVT14_AN2_MM_12                       1           1.07           1.07  Combinational              -              -
+SAEDLVT14_BUF_1P5                         2           0.31           0.62         Buffer              -              -
+SAEDLVT14_BUF_ECO_2                       1           0.49           0.49         Buffer              -              -
+SAEDLVT14_BUF_S_1P5                       6           0.31           1.86         Buffer              -              -
+SAEDLVT14_BUF_S_6                         1           0.49           0.49         Buffer              -              -
+SAEDLVT14_BUF_U_0P5                       6           0.27           1.60         Buffer              -              -
+SAEDLVT14_DEL_R2V1_2                      3           0.36           1.07         Buffer              -              -
+SAEDLVT14_INV_S_1                         1           0.18           0.18       Inverter              -              -
+SAEDLVT14_INV_S_1P5                       1           0.22           0.22       Inverter              -              -
+SAEDLVT14_INV_S_6                         1           0.40           0.40       Inverter              -              -
+SAEDLVT14_LVLUBUF_IY2_2                   1           4.17           4.17  Level shifter              -              -
+SAEDRVT14_AN2_MM_0P5                      1           0.31           0.31  Combinational              -              -
+SAEDRVT14_BUF_1P5                        13           0.31           4.04         Buffer              -              -
+SAEDRVT14_BUF_20                          2           1.29           2.58         Buffer              -              -
+SAEDRVT14_BUF_S_1P5                       1           0.31           0.31         Buffer              -              -
+SAEDRVT14_BUF_S_3                         2           0.40           0.80         Buffer              -              -
+SAEDRVT14_BUF_U_0P5                       2           0.27           0.53         Buffer              -              -
+SAEDRVT14_CKGTPLT_V5_1                   86           0.80          68.73            ICG              -              -
+SAEDRVT14_DEL_R2V1_2                      8           0.36           2.84         Buffer              -              -
+------------------------------------------------------------------------------------------------------------------------
+Total                                   148              -          98.43              -              -              -
+
+===== Standard Cell Sinks =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+SAEDLVT14_FSDPQ_V2LP_1                    2           1.11           2.22           Flop              -              -
+SAEDLVT14_FSDPQ_V2LP_2                    1           1.15           1.15           Flop              -              -
+SAEDLVT14_FSDPQ_V2_1                      1           1.11           1.11           Flop              -              -
+SAEDRVT14_FSDPQ_V2LP_1                 2123           1.11        2356.53           Flop              -              -
+SAEDRVT14_FSDPQ_V2LP_2                    1           1.15           1.15           Flop              -              -
+SAEDRVT14_FSDPQ_V2_0P5                    1           1.11           1.11           Flop              -              -
+SAEDRVT14_FSDPRBQ_V2LP_1                  5           1.29           6.44           Flop              -              -
+SAEDRVT14_LDNQ_V1_1                      10           0.67           6.66          Latch              -              -
+------------------------------------------------------------------------------------------------------------------------
+Total                                  2144              -        2376.38              -              -              -
+
+===== Macro Cells =====
+Type                               Instance           Unit          Total           Cell             Vt             Vt
+                                      Count           Area           Area           Type          Group           Type
+------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
+Total                                     0              -           0.00              -              -              -
+
+
+
+==============================
+==== Area (per hierarchy) ====
+==============================
+
+Hierarchy                             Sinks          Clock          Clock          Clock          Clock          Sinks           Sink
+                                 (balanced)     Cell Count        Stdcell       Repeater       Repeater     (physical)        Stdcell          Macro
+                                                (non sink)           Area          Count           Area                          Area           Area
+------------------------------------------------------------------------------------------------------------------------------------------------------
+fpu                                    1350             95          48.97             57          19.40           1350        1496.86           0.00
+ fpu_mul                                302             49          34.37              1           0.27            302         334.11           0.00
+ fpu_add                                492             63          35.16              1           0.40            492         545.41           0.00
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Total                                  2144            207         118.50             59          20.07           2144        2376.38           0.00
+
+1

@@ -1,0 +1,43 @@
+****************************************
+Report : constraint
+        -all_violators
+        -max_transition
+        -max_capacitance
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:57:18 2025
+****************************************
+
+
+
+   Mode: func_mode Corner: ss0p6v125c
+   Scenario: func_mode::ss0p6v125c
+   max_transition                                                              
+                             Required        Actual                            
+   Net                      Transition     Transition        Slack  Violation  
+  ---------------------------------------------------------------------------
+   i_fpu_inq_sram/HFSNET_228     0.10          0.10          -0.00  (VIOLATED) 
+     PIN : i_fpu_inq_sram/U1771/A1     0.10     0.10         -0.00  (VIOLATED) 
+     PIN : i_fpu_inq_sram/U2348/A1     0.10     0.10         -0.00  (VIOLATED) 
+
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 1
+
+   Mode: turbo_mode Corner: ss0p6vm40c
+   Scenario: turbo_mode::ss0p6vm40c
+  ---------------------------------------------------------------------------
+   Number of max_transition violation(s): 0
+
+   Mode: func_mode Corner: ss0p6v125c
+   Scenario: func_mode::ss0p6v125c
+   max_capacitance                                                             
+                             Required        Actual                            
+   Net                      Capacitance    Capacitance       Slack  Violation  
+  ---------------------------------------------------------------------------
+   fpu_div/fpu_div_frac_dp/n406     8.00       6.82           1.18  (MET)      
+
+  ---------------------------------------------------------------------------
+   Number of max_capacitance violation(s): 0
+
+   Total number of violation(s): 1
+1

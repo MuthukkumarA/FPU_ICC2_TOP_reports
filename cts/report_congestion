@@ -1,0 +1,749 @@
+
+Running global router for congestion map ...
+Info: Set app option 'route.global.deterministic' to on
+
+Generating Timing information  
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Design  Scenario func_mode::ss0p6v125c (Mode func_mode Corner ss0p6v125c)
+Generating Timing information  ... Done
+[End of Generating Timing Information] Elapsed real time: 0:00:01 
+[End of Generating Timing Information] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+Start Global Route ... 
+[Init] Elapsed real time: 0:00:00 
+[Init] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[Init] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[Init] Total (MB): Used    7  Alloctr    8  Proc 18065 
+Printing options for 'route.common.*'
+common.verbose_level                                    :	 0                   
+
+Printing options for 'route.global.*'
+global.deterministic                                    :	 on                  
+global.timing_driven                                    :	 true                
+
+Begin global routing.
+Cell Min-Routing-Layer = M1
+Cell Max-Routing-Layer = MRDL
+Turn off antenna since no rule is specified
+Information: Option route.detail.force_end_on_preferred_grid will be ignored since none of the layers have preferred grid. (ZRT-703)
+rule rm_leaf equivalent to default rule
+Warning: The step 0.037 of vertical track TRACK_0 is less than the pitch 0.074 of layer M1. (ZRT-642)
+Warning: 6184 vertical tracks are found in area (0, 0, 229.938, 260) of layer M1. The quantity of tracks is unreasonably high. (ZRT-642)
+Skipping 1 internal pins that are not physical. Set route.common.verbose_level to > 0 and run routing command to get skipped pin names.
+Info: number of net_type_blockage: 0 
+Information: Via ladder engine would be activated for pattern must join connection in certain commands. Please refer to man-page for the command list. (ZRT-619)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M1 pitch 0.074 may be too small: wire/via-down 0.074, wire/via-up 0.098. (ZRT-026)
+Via on layer (VIA1) needs more than one tracks
+Warning: Layer M2 pitch 0.060 may be too small: wire/via-down 0.098, wire/via-up 0.060. (ZRT-026)
+Via on layer (VIA3) needs more than one tracks
+Warning: Layer M3 pitch 0.074 may be too small: wire/via-down 0.060, wire/via-up 0.080. (ZRT-026)
+Wire on layer (M4) needs more than one tracks
+Via on layer (VIA3) needs more than one tracks
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M4 pitch 0.074 may be too small: wire/via-down 0.107, wire/via-up 0.105. (ZRT-026)
+Via on layer (VIA4) needs more than one tracks
+Warning: Layer M5 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 0.107. (ZRT-026)
+Via on layer (VIA8) needs more than one tracks
+Warning: Layer M8 pitch 0.120 may be too small: wire/via-down 0.107, wire/via-up 0.135. (ZRT-026)
+Wire on layer (M9) needs more than one tracks
+Via on layer (VIA8) needs more than one tracks
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer M9 pitch 0.120 may be too small: wire/via-down 0.135, wire/via-up 1.570. (ZRT-026)
+Via on layer (VIARDL) needs more than one tracks
+Warning: Layer MRDL pitch 0.600 may be too small: wire/via-down 4.500, wire/via-up 0.600. (ZRT-026)
+Transition layer name: M3(2)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 0.98 outside the layer range. (ZRT-707)
+Information: When applicable Min-max layer allow_pin_connection mode will allow paths of length 0.98 outside the layer range on clock nets. (ZRT-718)
+Information: When applicable layer based tapering will taper up to 0.00 in distance from the pin. (ZRT-706)
+Warning: Standard cell pin SAEDRVT14_OR2B_PSECO_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOI21_1P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOI21_1P5/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_ADDH_0P5/CO has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OA21_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_MUXI2_U_0P5/D1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_PS_1P5/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_PS_3/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_PS_6/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_DEL_PR2V2_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI21_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI21_2/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI222_1/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI222_1/C1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2_2/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI33_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI33_1/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_INV_PECO_12/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_2/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_INV_PECO_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_INV_PECO_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_ADDH_0P5/CO has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_INV_PECO_4/VDD has no valid via regions. (ZRT-044)
+Warning: Via regions for port SAEDRVT14_OA33_U_0P5/A2 may block other ports completely. (ZRT-045)
+Warning: Via regions for port SAEDRVT14_OA33_U_0P5/A1 may block other ports completely. (ZRT-045)
+Warning: Standard cell pin SAEDLVT14_INV_PECO_8/VDD has no valid via regions. (ZRT-044)
+Warning: Via regions for port SAEDRVT14_OA33_U_0P5/A2 may block other ports completely. (ZRT-045)
+Warning: Via regions for port SAEDRVT14_OA33_U_0P5/A1 may block other ports completely. (ZRT-045)
+Warning: Standard cell pin SAEDLVT14_INV_PS_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_INV_PS_3/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_INV_PS_6/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA21_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_1/VDDH has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PECO_12/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA21_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PECO_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PECO_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PECO_4/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2B_U_0P5/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2B_0P75/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PECO_8/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PS_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI311_1/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PS_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PS_3/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OA221_1/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OA221_U_0P5/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OA221_U_0P5/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_INV_PS_6/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_ND2B_U_0P5/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OR2B_PMM_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI311_4/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_1P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_1P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO221_1/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_ND2_0P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_ND2_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_MUX3_V1M_1/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_LVLUBUF_IY2_2/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AN3_0P75/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLUBUF_IY2_1/VDDL has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_EO2_V1_0P75/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_EO2_V1_0P75/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA221_1/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_EO2_0P5/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_EO2_0P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA21_4/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA32_U_0P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA32_U_0P5/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_EO2_MM_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_MM_3/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_ND2_0P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA221_U_0P5/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA221_U_0P5/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO32_1/A3 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA221_2/C has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA221_2/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO221_0P5/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_ND2B_U_0P5/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2B_1P5/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI22_0P75/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AN4_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AN2_MM_4/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_ND2B_1/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI22_0P75/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_S_1P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_S_1P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_ECO_1/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI21_1P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI21_1P5/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_FSDPQ_V2LP_1/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_ECO_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_AN2_8/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_AN2_8/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2_ECO_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_MUXI2_U_0P5/D1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI21_1P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI21_1P5/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2B_0P75/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2_1P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2_1P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_PS_3/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_PS_1P5/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_EO2_1/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_PS_0P75/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_INV_PS_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_PECO_4/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_NR2B_1P5/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_PECO_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_3/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA31_1/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA31_1/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_LVLDBUF_IY2V1_2/VDDH has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AOI22_1P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_PECO_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_S_4/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_ECO_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_PECO_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_ND2B_0P75/B has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI22_2/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OA2BB2_V1_0P75/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_PECO_8/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_PECO_12/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_PECO_4/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_PECO_12/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_PS_6/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_EO2_0P5/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_EO2_0P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_PECO_2/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_OAI22_0P5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO211_1/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO211_1/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO211_1/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_ND2_1/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_PECO_8/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO2BB2_V1_0P5/A2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR2_5/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_DEL_PR2V2_1/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_PS_0P75/VDD has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_ADDF_V2_1/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO211_U_0P5/B1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO211_U_0P5/B2 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_AO211_U_0P5/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_FSDPQ_V2LP_1/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_FSDPQ_V2LP_2/Q has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_BUF_S_4/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_BUF_ECO_1/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDRVT14_NR3B_U_0P5/A has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_AN3_0P75/X has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI21_2/A1 has no valid via regions. (ZRT-044)
+Warning: Standard cell pin SAEDLVT14_OAI21_2/B has no valid via regions. (ZRT-044)
+Current Stage stats:
+[End of Read DB] Elapsed real time: 0:00:00 
+[End of Read DB] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[End of Read DB] Stage (MB): Used  133  Alloctr  135  Proc    8 
+[End of Read DB] Total (MB): Used  140  Alloctr  143  Proc 18073 
+Loading timing information to the router from design
+Timing information loaded to the router.
+[End of Loading Timing] Elapsed real time: 0:00:00 
+[End of Loading Timing] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Constructing data structure ...
+Design statistics:
+Design Bounding Box (0.00um,0.00um,229.94um,260.00um)
+Number of routing layers = 10
+layer M1, dir Ver, min width = 0.034um, min space = 0.026um pitch = 0.074um
+layer M2, dir Hor, min width = 0.034um, min space = 0.026um pitch = 0.06um
+layer M3, dir Ver, min width = 0.034um, min space = 0.026um pitch = 0.074um
+layer M4, dir Hor, min width = 0.06um, min space = 0.04um pitch = 0.074um
+layer M5, dir Ver, min width = 0.06um, min space = 0.04um pitch = 0.12um
+layer M6, dir Hor, min width = 0.06um, min space = 0.04um pitch = 0.12um
+layer M7, dir Ver, min width = 0.06um, min space = 0.04um pitch = 0.12um
+layer M8, dir Hor, min width = 0.06um, min space = 0.04um pitch = 0.12um
+layer M9, dir Ver, min width = 0.06um, min space = 0.04um pitch = 0.12um
+layer MRDL, dir Hor, min width = 2um, min space = 2um pitch = 0.6um
+Current Stage stats:
+[End of Build Tech Data] Elapsed real time: 0:00:00 
+[End of Build Tech Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build Tech Data] Stage (MB): Used    5  Alloctr    5  Proc    0 
+[End of Build Tech Data] Total (MB): Used  150  Alloctr  152  Proc 18073 
+Net statistics:
+Total number of nets     = 16723
+Number of nets to route  = 16620
+Number of single or zero port nets = 39
+Number of nets with min-layer-mode soft = 96
+Number of nets with min-layer-mode soft-cost-medium = 96
+Number of nets with max-layer-mode hard = 96
+7 nets are partially connected,
+ of which 1 are detail routed and 6 are global routed.
+16677 nets are fully connected,
+ of which 64 are detail routed and 16583 are global routed.
+14 nets have non-default rule rm_2w2s
+	 14 non-user-specified nets, 14 non-user-specified clock nets, 0 user-specified nets
+Net length statistics: 
+Net Count(Ignore Fully Rted) 16620, Total Half Perimeter Wire Length (HPWL) 203661 microns
+HPWL   0 ~   50 microns: Net Count    15610	Total HPWL       105820 microns
+HPWL  50 ~  100 microns: Net Count      622	Total HPWL        45582 microns
+HPWL 100 ~  200 microns: Net Count      379	Total HPWL        49484 microns
+HPWL 200 ~  300 microns: Net Count        5	Total HPWL         1126 microns
+HPWL 300 ~  400 microns: Net Count        2	Total HPWL          668 microns
+HPWL 400 ~  500 microns: Net Count        2	Total HPWL          980 microns
+HPWL 500 ~  600 microns: Net Count        0	Total HPWL            0 microns
+HPWL 600 ~  700 microns: Net Count        0	Total HPWL            0 microns
+HPWL 700 ~  800 microns: Net Count        0	Total HPWL            0 microns
+HPWL 800 ~  900 microns: Net Count        0	Total HPWL            0 microns
+HPWL 900 ~ 1000 microns: Net Count        0	Total HPWL            0 microns
+HPWL     > 1000 microns: Net Count        0	Total HPWL            0 microns
+Current Stage stats:
+[End of Build All Nets] Elapsed real time: 0:00:00 
+[End of Build All Nets] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Build All Nets] Stage (MB): Used    0  Alloctr    5  Proc    0 
+[End of Build All Nets] Total (MB): Used  150  Alloctr  158  Proc 18073 
+Number of partitions: 1 (1 x 1)
+Size of partitions: 384 gCells x 434 gCells
+Average gCell capacity  1.27	 on layer (1)	 M1
+Average gCell capacity  5.85	 on layer (2)	 M2
+Average gCell capacity  4.83	 on layer (3)	 M3
+Average gCell capacity  4.82	 on layer (4)	 M4
+Average gCell capacity  2.88	 on layer (5)	 M5
+Average gCell capacity  2.96	 on layer (6)	 M6
+Average gCell capacity  2.98	 on layer (7)	 M7
+Average gCell capacity  2.22	 on layer (8)	 M8
+Average gCell capacity  2.24	 on layer (9)	 M9
+Average gCell capacity  0.60	 on layer (10)	 MRDL
+Average number of tracks per gCell 8.13	 on layer (1)	 M1
+Average number of tracks per gCell 9.99	 on layer (2)	 M2
+Average number of tracks per gCell 8.09	 on layer (3)	 M3
+Average number of tracks per gCell 8.10	 on layer (4)	 M4
+Average number of tracks per gCell 4.99	 on layer (5)	 M5
+Average number of tracks per gCell 5.00	 on layer (6)	 M6
+Average number of tracks per gCell 4.99	 on layer (7)	 M7
+Average number of tracks per gCell 5.00	 on layer (8)	 M8
+Average number of tracks per gCell 4.99	 on layer (9)	 M9
+Average number of tracks per gCell 1.00	 on layer (10)	 MRDL
+Number of gCells = 1666560
+Current Stage stats:
+[End of Build Congestion Map] Elapsed real time: 0:00:01 
+[End of Build Congestion Map] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Build Congestion Map] Stage (MB): Used   18  Alloctr   18  Proc    0 
+[End of Build Congestion Map] Total (MB): Used  169  Alloctr  176  Proc 18073 
+Number of partitions: 1 (1 x 1)
+Size of partitions: 384 gCells x 434 gCells
+Current Stage stats:
+[End of Add Nets Demand] Elapsed real time: 0:00:00 
+[End of Add Nets Demand] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of Add Nets Demand] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Add Nets Demand] Total (MB): Used  169  Alloctr  177  Proc 18073 
+Number of user frozen nets = 0
+Timing criticality report: total 1137 (6.80)% critical nets.
+   Number of criticality 1 nets = 814 (4.87)%
+   Number of criticality 2 nets = 40 (0.24)%
+   Number of criticality 3 nets = 42 (0.25)%
+   Number of criticality 4 nets = 26 (0.16)%
+   Number of criticality 5 nets = 152 (0.91)%
+   Number of criticality 6 nets = 50 (0.30)%
+   Number of criticality 7 nets = 13 (0.08)%
+Information: RC layer preference is turned on for this design. (ZRT-613)
+Total stats:
+[End of Build Data] Elapsed real time: 0:00:01 
+[End of Build Data] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:02
+[End of Build Data] Stage (MB): Used   27  Alloctr   31  Proc    0 
+[End of Build Data] Total (MB): Used  171  Alloctr  178  Proc 18073 
+Number of partitions: 1 (1 x 1)
+Size of partitions: 384 gCells x 434 gCells
+Current Stage stats:
+[End of Blocked Pin Detection] Elapsed real time: 0:00:01 
+[End of Blocked Pin Detection] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Blocked Pin Detection] Stage (MB): Used  177  Alloctr  177  Proc    0 
+[End of Blocked Pin Detection] Total (MB): Used  347  Alloctr  354  Proc 18073 
+Information: Using 4 threads for routing. (ZRT-444)
+Information: Multiple gcell levels ON
+Information: Buffer distance is estimated to be ~271.0000um (451 gCells)
+
+Start GR phase 0
+Number of partitions: 1 (1 x 1)
+Size of partitions: 384 gCells x 434 gCells
+10% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+20% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+30% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+40% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+50% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+60% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+70% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:01
+80% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:01
+90% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:02
+[rtAllBotParts] Elapsed real time: 0:00:08 
+[rtAllBotParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:07 total=0:00:08
+[rtTop] Elapsed real time: 0:00:00 
+[rtTop] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Current Stage stats:
+[End of Initial Routing] Elapsed real time: 0:00:08 
+[End of Initial Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:08 total=0:00:08
+[End of Initial Routing] Stage (MB): Used    9  Alloctr    9  Proc    0 
+[End of Initial Routing] Total (MB): Used  357  Alloctr  364  Proc 18073 
+Initial. Routing result:
+Initial. Both Dirs: Overflow =   458 Max = 4 GRCs =   714 (0.21%)
+Initial. H routing: Overflow =   191 Max = 4 (GRCs =  6) GRCs =   252 (0.15%)
+Initial. V routing: Overflow =   267 Max = 4 (GRCs =  1) GRCs =   462 (0.28%)
+Initial. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M2         Overflow =   170 Max = 4 (GRCs =  5) GRCs =   225 (0.14%)
+Initial. M3         Overflow =   238 Max = 4 (GRCs =  1) GRCs =   414 (0.25%)
+Initial. M4         Overflow =    16 Max = 4 (GRCs =  1) GRCs =    24 (0.01%)
+Initial. M5         Overflow =    19 Max = 3 (GRCs =  1) GRCs =    38 (0.02%)
+Initial. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M7         Overflow =     2 Max = 1 (GRCs =  3) GRCs =     3 (0.00%)
+Initial. M8         Overflow =     4 Max = 2 (GRCs =  1) GRCs =     3 (0.00%)
+Initial. M9         Overflow =     8 Max = 2 (GRCs =  1) GRCs =     7 (0.00%)
+Initial. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Overflow over macro areas
+
+Initial. Both Dirs: Overflow =    33 Max =  4 GRCs =    39 (0.03%)
+Initial. H routing: Overflow =     1 Max =  1 (GRCs =  1) GRCs =     1 (0.00%)
+Initial. V routing: Overflow =    32 Max =  4 (GRCs =  1) GRCs =    38 (0.06%)
+Initial. M1         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M2         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M3         Overflow =    21 Max =  4 (GRCs =  1) GRCs =    20 (0.03%)
+Initial. M4         Overflow =     1 Max =  1 (GRCs =  1) GRCs =     1 (0.00%)
+Initial. M5         Overflow =    10 Max =  3 (GRCs =  1) GRCs =    17 (0.03%)
+Initial. M6         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M7         Overflow =     0 Max =  1 (GRCs =  1) GRCs =     1 (0.00%)
+Initial. M8         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. M9         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+Initial. MRDL       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       98.0 1.42 0.48 0.07 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M2       50.1 21.3 3.52 14.0 1.26 4.46 2.44 1.55 0.87 0.12 0.15 0.04 0.01 0.01
+M3       45.2 11.4 12.2 12.8 1.31 8.60 4.78 1.86 1.25 0.00 0.35 0.05 0.02 0.01
+M4       67.5 22.0 3.99 3.60 0.44 1.74 0.33 0.17 0.11 0.00 0.04 0.01 0.00 0.00
+M5       74.7 17.9 0.81 3.97 0.00 0.43 1.19 0.23 0.40 0.00 0.23 0.00 0.01 0.00
+M6       84.7 13.2 0.52 1.15 0.00 0.12 0.16 0.01 0.00 0.00 0.02 0.00 0.00 0.00
+M7       88.0 8.08 0.09 2.60 0.00 0.11 0.69 0.06 0.16 0.00 0.12 0.00 0.00 0.00
+M8       97.5 1.73 0.02 0.47 0.00 0.04 0.08 0.00 0.06 0.00 0.03 0.00 0.00 0.00
+M9       96.1 2.83 0.02 0.61 0.00 0.13 0.16 0.00 0.04 0.00 0.02 0.00 0.01 0.00
+MRDL     100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    80.3 9.98 2.16 3.92 0.30 1.56 0.98 0.39 0.29 0.01 0.09 0.01 0.00 0.00
+
+
+Initial. Total Wire Length = 222414.12
+Initial. Layer M1 wire length = 1884.54
+Initial. Layer M2 wire length = 64552.27
+Initial. Layer M3 wire length = 83309.85
+Initial. Layer M4 wire length = 23940.78
+Initial. Layer M5 wire length = 21953.93
+Initial. Layer M6 wire length = 10708.14
+Initial. Layer M7 wire length = 11118.96
+Initial. Layer M8 wire length = 1816.60
+Initial. Layer M9 wire length = 3129.06
+Initial. Layer MRDL wire length = 0.00
+Initial. Total Number of Contacts = 111488
+Initial. Via VIA12SQ_C count = 46338
+Initial. Via VIA23SQ_C count = 56595
+Initial. Via VIA34SQ_C count = 4245
+Initial. Via VIA45SQ count = 2321
+Initial. Via VIA56SQ count = 1167
+Initial. Via VIA67SQ_C count = 556
+Initial. Via VIA78SQ_C count = 186
+Initial. Via VIA89_C count = 80
+Initial. Via VIA9RDL count = 0
+Initial. completed.
+
+Start GR phase 1
+Fri Aug 22 18:58:13 2025
+Number of partitions: 9 (3 x 3)
+Size of partitions: 128 gCells x 160 gCells
+10% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:01
+20% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:01
+30% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:01
+40% of nets complete Elapsed cpu time: 0:00:02 Elapsed real time: 0:00:01
+50% of nets complete Elapsed cpu time: 0:00:03 Elapsed real time: 0:00:01
+60% of nets complete Elapsed cpu time: 0:00:03 Elapsed real time: 0:00:01
+70% of nets complete Elapsed cpu time: 0:00:03 Elapsed real time: 0:00:01
+80% of nets complete Elapsed cpu time: 0:00:03 Elapsed real time: 0:00:01
+90% of nets complete Elapsed cpu time: 0:00:03 Elapsed real time: 0:00:01
+[rtAllParts] Elapsed real time: 0:00:01 
+[rtAllParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:03
+Current Stage stats:
+[End of Phase1 Routing] Elapsed real time: 0:00:01 
+[End of Phase1 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:02 total=0:00:03
+[End of Phase1 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase1 Routing] Total (MB): Used  358  Alloctr  364  Proc 18073 
+phase1. Routing result:
+phase1. Both Dirs: Overflow =   125 Max = 5 GRCs =   144 (0.04%)
+phase1. H routing: Overflow =   118 Max = 5 (GRCs =  2) GRCs =   119 (0.07%)
+phase1. V routing: Overflow =     7 Max = 1 (GRCs = 25) GRCs =    25 (0.02%)
+phase1. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M2         Overflow =   117 Max = 5 (GRCs =  2) GRCs =   118 (0.07%)
+phase1. M3         Overflow =     5 Max = 1 (GRCs = 22) GRCs =    22 (0.01%)
+phase1. M4         Overflow =     0 Max = 1 (GRCs =  1) GRCs =     1 (0.00%)
+phase1. M5         Overflow =     0 Max = 1 (GRCs =  1) GRCs =     1 (0.00%)
+phase1. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M9         Overflow =     2 Max = 1 (GRCs =  2) GRCs =     2 (0.00%)
+phase1. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Overflow over macro areas
+
+phase1. Both Dirs: Overflow =     1 Max =  1 GRCs =     3 (0.00%)
+phase1. H routing: Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. V routing: Overflow =     1 Max =  1 (GRCs =  3) GRCs =     3 (0.00%)
+phase1. M1         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M2         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M3         Overflow =     0 Max =  1 (GRCs =  2) GRCs =     2 (0.00%)
+phase1. M4         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M5         Overflow =     0 Max =  1 (GRCs =  1) GRCs =     1 (0.00%)
+phase1. M6         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M7         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M8         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. M9         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase1. MRDL       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       98.0 1.42 0.48 0.07 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M2       50.1 21.5 3.55 14.1 1.25 4.34 2.41 1.52 0.89 0.13 0.07 0.02 0.01 0.01
+M3       45.2 11.6 12.3 12.9 1.34 8.61 4.68 1.85 1.21 0.00 0.06 0.00 0.00 0.00
+M4       66.7 22.0 4.30 3.81 0.51 1.97 0.37 0.19 0.10 0.00 0.02 0.00 0.00 0.00
+M5       73.3 18.8 1.10 4.45 0.00 0.48 1.26 0.13 0.39 0.00 0.06 0.00 0.00 0.00
+M6       83.8 14.1 0.55 1.19 0.00 0.12 0.14 0.01 0.00 0.00 0.02 0.00 0.00 0.00
+M7       87.3 8.52 0.10 2.69 0.00 0.11 0.84 0.05 0.19 0.00 0.10 0.00 0.00 0.00
+M8       97.2 1.97 0.02 0.54 0.00 0.05 0.03 0.00 0.08 0.00 0.03 0.00 0.00 0.00
+M9       95.4 3.18 0.10 1.20 0.00 0.00 0.00 0.00 0.06 0.00 0.03 0.00 0.00 0.00
+MRDL     100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    79.8 10.2 2.25 4.09 0.31 1.56 0.97 0.37 0.29 0.01 0.04 0.00 0.00 0.00
+
+
+phase1. Total Wire Length = 223405.67
+phase1. Layer M1 wire length = 1884.54
+phase1. Layer M2 wire length = 63767.31
+phase1. Layer M3 wire length = 81403.55
+phase1. Layer M4 wire length = 24804.77
+phase1. Layer M5 wire length = 22686.66
+phase1. Layer M6 wire length = 11284.24
+phase1. Layer M7 wire length = 11881.08
+phase1. Layer M8 wire length = 1928.91
+phase1. Layer M9 wire length = 3764.62
+phase1. Layer MRDL wire length = 0.00
+phase1. Total Number of Contacts = 112429
+phase1. Via VIA12SQ_C count = 46338
+phase1. Via VIA23SQ_C count = 56723
+phase1. Via VIA34SQ_C count = 4637
+phase1. Via VIA45SQ count = 2554
+phase1. Via VIA56SQ count = 1240
+phase1. Via VIA67SQ_C count = 623
+phase1. Via VIA78SQ_C count = 214
+phase1. Via VIA89_C count = 100
+phase1. Via VIA9RDL count = 0
+phase1. completed.
+
+Start GR phase 2
+Fri Aug 22 18:58:15 2025
+Number of partitions: 9 (3 x 3)
+Size of partitions: 128 gCells x 160 gCells
+10% of nets complete Elapsed cpu time: 0:00:00 Elapsed real time: 0:00:00
+20% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+30% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+40% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+50% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+60% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+70% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+80% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+90% of nets complete Elapsed cpu time: 0:00:01 Elapsed real time: 0:00:00
+[rtAllParts] Elapsed real time: 0:00:01 
+[rtAllParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+Number of partitions: 9 (3 x 3)
+Size of partitions: 128 gCells x 160 gCells
+[updNetsDmd] Elapsed real time: 0:00:00 
+[updNetsDmd] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Current Stage stats:
+[End of Phase2 Routing] Elapsed real time: 0:00:01 
+[End of Phase2 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:02
+[End of Phase2 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase2 Routing] Total (MB): Used  359  Alloctr  365  Proc 18073 
+phase2. Routing result:
+phase2. Both Dirs: Overflow =    14 Max = 2 GRCs =    11 (0.00%)
+phase2. H routing: Overflow =    11 Max = 2 (GRCs =  4) GRCs =     8 (0.00%)
+phase2. V routing: Overflow =     3 Max = 1 (GRCs =  3) GRCs =     3 (0.00%)
+phase2. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M2         Overflow =     6 Max = 2 (GRCs =  2) GRCs =     5 (0.00%)
+phase2. M3         Overflow =     1 Max = 1 (GRCs =  1) GRCs =     1 (0.00%)
+phase2. M4         Overflow =     5 Max = 2 (GRCs =  2) GRCs =     3 (0.00%)
+phase2. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M9         Overflow =     2 Max = 1 (GRCs =  2) GRCs =     2 (0.00%)
+phase2. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Overflow over macro areas
+
+phase2. Both Dirs: Overflow =     0 Max =  0 GRCs =     0 (0.00%)
+phase2. H routing: Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. V routing: Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M1         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M2         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M3         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M4         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M5         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M6         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M7         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M8         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. M9         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase2. MRDL       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       98.0 1.42 0.48 0.07 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M2       51.5 23.9 4.07 15.5 1.48 2.82 0.57 0.08 0.02 0.00 0.01 0.00 0.00 0.00
+M3       45.7 11.7 12.3 13.3 1.34 8.71 4.59 1.57 0.55 0.00 0.03 0.00 0.00 0.00
+M4       67.1 21.8 4.09 3.85 0.50 1.96 0.37 0.17 0.07 0.00 0.02 0.00 0.00 0.00
+M5       73.6 18.6 1.12 4.48 0.00 0.36 1.23 0.09 0.43 0.00 0.06 0.00 0.00 0.00
+M6       83.9 14.1 0.56 1.14 0.00 0.12 0.14 0.01 0.00 0.00 0.02 0.00 0.00 0.00
+M7       87.5 8.18 0.13 2.81 0.00 0.12 0.82 0.05 0.19 0.00 0.11 0.00 0.00 0.00
+M8       97.5 1.70 0.02 0.55 0.00 0.05 0.03 0.00 0.08 0.00 0.03 0.00 0.00 0.00
+M9       95.7 2.97 0.09 1.09 0.00 0.00 0.00 0.00 0.06 0.00 0.03 0.00 0.00 0.00
+MRDL     100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    80.1 10.4 2.28 4.26 0.33 1.41 0.77 0.20 0.14 0.00 0.03 0.00 0.00 0.00
+
+
+phase2. Total Wire Length = 223441.91
+phase2. Layer M1 wire length = 1884.54
+phase2. Layer M2 wire length = 63599.84
+phase2. Layer M3 wire length = 81283.65
+phase2. Layer M4 wire length = 24847.22
+phase2. Layer M5 wire length = 22837.34
+phase2. Layer M6 wire length = 11386.66
+phase2. Layer M7 wire length = 11990.74
+phase2. Layer M8 wire length = 1952.31
+phase2. Layer M9 wire length = 3659.62
+phase2. Layer MRDL wire length = 0.00
+phase2. Total Number of Contacts = 112538
+phase2. Via VIA12SQ_C count = 46338
+phase2. Via VIA23SQ_C count = 56759
+phase2. Via VIA34SQ_C count = 4668
+phase2. Via VIA45SQ count = 2567
+phase2. Via VIA56SQ count = 1259
+phase2. Via VIA67SQ_C count = 629
+phase2. Via VIA78SQ_C count = 218
+phase2. Via VIA89_C count = 100
+phase2. Via VIA9RDL count = 0
+phase2. completed.
+
+Start GR phase 3
+Fri Aug 22 18:58:16 2025
+Number of partitions: 9 (3 x 3)
+Size of partitions: 128 gCells x 160 gCells
+[rtAllParts] Elapsed real time: 0:00:00 
+[rtAllParts] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+Number of partitions: 9 (3 x 3)
+Size of partitions: 128 gCells x 160 gCells
+[updNetsDmd] Elapsed real time: 0:00:00 
+[updNetsDmd] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+Current Stage stats:
+[End of Phase3 Routing] Elapsed real time: 0:00:00 
+[End of Phase3 Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:01 total=0:00:01
+[End of Phase3 Routing] Stage (MB): Used    0  Alloctr    0  Proc    0 
+[End of Phase3 Routing] Total (MB): Used  359  Alloctr  365  Proc 18073 
+phase3. Routing result:
+phase3. Both Dirs: Overflow =    11 Max = 2 GRCs =     9 (0.00%)
+phase3. H routing: Overflow =     9 Max = 2 (GRCs =  3) GRCs =     7 (0.00%)
+phase3. V routing: Overflow =     2 Max = 1 (GRCs =  2) GRCs =     2 (0.00%)
+phase3. M1         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M2         Overflow =     6 Max = 2 (GRCs =  2) GRCs =     5 (0.00%)
+phase3. M3         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M4         Overflow =     3 Max = 2 (GRCs =  1) GRCs =     2 (0.00%)
+phase3. M5         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M6         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M7         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M8         Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M9         Overflow =     2 Max = 1 (GRCs =  2) GRCs =     2 (0.00%)
+phase3. MRDL       Overflow =     0 Max = 0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Overflow over macro areas
+
+phase3. Both Dirs: Overflow =     0 Max =  0 GRCs =     0 (0.00%)
+phase3. H routing: Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. V routing: Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M1         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M2         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M3         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M4         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M5         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M6         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M7         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M8         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. M9         Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+phase3. MRDL       Overflow =     0 Max =  0 (GRCs =  0) GRCs =     0 (0.00%)
+
+
+Density distribution:
+Layer    0.0  0.1  0.2  0.3  0.4  0.5  0.6  0.7  0.8  0.9  1.0  1.1  1.2  > 1.2 
+M1       98.0 1.42 0.48 0.07 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+M2       51.5 23.9 4.06 15.5 1.48 2.82 0.57 0.08 0.02 0.00 0.01 0.00 0.00 0.00
+M3       45.9 11.7 12.3 13.2 1.33 8.69 4.58 1.57 0.55 0.00 0.03 0.00 0.00 0.00
+M4       67.1 21.8 4.09 3.85 0.50 1.96 0.37 0.17 0.07 0.00 0.02 0.00 0.00 0.00
+M5       73.7 18.5 1.11 4.47 0.00 0.36 1.19 0.09 0.43 0.00 0.06 0.00 0.00 0.00
+M6       83.8 14.1 0.56 1.14 0.00 0.12 0.14 0.01 0.00 0.00 0.02 0.00 0.00 0.00
+M7       87.5 8.23 0.13 2.80 0.00 0.12 0.80 0.05 0.19 0.00 0.11 0.00 0.00 0.00
+M8       97.5 1.70 0.02 0.55 0.00 0.05 0.03 0.00 0.08 0.00 0.03 0.00 0.00 0.00
+M9       95.7 2.96 0.08 1.09 0.00 0.00 0.00 0.00 0.06 0.00 0.03 0.00 0.00 0.00
+MRDL     100. 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+Total    80.1 10.4 2.28 4.26 0.33 1.41 0.76 0.20 0.14 0.00 0.03 0.00 0.00 0.00
+
+
+phase3. Total Wire Length = 223463.75
+phase3. Layer M1 wire length = 1884.54
+phase3. Layer M2 wire length = 63606.69
+phase3. Layer M3 wire length = 81305.69
+phase3. Layer M4 wire length = 24843.44
+phase3. Layer M5 wire length = 22787.70
+phase3. Layer M6 wire length = 11405.44
+phase3. Layer M7 wire length = 12018.34
+phase3. Layer M8 wire length = 1952.31
+phase3. Layer M9 wire length = 3659.62
+phase3. Layer MRDL wire length = 0.00
+phase3. Total Number of Contacts = 112536
+phase3. Via VIA12SQ_C count = 46338
+phase3. Via VIA23SQ_C count = 56761
+phase3. Via VIA34SQ_C count = 4666
+phase3. Via VIA45SQ count = 2565
+phase3. Via VIA56SQ count = 1259
+phase3. Via VIA67SQ_C count = 629
+phase3. Via VIA78SQ_C count = 218
+phase3. Via VIA89_C count = 100
+phase3. Via VIA9RDL count = 0
+phase3. completed.
+[End of Whole Chip Routing] Elapsed real time: 0:00:16 
+[End of Whole Chip Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:18 total=0:00:18
+[End of Whole Chip Routing] Stage (MB): Used  214  Alloctr  218  Proc    0 
+[End of Whole Chip Routing] Total (MB): Used  359  Alloctr  365  Proc 18073 
+
+Congestion utilization per direction:
+Average vertical track utilization   = 10.27 %
+Peak    vertical track utilization   = 100.00 %
+Average horizontal track utilization =  8.51 %
+Peak    horizontal track utilization = 71.43 %
+
+[End of Global Routing] Elapsed real time: 0:00:16 
+[End of Global Routing] Elapsed cpu  time: sys=0:00:00 usr=0:00:18 total=0:00:19
+[End of Global Routing] Stage (MB): Used  199  Alloctr  203  Proc    0 
+[End of Global Routing] Total (MB): Used  343  Alloctr  351  Proc 18073 
+Writing out congestion map...
+Updating congestion ...
+Updating congestion ...
+[DBOUT] Elapsed real time: 0:00:00 
+[DBOUT] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[DBOUT] Stage (MB): Used -145  Alloctr -152  Proc    0 
+[DBOUT] Total (MB): Used   36  Alloctr   37  Proc 18073 
+[End of dbOut] Elapsed real time: 0:00:00 
+[End of dbOut] Elapsed cpu  time: sys=0:00:00 usr=0:00:00 total=0:00:00
+[End of dbOut] Stage (MB): Used -145  Alloctr -152  Proc    0 
+[End of dbOut] Total (MB): Used   36  Alloctr   37  Proc 18073 
+
+****************************************
+Report : congestion
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:58:17 2025
+****************************************
+
+Layer     |    overflow     |              # GRCs has
+Name      |  total  |  max  | overflow (%)      | max overflow
+---------------------------------------------------------------
+M1        |       0 |     0 |       0  ( 0.00%) |       0
+M2        |       7 |     2 |       5  ( 0.00%) |       2
+M3        |       0 |     0 |       0  ( 0.00%) |       0
+M4        |       3 |     2 |       2  ( 0.00%) |       1
+M5        |       0 |     0 |       0  ( 0.00%) |       0
+M6        |       0 |     0 |       0  ( 0.00%) |       0
+M7        |       0 |     0 |       0  ( 0.00%) |       0
+M8        |       0 |     0 |       0  ( 0.00%) |       0
+M9        |       2 |     1 |       2  ( 0.00%) |       2
+MRDL      |       0 |     0 |       0  ( 0.00%) |       0
+---------------------------------------------------------------
+Both Dirs |      12 |     2 |       9  ( 0.00%) |       3
+H routing |      10 |     2 |       7  ( 0.00%) |       3
+V routing |       2 |     1 |       2  ( 0.00%) |       2
+
+1

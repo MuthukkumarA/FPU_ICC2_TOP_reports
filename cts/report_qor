@@ -1,0 +1,141 @@
+****************************************
+Report : qor
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:57:17 2025
+****************************************
+
+
+Scenario           'func_mode::ss0p6v125c'
+Timing Path Group  '**in2reg_default**'
+----------------------------------------
+Levels of Logic:                     15
+Critical Path Length:              1.57
+Critical Path Slack:               0.02
+Critical Path Clk Period:          1.67
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'func_mode::ss0p6v125c'
+Timing Path Group  '**reg2out_default**'
+----------------------------------------
+Levels of Logic:                      3
+Critical Path Length:              0.26
+Critical Path Slack:               0.97
+Critical Path Clk Period:          1.67
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'func_mode::ss0p6v125c'
+Timing Path Group  '**in2out_default**'
+----------------------------------------
+Levels of Logic:                      5
+Critical Path Length:              0.89
+Critical Path Slack:               0.34
+Critical Path Clk Period:          1.67
+Total Negative Slack:              0.00
+No. of Violating Paths:               0
+----------------------------------------
+
+Scenario           'func_mode::ss0p6v125c'
+Timing Path Group  'gclk'
+----------------------------------------
+Levels of Logic:                    109
+Critical Path Length:              1.74
+Critical Path Slack:              -0.01
+Critical Path Clk Period:          1.67
+Total Negative Slack:             -0.02
+No. of Violating Paths:               4
+----------------------------------------
+
+Scenario           'turbo_mode::ss0p6vm40c'
+Timing Path Group  '**in2reg_default**'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'turbo_mode::ss0p6vm40c'
+Timing Path Group  '**reg2out_default**'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'turbo_mode::ss0p6vm40c'
+Timing Path Group  '**in2out_default**'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+Scenario           'turbo_mode::ss0p6vm40c'
+Timing Path Group  'gclk'
+----------------------------------------
+Worst Hold Violation:              0.00
+Total Hold Violation:              0.00
+No. of Hold Violations:               0
+----------------------------------------
+
+
+Cell Count
+----------------------------------------
+Hierarchical Cell Count:           1069
+Hierarchical Port Count:          14710
+Leaf Cell Count:                  16383
+Buf/Inv Cell Count:                3315
+Buf Cell Count:                     686
+Inv Cell Count:                    2629
+CT Buf/Inv Cell Count:                0
+Combinational Cell Count:         12363
+   Single-bit Isolation Cell Count:                        0
+   Multi-bit Isolation Cell Count:                         0
+   Isolation Cell Banking Ratio:                           0.00%
+   Single-bit Level Shifter Cell Count:                    246
+   Multi-bit Level Shifter Cell Count:                     0
+   Level Shifter Cell Banking Ratio:                       0.00%
+   Single-bit ELS Cell Count:                              0
+   Multi-bit ELS Cell Count:                               0
+   ELS Cell Banking Ratio:                                 0.00%
+Sequential Cell Count:             4020
+   Integrated Clock-Gating Cell Count:                     103
+   Sequential Macro Cell Count:                            0
+   Single-bit Sequential Cell Count:                       5663
+   Multi-bit Sequential Cell Count:                        0
+   Sequential Cell Banking Ratio:                          0.00%
+   BitsPerflop:                                            1.00
+Macro Count:                          2
+----------------------------------------
+
+
+Area
+----------------------------------------
+Combinational Area:             4122.76
+Noncombinational Area:          3279.74
+Buf/Inv Area:                    728.60
+Total Buffer Area:               246.55
+Total Inverter Area:             482.05
+Macro/Black Box Area:          23070.16
+Net Area:                             0
+Net XLength:                  138511.68
+Net YLength:                  177346.38
+----------------------------------------
+Cell Area (netlist):                          30472.66
+Cell Area (netlist and physical only):        30754.69
+Net Length:                   315858.06
+
+
+Design Rules
+----------------------------------------
+Total Number of Nets:             22322
+Nets with Violations:               141
+Max Trans Violations:                 1
+Max Cap Violations:                   0
+----------------------------------------
+
+1

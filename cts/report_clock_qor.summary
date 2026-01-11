@@ -1,0 +1,133 @@
+ Info: Initializing timer in CLOCK_SYN_REPORT_MODE
+Information: The value of option cts.compile.enable_cell_relocation has been overridden to "leaf_only" to support latency-driven placement. (CTS-973)
+Information: Top design (Reference: fpu/cts.design) is treated as modifiable. (HOPT-001)
+Information: 2 sub-block instances are treated as non-modifiable. (HOPT-003)
+Corner Scaling is off, multiplier is 1.000000
+Number of Site types in the design = 1
+Setting up Chip Core
+Chip Core shape: (100000 100000) (2199380 2500000)
+Number of VARs = 3
+Number of unique PDs = 2
+Number of Power Domains = 3
+Number of Voltage Areas = 3
+Number of supply Nets = 8
+Number of used supplies = 0
+Blocked VAs: 1 2 
+INFO: auto-mv setup started.
+bmap: stepx = stepy = 52000
+DB units per micron : 10000
+Core Area = 45 X 50 ()
+Information: Initializing classic cellmap without advanced rules enabled and without PDC enabled
+Information: The following app options are used in cellmap
+        place.legalize.enable_color_aware_placement : false
+        place.legalize.use_nll_query_cm : false
+        place.legalize.enable_advanced_legalizer : false
+        place.legalize.enable_prerouted_net_check : true
+        place.legalize.enable_advanced_prerouted_net_check : false
+        place.legalize.always_continue : true
+        place.legalize.limit_legality_checks : false
+        place.common.pnet_aware_density : 1.0000
+        place.common.pnet_aware_min_width : 0.0000
+        place.common.pnet_aware_layers : {}
+        place.common.use_placement_model : false
+        place.common.enable_advanced_placement_model : true
+        cts.placement.cell_spacing_rule_style : maximum
+Warning: Library cell saed14rvt_ss0p6v125c:SAEDRVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14rvt_ss0p6v125c:SAEDRVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14lvt_ss0p6v125c:SAEDLVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14lvt_ss0p6v125c:SAEDLVT14_DCAP_PV1ECO_12.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Warning: Library cell saed14rvt_ss0p6v125c:SAEDRVT14_ISOFSDPQ_PECO_8.frame is missing supply pins. Its power structure cannot be determined. (LGL-050)
+Total 2.1549 seconds to build cellmap data
+INFO: creating 50(r) x 50(c) GridCells YDim 5.2 XDim 4.5988
+INFO: creating 50(r) x 50(c) GridCells YDim 5.2 XDim 4.5988
+Total 0.1907 seconds to load 17482 cell instances into cellmap
+Moveable cells: 16286; Application fixed cells: 95; Macro cells: 0; User fixed cells: 1101
+0 out of 16653 data nets is detail routed, 94 out of 96 clock nets are detail routed and total 16749 nets have been analyzed
+Only clock route nets/shapes. Estimated current stage is after clock detail route stage
+Average cell width 0.7374, cell height 0.6030, cell area 0.4519 for total 16381 placed and application fixed cells
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+ORB: timingScenario func_mode::ss0p6v125c timingCorner ss0p6v125c
+INFO: Using corner ss0p6vm40c for worst leakage corner
+Using default layer M4
+nplLib: sample lib cell area 1.420800
+nplLib: sample lib cell leakage 0.000128
+new cutoff lpd: 8.86389e-06
+maxCornerId = 2
+corner=ss0p6v125c, tran factor=1.0000 (0.0458 / 0.0458)
+corner=ss0p6vm40c, tran factor=0.8711 (0.0399 / 0.0458)
+ORB: Nominal = 0.0064699  Design MT = 0.100000  Target = 0.0458298 (7.084 nominal)  MaxRC = 0.030884
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'M4' setting 'pitch' is not valid (NEX-001)
+Warning: Technology layer 'MRDL' setting 'pitch' is not valid (NEX-001)
+****************************************
+Report : clock qor
+        -type summary
+        -nosplit
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:57:22 2025
+****************************************
+
+Attributes
+===========
+M Master Clock
+G Generated Clock
+& Internal Generated Clock
+U User Defined Skew Group
+D Default Skew Group
+* Generated Clock Balanced Separately
+
+=================================================
+==== Summary Reporting for Corner ss0p6v125c ====
+=================================================
+
+========================================================= Summary Table for Corner ss0p6v125c ==========================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: func_mode, Scenario: func_mode::ss0p6v125c
+gclk                                    M,D      2144     13       59     20.07    118.50      0.45      0.39         0         0   5521.74
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                       2144     13       59     20.07    118.50      0.45      0.39         0         0   5521.74
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+Warning: The scenario turbo_mode::ss0p6vm40c has max capacitance DRC fixing disabled using the set_scenario_status command.  High DRC count may be expected.
+=================================================
+==== Summary Reporting for Corner ss0p6vm40c ====
+=================================================
+
+========================================================= Summary Table for Corner ss0p6vm40c ==========================================================
+Clock /                               Attrs     Sinks Levels    Clock     Clock     Clock       Max    Global  Trans DRC  Cap DRC      Wire
+Skew Group                                                   Repeater  Repeater   Stdcell   Latency      Skew     Count     Count    Length
+                                                                Count      Area      Area
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+### Mode: turbo_mode, Scenario: turbo_mode::ss0p6vm40c
+gclk                                    M,D      2144     13       59     20.07    118.50      0.42      0.36         0         0   5521.74
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+All Clocks                                       2144     13       59     20.07    118.50      0.42      0.36         0         0   5521.74
+
+
+Warning: Please use -largest / -smallest / -all switches with -show_verbose_paths / -show_paths to report the clock paths. (CTS-956)
+1

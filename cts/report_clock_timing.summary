@@ -1,0 +1,73 @@
+Information: Timer using 1 threads
+****************************************
+Report : clock timing
+        -type summary
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:57:27 2025
+****************************************
+
+  Mode: func_mode
+  Clock: gclk
+                                                                                 Corner
+---------------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_28_/CK               0.45       rp-+   ss0p6v125c
+
+  Minimum setup capture latency:
+      cluster_header/I0/dbginit_repeater/repeater/i0/u_FD/CK     0.06     rp-+   ss0p6v125c
+
+  Minimum hold launch latency:
+      cluster_header/I0/dbginit_repeater/repeater/i0/u_FD/CK     0.06     rp-+   ss0p6v125c
+
+  Maximum hold capture latency:
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_28_/CK               0.45       rp-+   ss0p6v125c
+
+  Maximum active transition:
+      fpu_in/fpu_in_ctl/i_inq_div_rdptr_dec/q_reg_5_/CK        0.09       rp-+   ss0p6v125c
+
+  Minimum active transition:
+      fpu_mul/fpu_mul_ctl/i_m6stg_opdec/q_reg_1_/CK            0.00       rp-+   ss0p6v125c
+
+  Maximum setup skew:
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_28_/CK                          rp-+   ss0p6v125c
+      fpu_add/fpu_add_frac_dp/i_a1stg_in2/q_reg_28_/CK         0.28       rp-+   ss0p6v125c
+
+  Maximum hold skew:
+      fpu_add/fpu_add_ctl/i_add_id_out/q_reg_7_/CK                        rp-+   ss0p6v125c
+      fpu_out/fpu_out_ctl/i_fp_cpx_req_cq/q_reg_5_/CK          0.24       rp-+   ss0p6v125c
+
+
+
+  Mode: turbo_mode
+  Clock: gclk
+                                                                                 Corner
+---------------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_28_/CK               0.42       rp-+   ss0p6vm40c
+
+  Minimum setup capture latency:
+      cluster_header/I0/dbginit_repeater/repeater/i0/u_FD/CK     0.05     rp-+   ss0p6vm40c
+
+  Minimum hold launch latency:
+      cluster_header/I0/dbginit_repeater/repeater/i0/u_FD/CK     0.05     rp-+   ss0p6vm40c
+
+  Maximum hold capture latency:
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_28_/CK               0.42       rp-+   ss0p6vm40c
+
+  Maximum active transition:
+      fpu_in/fpu_in_ctl/i_inq_div_rdptr_dec/q_reg_5_/CK        0.09       rp-+   ss0p6vm40c
+
+  Minimum active transition:
+      fpu_mul/fpu_mul_ctl/i_m6stg_opdec/q_reg_1_/CK            0.00       rp-+   ss0p6vm40c
+
+  Maximum setup skew:
+      fpu_in/fpu_in_dp/i_inq_din_d1/q_reg_97_/CK                          rp-+   ss0p6vm40c
+      fpu_add/fpu_add_frac_dp/i_a1stg_in1a/q_reg_28_/CK        0.25       rp-+   ss0p6vm40c
+
+  Maximum hold skew:
+      fpu_add/fpu_add_ctl/i_add_id_out/q_reg_1_/CK                        rp-+   ss0p6vm40c
+      fpu_out/fpu_out_ctl/i_req_thread/q_reg_1_/CK             0.22       rp-+   ss0p6vm40c
+
+
+1

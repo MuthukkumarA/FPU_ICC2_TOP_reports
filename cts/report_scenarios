@@ -1,0 +1,14 @@
+****************************************
+Report : scenario
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:57:44 2025
+****************************************
+
+                                                                     Leakage  Dynamic                              Cell  Signal
+Name            Mode            Corner          Active  Setup  Hold  Power    Power    Max_tran  Max_cap  Min_cap  EM    EM
+-------------------------------------------------------------------------------------------------------------------------------
+func_mode::ss0p6v125c * func_mode ss0p6v125c    true    true   false true     true     true      true     false    false false
+turbo_mode::ss0p6vm40c * turbo_mode ss0p6vm40c  true    false  true  true     false    true      false    true     false false
+
+1

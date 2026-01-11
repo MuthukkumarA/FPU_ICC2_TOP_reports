@@ -1,0 +1,194 @@
+****************************************
+Report : check_mv_design
+Design : fpu
+Version: T-2022.03-SP4
+Date   : Fri Aug 22 18:57:44 2025
+****************************************
+
+---------- Power domain rule ----------
+No errors or warnings.
+
+---------- Supply set rule ----------
+No errors or warnings.
+
+---------- Supply net rule ----------
+Warning: Supply state(s) has not been defined on the supply net 'fpu_mul/VDD'. (MV-099)
+Warning: Supply state(s) has not been defined on the supply net 'fpu_mul/VDDo'. (MV-099)
+Warning: Supply state(s) has not been defined on the supply net 'fpu_mul/VSS'. (MV-099)
+Information: Total 3 MV-099 violations. (MV-080)
+
+---------- Supply port rule ----------
+No errors or warnings.
+
+---------- Isolation strategy rule ----------
+No errors or warnings.
+
+---------- Level shifter strategy rule ----------
+No errors or warnings.
+
+---------- Retention strategy rule ----------
+No errors or warnings.
+
+---------- Power switch strategy rule ----------
+No errors or warnings.
+
+---------- Repeater rule ----------
+No errors or warnings.
+
+---------- Terminal boundary rule ----------
+No errors or warnings.
+
+---------- Isolation cell rule ----------
+No errors or warnings.
+
+---------- Level shifter cell rule ----------
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_0__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_1__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_2__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_3__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_4__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_5__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_6__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_7__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_8__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_9__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_10__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_11__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_12__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_13__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_14__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_15__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_16__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_17__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_18__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Error: The input supply net 'VDDH' of the level shifter 'mul_frac_out_19__UPF_LS' is less always-on than its output supply net 'VDD'. (MV-045)
+Information: Message 'MV-045' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 83 MV-045 violations. (MV-080)
+
+Error: Level shifter 'mul_frac_out_0__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_1__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_2__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_3__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_4__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_5__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_6__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_7__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_8__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_9__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_10__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_11__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_12__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_13__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_14__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_15__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_16__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_17__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_18__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Error: Level shifter 'mul_frac_out_19__UPF_LS' of level shifter type 'High to low' is incompatible with the voltage conversion from <undef>V to <undef>V. (MV-046)
+Information: Message 'MV-046' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 83 MV-046 violations. (MV-080)
+
+Information: The level shifter 'mul_frac_out_0__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_1__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_2__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_3__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_4__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_5__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_6__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_7__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_8__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_9__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_10__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_11__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_12__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_13__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_14__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_15__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_16__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_17__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_18__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: The level shifter 'mul_frac_out_19__UPF_LS' is not associated with any level shifter strategies. (MV-072)
+Information: Message 'MV-072' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 83 MV-072 violations. (MV-080)
+
+---------- Retention cell rule ----------
+No errors or warnings.
+
+---------- Switch cell rule ----------
+No errors or warnings.
+
+---------- PGMUX rule ----------
+No errors or warnings.
+
+---------- Diode cell rule ----------
+No errors or warnings.
+
+---------- Model rule ----------
+No errors or warnings.
+
+---------- Isolation rule ----------
+Warning: Driver pin 'cluster_header/I0/rst_repeater/syncff/i0/HFSBUF_156_785/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_159/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/U29/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_157/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/U29/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_156/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/HFSBUF_50_687/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_153/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_out/fpu_out_ctl/i_mul_dest_rdy/q_reg_0_/Q' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_155/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_out/fpu_out_ctl/i_mul_dest_rdy/q_reg_0_/Q' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_154/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8545/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_14/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8460/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8539/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_3/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8457/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_4/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8536/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_5/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8527/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_6/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8346/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_24/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8349/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_25/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8325/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_26/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8352/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_28/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8700/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_29/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8337/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_30/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/ctmTdsLR_4_3570/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_40/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8331/X' [supply net 'VDD', power state 'UNDEFINED'] is less always-on than the load pin 'fpu_mul/eco_cell_41/A' [supply net 'fpu_mul/VDD', power state 'UNDEFINED']. (MV-013)
+Information: Message 'MV-013' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 164 MV-013 violations. (MV-080)
+
+---------- Voltage shifting rule ----------
+Warning: Driver pin 'cluster_header/I0/rst_repeater/syncff/i0/HFSBUF_156_785/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_159/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/U29/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_157/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/U29/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_156/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_ctl/HFSBUF_50_687/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_153/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_out/fpu_out_ctl/i_mul_dest_rdy/q_reg_0_/Q' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_155/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_out/fpu_out_ctl/i_mul_dest_rdy/q_reg_0_/Q' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_154/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8545/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_14/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8460/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8539/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_3/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8457/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_4/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8536/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_5/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8527/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_6/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8346/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_24/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8349/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_25/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8325/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_26/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8352/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_28/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8700/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_29/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8337/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_30/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/ctmTdsLR_4_3570/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_40/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Warning: Driver pin 'fpu_in/fpu_in_dp/clock_opt_cts_opt_ctmTdsLR_1_8331/X' (supply net 'VDD' [<undef>V]) cannot drive load pin 'fpu_mul/eco_cell_41/A' (supply net 'fpu_mul/VDD' [<undef>V]) due to voltage difference. (MV-012)
+Information: Message 'MV-012' limit (20) exceeded. Remainder will be suppressed. The limit can be changed with '-max_message_count' option. (MV-079)
+Information: Total 164 MV-012 violations. (MV-080)
+
+---------- Tie-off connection rule ----------
+No errors or warnings.
+
+---------- Analog net rule ----------
+No errors or warnings.
+
+---------- Physical block pin rule ----------
+No errors or warnings.
+
+---------- PG pin rule ----------
+No errors or warnings.
+
+---------- Signal pin rule ----------
+No errors or warnings.
+
+---------- Summary ----------
+Information: Total 166 error(s) and 331 warning(s) from check_mv_design. (MV-082)
+0
